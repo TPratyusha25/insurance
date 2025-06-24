@@ -20,14 +20,13 @@
       {
         "id": "textblock",
         "fields": [
-       
-          {
-            "component": "richtext",
-            "name": "text",
-            "value": "",
-            "label": "Text",
-            "valueType": "string"
-          }
+         {
+      "component": "richtext",
+      "name": "textContent",
+      "label": "Text",
+      "valueType": "string",
+      "required": true
+    }
         ]
       }
     ],
