@@ -203,6 +203,8 @@ button {
     white-space: nowrap;
     width: 67%;
   margin-left: 5px;
+    white-space: normal;
+    word-break: break-word;
 }
 
 /*  a.button:hover, 
