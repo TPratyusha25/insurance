@@ -309,15 +309,13 @@
         "id": "textblock",
         "fields": [
        
-            {
-              "component": "text",
-           "name": "Btext",
-           "label": "Button Text" 
-         },
-          { "component": "aem-content",
-            "name": "BUrl", 
-            "label": "Button URL"
-          }
+          {
+      "component": "richtext",
+      "name": "textContent",
+      "label": "Text",
+      "valueType": "string",
+      "required": true
+    }
         ]
       }
 
