@@ -80,6 +80,10 @@
     font-size: 14px;
     margin-right: 6px;
   }
+
+[data-aue-prop="searchPlaceholder"] {
+margin-left:5px;
+}
   
   
   [data-aue-prop="topLink1Text"] {
