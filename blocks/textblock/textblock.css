@@ -1,7 +1,5 @@
-
-
-
-.text-block-wrapper .text-block [data-aue-prop="text"] {
+/* Make the visible text look like a button */
+.text-block-wrapper .text-block > div:first-child p[data-aue-prop="text"] {
   background-color: #d40000;
   color: white;
   padding: 10px 20px;
@@ -10,12 +8,17 @@
   font-size: 14px;
   cursor: pointer;
   display: inline-block;
+  position: relative;
   z-index: 1;
+}
+
+/* Position the wrapper relative so the link can overlay */
+.text-block-wrapper .text-block {
   position: relative;
 }
 
-
-.text-block-wrapper .text-block + div a[href*="michigan.aaa.com"] {
+/* Make the link invisible but clickable */
+.text-block-wrapper .text-block a[href*="michigan.aaa.com"] {
   position: absolute;
   top: 0;
   left: 0;
@@ -24,5 +27,11 @@
   opacity: 0;
   z-index: 2;
   pointer-events: auto;
-    display: none;
+  display: block !important; /* override any display: none */
+}
+
+
+.headereds-wrapper a[href*="michigan.aaa.com"] {
+  opacity: 0 !important;
+  pointer-events: auto !important;
 }
