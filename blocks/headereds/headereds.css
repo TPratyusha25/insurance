@@ -7,15 +7,7 @@
       position: fixed; */
   }
   
-  .nav-separator {
-    width: 3px;
-    background-image: url(/assets/Images/Global/Navigation.png?v=2);
-    background-repeat: no-repeat;
-    background-position: -0px -112px;
-    height: 56px;
-    position: absolute;
-    right: 0;
-}
+ 
   
   
   /* Top Bar Styling */
@@ -52,6 +44,8 @@
   [data-aue-prop="topLink3Text"] {
        border-right: none;
       margin-left: -1px;
+      font-size: 13px;
+    color: #666666;
   }
   
   /* JOIN AAA */
@@ -101,11 +95,15 @@
   [data-aue-prop="topLink1Text"] {
   margin-left: 449px;
       position: relative;
+      font-size: 13px;
+    color: #666666;
   
   }
   
   [data-aue-prop="topLink2Text"] {
   margin-left: -5px;
+      font-size: 13px;
+    color: #666666;
   
   }
   
