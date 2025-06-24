@@ -202,7 +202,7 @@ button {
     text-overflow: ellipsis;
     white-space: nowrap;
     width: 67%;
-    margin-left: 167px;
+  margin-left: 5px;
 }
 
 /*  a.button:hover, 
