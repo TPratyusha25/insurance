@@ -1,9 +1,9 @@
-.richtext-component-wrapper [data-aue-prop="text"] h2 {
+.richtext-component-wrapper .richtext-component.block div > div > [data-aue-prop="text"] h2 {
   font-size: 28px !important;
   line-height: 32px !important;
-  font-family: "Mission Gothic Bold Italic", Arial Narrow Bold !important;
+  font-family: "Mission Gothic Bold Italic", Arial Narrow Bold, sans-serif !important;
   font-weight: bold !important;
   font-style: italic !important;
-  text-align: center;
-  color: #0065a4;
+  text-align: center !important;
+  color: #0065a4 !important;
 }
