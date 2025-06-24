@@ -200,7 +200,7 @@ button {
     margin-left: 167px;
 }
 
-a.button:hover,
+/* a.button:hover, */
 a.button:focus,
 button:hover,
 button:focus {
