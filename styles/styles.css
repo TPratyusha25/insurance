@@ -128,8 +128,13 @@ ol,
 ul,
 pre,
 blockquote {
-  margin-top: 0.8em;
-  margin-bottom: 0.25em;
+ font-size: 15px !important;
+    line-height: 19px !important;
+    font-family: Verdana, Arial Narrow Bold;
+    text-align: center;
+    color: #666666;
+    margin-top: -11px;
+    line-height: 1.6 ! important;
 }
 
 code,
