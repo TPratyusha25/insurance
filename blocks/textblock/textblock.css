@@ -1,11 +1,11 @@
 /* Container must be positioned relatively */
-.text-block-wrapper  {
+.textblock  {
 
   display: inline-block;
 }
 
 /* Style the visible text like a button */
-.text-block-wrapper .text-block [data-aue-prop="text"] {
+.textblock [data-aue-prop="text"] {
   background-color: #d40000;
   color: white;
   padding: 10px 20px;
