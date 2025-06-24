@@ -209,11 +209,18 @@
     margin: 0 20px;
   }
 
-  [data-aue-prop^="topLink"],
-  [data-aue-prop="joinText"],
+  [data-aue-prop^="topLink"] {
+ margin: 10px;
+    font-size: 13px;
+  }
+  [data-aue-prop="joinText"] {
+ margin: 10px;
+    font-size: 13px;
+  }
   [data-aue-prop="searchIcon"] {
     margin: 10px;
     font-size: 13px;
+      margin-left: -33px;
   }
 
   [data-aue-prop^="nav"] {
