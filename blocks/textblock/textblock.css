@@ -1,14 +1,14 @@
-  [data-aue-prop="text"] {
-       background-color: #d40000;
-      color: white;
-      padding: 0px 16px;
-      border-radius: 20px;
-      font-weight: bold;
-      font-size: 14px;
-      cursor: pointer;
-      display: inline-block;
-      margin-left: -5px;
-      position: relative;
-          margin-top: -28px;
-    margin-bottom: 28px;
-  }
+.text-block-wrapper a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #d40000; /* AAA red */
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 25px;
+  transition: background-color 0.3s ease;
+}
+
+.text-block-wrapper a:hover {
+  background-color: #a80000; /* darker red on hover */
+}
