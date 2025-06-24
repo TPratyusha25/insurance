@@ -82,7 +82,11 @@
   }
 
 [data-aue-prop="searchPlaceholder"] {
-margin-left:5px;
+    margin-left: -196px;
+    margin-top: 45px;
+    font: 12px / 24px Arial, Verdana, Geneva, sans-serif;
+    color: #999;
+    text-indent: 10px;
 }
   
   
