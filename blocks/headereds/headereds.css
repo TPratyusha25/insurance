@@ -17,8 +17,9 @@
       flex-wrap: wrap;
     margin-left: 68px;
       position: initial;
-      margin-top: -73px;
-  }
+          margin-top: -57px;
+}
+  
   
   /* LOGO */
   [data-aue-prop="logo"] {
@@ -37,6 +38,8 @@
     cursor: pointer;
     display: inline-block;
     margin-left: 106px;
+          margin-top: -9px;
+    margin-bottom: 26px;
   }
   [data-aue-prop="topLink3Text"] {
        border-right: none;
@@ -55,7 +58,8 @@
       display: inline-block;
       margin-left: -5px;
       position: relative;
-      margin-top: -17px;
+          margin-top: -28px;
+    margin-bottom: 28px;
   }
   
   /* SEARCH */
@@ -68,7 +72,7 @@
       height: 14px;
       position: absolute;
         margin-left: -201px;
-      margin-top: 20px;
+      margin-top: 8px;
   }
   [data-aue-prop="searchIcon"]::before {
     content: "Search";
