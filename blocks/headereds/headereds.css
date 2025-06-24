@@ -126,22 +126,23 @@
   
   /* Nav Items */
   [data-aue-prop^="nav"] {
-      color: white;
-      font-weight: bold;
-      text-transform: uppercase;
-      font-size: 14px;
-      padding: 12px 20px;
-      cursor: pointer;
-      white-space: nowrap;
-      background-color: #2562ad;
-      border-top: 1px solid #1e4f8f;
-   
-      position: relative;
-      margin-top: 14px;
-      background-image: url(https://michigan.aaa.com/assets/Images/Global/MainNav.png);
+     color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 12px 20px;
+    cursor: pointer;
+    white-space: nowrap;
+    background-color: #2562ad;
+    border-top: 1px solid #1e4f8f;
+    position: relative;
+    margin-top: -6px;
+    background-image: url(https://michigan.aaa.com/assets/Images/Global/MainNav.png);
+    margin-left: 13px;
+}
      
   
-  }
+  
   
   
   
