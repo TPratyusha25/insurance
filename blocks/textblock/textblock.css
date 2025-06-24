@@ -1,23 +1,19 @@
-.text-block-wrapper {
-  font-family: Mission Gothic, Arial, sans-serif;
-  position: relative;
-  display: inline-block;
-}
-
-/* Style the visible text like a button */
-.text-block-wrapper [data-aue-prop="textContent"]  {
+/* Style the anchor tag as a button */
+.text-block-wrapper .button-container .button {
   background-color: #d40000;
   color: white;
-  padding: 0px 16px;
+  padding: 10px 24px;
   border-radius: 20px;
   font-weight: bold;
   font-size: 14px;
-  cursor: pointer;
+  text-decoration: none;
   display: inline-block;
-  margin-left: -5px;
-  position: relative;
-  margin-top: -17px;
-  z-index: 1;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
 }
 
-
+/* Hover effect */
+.text-block-wrapper .button-container .button:hover {
+  background-color: #a80000;
+  text-decoration: underline;
+}
