@@ -1,10 +1,7 @@
 .headereds-wrapper {
     font-family: Mission Gothic, Arial, sans-serif;
       background-image: url(https://michigan.aaa.com/assets/images/Global/background.png);
-/*     display: flex;
-    flex-direction: column;
-    gap: 10px;
-      position: fixed; */
+
   }
   
  
@@ -21,7 +18,7 @@
 }
   
   
-  /* LOGO */
+
   [data-aue-prop="logo"] {
     width: 140px;
     height: auto;
@@ -29,7 +26,7 @@
       margin-top: 15px;
   }
   
-  /* Top links */
+
   [data-aue-prop^="topLink"] {
     font-size: 14px;
     color: #333;
@@ -48,7 +45,7 @@
     color: #666666;
   }
   
-  /* JOIN AAA */
+
   [data-aue-prop="joinText"] {
        background-color: #d40000;
       color: white;
@@ -64,7 +61,7 @@
     margin-bottom: 28px;
   }
   
-  /* SEARCH */
+ 
   [data-aue-prop="searchIcon"] {
       display: flex;
       align-items: center;
@@ -113,9 +110,10 @@
     display: none !important;
   }
   
-  /* Make the top link text behave like a link */
+  
   [data-aue-prop^="topLink"]:hover {
     color: #005999;
+    
   }
   
   
