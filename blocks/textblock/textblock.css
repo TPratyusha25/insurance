@@ -1,11 +1,7 @@
-/* Container must be positioned relatively */
-.textblock  {
 
-  display: inline-block;
-}
 
-/* Style the visible text like a button */
-.textblock [data-aue-prop="text"] {
+
+.text-block-wrapper .text-block [data-aue-prop="text"] {
   background-color: #d40000;
   color: white;
   padding: 10px 20px;
@@ -18,7 +14,7 @@
   position: relative;
 }
 
-/* Make the link invisible but clickable, and overlay it */
+
 .text-block-wrapper .text-block + div a[href*="michigan.aaa.com"] {
   position: absolute;
   top: 0;
@@ -28,4 +24,5 @@
   opacity: 0;
   z-index: 2;
   pointer-events: auto;
+    display: none;
 }
