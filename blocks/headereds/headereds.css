@@ -1,13 +1,10 @@
 .headereds-wrapper {
     font-family: Mission Gothic, Arial, sans-serif;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-      position: fixed;
+      background-image: url(https://michigan.aaa.com/assets/images/Global/background.png);
+
   }
   
-  
+ 
   
   
   /* Top Bar Styling */
@@ -17,10 +14,11 @@
       flex-wrap: wrap;
     margin-left: 68px;
       position: initial;
-      margin-top: -121px;
-  }
+          margin-top: -57px;
+}
   
-  /* LOGO */
+  
+
   [data-aue-prop="logo"] {
     width: 140px;
     height: auto;
@@ -28,7 +26,7 @@
       margin-top: 15px;
   }
   
-  /* Top links */
+
   [data-aue-prop^="topLink"] {
     font-size: 14px;
     color: #333;
@@ -37,13 +35,17 @@
     cursor: pointer;
     display: inline-block;
     margin-left: 106px;
+          margin-top: -9px;
+    margin-bottom: 26px;
   }
   [data-aue-prop="topLink3Text"] {
        border-right: none;
       margin-left: -1px;
+      font-size: 13px;
+    color: #666666;
   }
   
-  /* JOIN AAA */
+
   [data-aue-prop="joinText"] {
        background-color: #d40000;
       color: white;
@@ -55,10 +57,11 @@
       display: inline-block;
       margin-left: -5px;
       position: relative;
-      margin-top: -17px;
+          margin-top: -28px;
+    margin-bottom: 28px;
   }
   
-  /* SEARCH */
+ 
   [data-aue-prop="searchIcon"] {
       display: flex;
       align-items: center;
@@ -68,7 +71,7 @@
       height: 14px;
       position: absolute;
         margin-left: -201px;
-      margin-top: 20px;
+      margin-top: 8px;
   }
   [data-aue-prop="searchIcon"]::before {
     content: "Search";
@@ -76,16 +79,28 @@
     font-size: 14px;
     margin-right: 6px;
   }
+
+[data-aue-prop="searchPlaceholder"] {
+    margin-left: -196px;
+    margin-top: 45px;
+    font: 12px / 24px Arial, Verdana, Geneva, sans-serif;
+    color: #999;
+    text-indent: 10px;
+}
   
   
   [data-aue-prop="topLink1Text"] {
   margin-left: 449px;
       position: relative;
+      font-size: 13px;
+    color: #666666;
   
   }
   
   [data-aue-prop="topLink2Text"] {
   margin-left: -5px;
+      font-size: 13px;
+    color: #666666;
   
   }
   
@@ -95,9 +110,10 @@
     display: none !important;
   }
   
-  /* Make the top link text behave like a link */
+  
   [data-aue-prop^="topLink"]:hover {
     color: #005999;
+    
   }
   
   
@@ -126,22 +142,23 @@
   
   /* Nav Items */
   [data-aue-prop^="nav"] {
-      color: white;
-      font-weight: bold;
-      text-transform: uppercase;
-      font-size: 14px;
-      padding: 12px 20px;
-      cursor: pointer;
-      white-space: nowrap;
-      background-color: #2562ad;
-      border-top: 1px solid #1e4f8f;
-   
-      position: relative;
-      margin-top: 14px;
-      background-image: url(https://michigan.aaa.com/assets/Images/Global/MainNav.png);
+     color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 12px 20px;
+    cursor: pointer;
+    white-space: nowrap;
+    background-color: #2562ad;
+    border-top: 1px solid #1e4f8f;
+    position: relative;
+    margin-top: -6px;
+    background-image: url(https://michigan.aaa.com/assets/Images/Global/MainNav.png);
+    margin-left: 13px;
+}
      
   
-  }
+  
   
   
   
@@ -164,7 +181,7 @@
     display: none !important;
   }
   
-  
+
   
   
   

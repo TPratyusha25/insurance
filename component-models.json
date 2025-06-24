@@ -252,6 +252,34 @@
           { "component": "text", "name": "nav7_text", "label": "Nav Item 7 Text" },
           { "component": "aem-content", "name": "nav7_url", "label": "Nav Item 7 URL" }
         ]
+      },
+
+
+
+   {
+        "id": "hero50-50",
+        "fields": [
+          {
+            "component": "reference",
+            "valueType": "string",
+            "name": "image",
+            "label": "Image",
+            "multi": false
+          },
+          {
+            "component": "text",
+            "valueType": "string",
+            "name": "imageAlt",
+            "label": "Alt Text",
+            "value": ""
+          },
+          {
+            "component": "boolean",
+            "name": "showSearchIcon",
+            "label": "Show Search Icon",
+            "value": true
+          }
+        ]
       }
 
 
