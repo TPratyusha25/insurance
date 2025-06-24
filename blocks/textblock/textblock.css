@@ -1,27 +1,34 @@
 .text-block-wrapper {
   font-family: Mission Gothic, Arial, sans-serif;
-
+  position: relative;
+  display: inline-block;
 }
 
-.text-block-wrapper  [data-aue-prop="text"] {
-     background-color: #d40000;
-    color: white;
-    padding: 0px 16px;
-    border-radius: 20px;
-    font-weight: bold;
-    font-size: 14px;
-    cursor: pointer;
-    display: inline-block;
-    margin-left: -5px;
-    position: relative;
-    margin-top: -17px;
+/* Style the visible text like a button */
+.text-block-wrapper [data-aue-prop="text"] {
+  background-color: #d40000;
+  color: white;
+  padding: 0px 16px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  display: inline-block;
+  margin-left: -5px;
+  position: relative;
+  margin-top: -17px;
+  z-index: 1;
 }
 
+/* Make the link invisible but clickable */
 .text-block-wrapper a[href*="michigan.aaa.com"] {
-  display: none !important;
-}
-
-
-[data-aue-prop="text"] + div {
-  display: none !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 2;
+  pointer-events: auto;
+  display: block !important; /* override any display: none */
 }
