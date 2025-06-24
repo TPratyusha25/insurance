@@ -2,7 +2,7 @@
     "definitions": [
       {
         "title": "Video Component",
-        "id": "videoComp",
+        "id": "videocomp",
         "plugins": {
           "xwalk": {
             "page": {
