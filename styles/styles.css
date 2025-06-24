@@ -281,6 +281,18 @@ a.button:any-link, button {
     height: 120px;
     margin-left: 1px;
     }
+
+    p {
+
+    font-size: 22px !important;
+    line-height: 19px !important;
+    font-family: Verdana, Arial Narrow Bold;
+    text-align: center;
+    color: #666666;
+    margin-top: -11px;
+    line-height: 1.6 ! important;
+    width: 148%;
+    }
 }
 
 
