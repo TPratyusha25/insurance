@@ -21,12 +21,13 @@
         "id": "textblock",
         "fields": [
        
-          {
-            "component": "richtext",
-            "name": "text",
-            "value": "",
-            "label": "Text",
-            "valueType": "string"
+         { "component": "text",
+           "name": "text",
+           "label": "Button Text" 
+         },
+          { "component": "aem-content",
+            "name": "Url", 
+            "label": "Button URL"
           }
         ]
       }
