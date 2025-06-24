@@ -1,6 +1,6 @@
 .headereds-wrapper {
     font-family: Mission Gothic, Arial, sans-serif;
-    background-color: white;
+  
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -17,7 +17,7 @@
       flex-wrap: wrap;
     margin-left: 68px;
       position: initial;
-      margin-top: -121px;
+      margin-top: -73px;
   }
   
   /* LOGO */
