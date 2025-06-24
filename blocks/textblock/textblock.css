@@ -1,5 +1,5 @@
-/* Style the paragraph that contains the button text */
-.text-block-wrapper .text-block p[data-aue-prop="text"] {
+/* Make the paragraph look like a button */
+.text-block-wrapper .text-block [data-aue-prop="text"] {
   background-color: #d40000;
   color: white;
   padding: 10px 20px;
@@ -10,24 +10,17 @@
   display: inline-block;
   margin: 20px 0;
   text-align: center;
+  position: relative;
 }
 
-/* Style the anchor tag to look like a button */
+/* Position the hidden link over the paragraph */
 .text-block-wrapper .text-block a[href*="michigan.aaa.com"] {
-  background-color: #d40000;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 20px;
-  font-weight: bold;
-  font-size: 14px;
-  text-decoration: none;
-  display: inline-block;
-  margin-top: 10px;
-  transition: background-color 0.3s ease;
-}
-
-/* Hover effect */
-.text-block-wrapper .text-block a[href*="michigan.aaa.com"]:hover {
-  background-color: #a80000;
-  text-decoration: underline;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 1;
+  pointer-events: auto;
 }
