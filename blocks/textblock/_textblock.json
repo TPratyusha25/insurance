@@ -22,11 +22,11 @@
         "fields": [
        
          { "component": "text",
-           "name": "text",
+           "name": "Btext",
            "label": "Button Text" 
          },
           { "component": "aem-content",
-            "name": "Url", 
+            "name": "BUrl", 
             "label": "Button URL"
           }
         ]
