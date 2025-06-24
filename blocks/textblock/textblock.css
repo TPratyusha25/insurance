@@ -1,6 +1,6 @@
 /* Container must be positioned relatively */
-.text-block-wrapper .text-block > div:first-child {
-  position: relative;
+.text-block-wrapper  {
+
   display: inline-block;
 }
 
