@@ -1,3 +1,8 @@
+
+
+
+
+
 .text-block-wrapper [data-aue-prop="text"] a {
   display: inline-block;
   padding: 10px 20px;
@@ -7,6 +12,21 @@
   font-weight: bold;
   border-radius: 25px;
   transition: background-color 0.3s ease;
+}
+
+
+[data-aue-prop="text"] {
+     background-color: #d40000;
+    color: white;
+    padding: 0px 16px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    display: inline-block;
+    margin-left: -5px;
+    position: relative;
+    margin-top: -17px;
 }
 
 .text-block-wrapper a:hover {
