@@ -17,8 +17,8 @@
 @media (min-width: 768px) and (max-width: 1024px) {
 [data-aue-prop="image" ] {
 
-        margin-top: -1px;
+      margin-top: -1px;
         margin-left: -25px;
-        max-width: 118%;
+        max-width: 125%;
 }
 }
