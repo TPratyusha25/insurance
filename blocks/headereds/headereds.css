@@ -186,15 +186,40 @@
   
   
   
-  /* Responsive (mobile) */
-  @media (max-width: 768px) {
-    .headereds-wrapper > div:nth-of-type(-n+14) {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-    .headereds-wrapper > div:nth-of-type(n+15) {
-      flex-direction: column;
-      align-items: flex-start;
-    }
+@media (max-width: 768px) {
+  .headereds-wrapper {
+    display: none;
   }
+}
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .headereds-wrapper {
+    display: flex;
+    flex-direction: column;
+    background-color: #f8f8f8;
+    padding: 10px;
+  }
+
+  .headereds-wrapper > div:nth-of-type(-n+15),
+  .headereds-wrapper > div:nth-of-type(n+15) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 20px;
+  }
+
+  [data-aue-prop^="topLink"],
+  [data-aue-prop="joinText"],
+  [data-aue-prop="searchIcon"] {
+    margin: 10px;
+    font-size: 13px;
+  }
+
+  [data-aue-prop^="nav"] {
+    padding: 10px 15px;
+    font-size: 13px;
+  }
+}
+
   
