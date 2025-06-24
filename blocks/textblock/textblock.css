@@ -1,5 +1,5 @@
-/* Style the anchor tag as a button */
-.text-block-wrapper [data-aue-prop="textContent"] a.button {
+/* Style the anchor tag inside the textContent block */
+[data-aue-prop="textContent"] a {
   background-color: #d40000;
   color: white;
   padding: 10px 24px;
@@ -10,10 +10,16 @@
   display: inline-block;
   transition: background-color 0.3s ease;
   cursor: pointer;
+  margin: 10px auto;
+}
+
+/* Optional: center the button */
+[data-aue-prop="textContent"] {
+  text-align: center;
 }
 
 /* Hover effect */
-.text-block-wrapper .button-container .button:hover {
+[data-aue-prop="textContent"] a:hover {
   background-color: #a80000;
   text-decoration: underline;
 }
