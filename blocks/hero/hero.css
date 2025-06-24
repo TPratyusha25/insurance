@@ -6,10 +6,10 @@
 @media (max-width: 767px) {
 [data-aue-prop="image" ] {
 
-        margin-top: -64px;
+      margin-top: -64px;
         margin-left: -24px;
-        max-width: 138%;
-        height: 234px;
+        max-width: 211%;
+        height: 258px;
 }
 
 }
