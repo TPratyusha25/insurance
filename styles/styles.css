@@ -255,9 +255,8 @@ main > .section:first-of-type {
 
 @media (max-width: 767px) {
 a.button:any-link, button {
-   
 
-  width: max-content;
+  width: max-content;
   max-width: 150px; /* Adjust based on your layout */
   white-space: normal;
   word-break: break-word;
