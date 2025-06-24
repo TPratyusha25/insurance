@@ -1,4 +1,4 @@
-.text-block-wrapper [data-aue-prop="text"] a.button {
+.text-block-wrapper [data-aue-prop="text"] a {
   display: inline-block;
   padding: 10px 20px;
   background-color: #d40000; /* AAA red */
