@@ -1,0 +1,48 @@
+{
+    "definitions": [
+      {
+        "title": "Hero 50-50",
+        "id": "hero50-50",
+        "plugins": {
+          "xwalk": {
+            "page": {
+              "resourceType": "core/franklin/components/block/v1/block",
+              "template": {
+                "name": "Her0 50-50",
+                "model": "hero50-50"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "models": [
+      {
+        "id": "hero50-50",
+        "fields": [
+          {
+            "component": "reference",
+            "valueType": "string",
+            "name": "image",
+            "label": "Image",
+            "multi": false
+          },
+          {
+            "component": "text",
+            "valueType": "string",
+            "name": "imageAlt",
+            "label": "Alt Text",
+            "value": ""
+          },
+          {
+            "component": "boolean",
+            "name": "showSearchIcon",
+            "label": "Show Search Icon",
+            "value": true
+          }
+        ]
+      }
+    ],
+    "filters": []
+  }
+  
