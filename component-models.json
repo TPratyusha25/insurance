@@ -280,6 +280,29 @@
             "value": true
           }
         ]
+      },
+
+
+   {
+        "id": "videocomp",
+        "fields": [
+          {
+            "component": "text",
+            "valueType": "string",
+            "name": "videoUrl",
+            "label": "Video URL",
+            "value": "https://www.w3schools.com/html/mov_bbb.mp4"
+          },
+
+           {
+          "component": "richtext",
+          "name": "text",
+          "value": "",
+          "label": "Text",
+          "valueType": "string"
+        }
+          
+        ]
       }
 
 
