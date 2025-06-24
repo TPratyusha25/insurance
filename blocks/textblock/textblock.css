@@ -3,7 +3,7 @@
 
 }
 
-[data-aue-prop="text"] {
+.text-block-wrapper  [data-aue-prop="text"] {
      background-color: #d40000;
     color: white;
     padding: 0px 16px;
