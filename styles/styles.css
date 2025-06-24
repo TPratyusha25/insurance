@@ -291,11 +291,33 @@ a.button:any-link, button {
 a.button:any-link, button {
  
 
-  width: max-content;
-  max-width: 150px; /* Adjust based on your layout */
-  white-space: normal;
-  word-break: break-word;
-  line-height: 1.4;
+   font-family: "Mission Gothic Bold Italic", Arial Narrow Bold !important;
+    font-size: 28px !important;
+    line-height: 32px !important;
+    font-weight: bold !important;
+    font-style: inherit !important;
+    text-align: center;
+    box-sizing: border-box;
+    display: inline-block;
+    max-width: 171%;
+    margin: 5px 20px;
+    border: 2px solid transparent;
+    /* border-radius: 0.4em; */
+    padding: 0.2em 1.2em;
+    font-family: var(--body-font-family);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2.25;
+    /* text-align: center; */
+    text-decoration: none;
+    background-color: #d40000;
+    color: var(--background-color);
+    cursor: pointer;
+    /* overflow: hidden; */
+    text-overflow: ellipsis;
+    /* white-space: nowrap; */
+    width: 115%;
+    margin-left: -19px;
 
 }
 }
