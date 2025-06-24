@@ -1,5 +1,5 @@
 /* Style the anchor tag as a button */
-.text-block-wrapper .button-container .button {
+.text-block-wrapper [data-aue-prop="textContent"] a.button {
   background-color: #d40000;
   color: white;
   padding: 10px 24px;
