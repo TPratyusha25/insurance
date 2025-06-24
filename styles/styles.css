@@ -200,13 +200,13 @@ button {
     margin-left: 167px;
 }
 
-/* a.button:hover, */
+/*  a.button:hover, 
 a.button:focus,
 button:hover,
 button:focus {
   background-color: var(--link-hover-color);
   cursor: pointer;
-}
+} */
 
 button:disabled,
 button:disabled:hover {
