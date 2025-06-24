@@ -265,6 +265,11 @@ a.button:any-link, button {
         height: 120px;
 
 }
+
+    h2 {
+
+     margin-left: 1px;
+    }
 }
 
 
@@ -302,6 +307,12 @@ a.button:any-link, button {
     margin-left: -19px;
 
 }
+
+
+    h2 {
+
+     margin-left: 1px;
+    }
 }
     
 
