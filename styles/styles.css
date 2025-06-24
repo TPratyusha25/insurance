@@ -122,19 +122,7 @@ h4 { font-size: var(--heading-font-size-m); }
 h5 { font-size: var(--heading-font-size-s); }
 h6 { font-size: var(--heading-font-size-xs); }
 
-p{
-font-size: 15px !important;
-    line-height: 19px !important;
-    font-family: Verdana, Arial Narrow Bold;
-    text-align: center;
-    color: #666666;
-    margin-top: -11px;
-    line-height: 1.6 ! important;
-
-}
-
-
-
+p,
 dl,
 ol,
 ul,
