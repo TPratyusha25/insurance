@@ -140,7 +140,7 @@
     margin: 0;
 }
 
-.headereds > div:nth-child(16) > div > p:nth-child(1){
+.headereds > div:nth-child(16) > div > p{
     color: white;
     font-weight: bold;
     text-transform: uppercase;
