@@ -360,6 +360,7 @@ a.button:any-link, button {
         margin-left: 264px;
         width: 111%;
         font-size: 35px ! important;
+        line-height: 42px ! important;
     }
 
     p{
