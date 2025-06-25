@@ -60,7 +60,7 @@
     margin-bottom: 28px;
 }
 
-[data-aue-prop="searchIcon"] {
+.headereds > div:nth-child(13) > div > picture > img {
     display: flex;
     align-items: center;
     border: 2px solid #d40000;
@@ -79,12 +79,11 @@
     margin-right: 6px;
 }
 
-[data-aue-prop="searchPlaceholder"] {
-    margin-left: -196px;
-    margin-top: 45px;
+.headereds > div:nth-child(12) > div > p {
+    margin-left: -325px;
+    margin-top: 50px;
     font: 12px / 24px Arial, Verdana, Geneva, sans-serif;
     color: #999;
-    text-indent: 10px;
 }
 
 .headereds > div:nth-child(3) > div > p {
