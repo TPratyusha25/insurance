@@ -9,14 +9,14 @@
 }
 
 /* TOP LINKS (ONLINE HELP, CONTACT US...) */
-.footereds > div:first-child ul {
+.footer-eds-wrapper .footereds > div:first-child ul {
   list-style: none;
   margin: 0;
   padding: 0;
   display: inline-block;
 }
 
-.footereds > div:first-child ul li {
+.footer-eds-wrapper .footereds > div:first-child ul li {
   display: inline-block;
   margin: 0 8px;
   position: relative;
@@ -24,38 +24,38 @@
 }
 
 /* Add divider bar after each list item except last */
-.footereds > div:first-child ul li:not(:last-child)::after {
+.footer-eds-wrapper .footereds > div:first-child ul li:not(:last-child)::after {
   content: "|";
   margin-left: 10px;
   color: #666;
 }
 
 /* Footer links */
-.footereds a {
+.footer-eds-wrapper .footereds a {
   text-decoration: none;
   color: #333;
 }
 
-.footereds a:hover {
+.footer-eds-wrapper .footereds a:hover {
   text-decoration: underline;
 }
 
 /* Subtext (Serving AAA...) */
-.footereds > div:first-child p {
+.footer-eds-wrapper .footereds > div:first-child p {
   margin-top: 10px;
   color: #333;
   font-size: 14px;
 }
 
 /* BOTTOM ROW (Other AAA Clubs, Phone, Copyright) */
-.footereds > div:last-child ul {
+.footer-eds-wrapper .footereds > div:last-child ul {
   list-style: none;
   margin: 10px 0 0;
   padding: 0;
   display: inline-block;
 }
 
-.footereds > div:last-child ul li {
+.footer-eds-wrapper .footereds > div:last-child ul li {
   display: inline-block;
   margin: 0 8px;
   position: relative;
@@ -63,7 +63,7 @@
 }
 
 /* Divider bars between bottom items */
-.footereds > div:last-child ul li:not(:last-child)::after {
+.footer-eds-wrapper .footereds > div:last-child ul li:not(:last-child)::after {
   content: "|";
   margin-left: 10px;
   color: #666;
