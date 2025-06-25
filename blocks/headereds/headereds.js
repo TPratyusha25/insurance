@@ -7,10 +7,14 @@ document.addEventListener("DOMContentLoaded", function () {
   );
 
   function performSearch() {
-    const query = encodeURIComponent(searchInput.value.trim());
+    const query = encodeURIComponent(searchInput?.value.trim());
     if (query) {
       window.location.href = `https://www.acg.aaa.com/search.html?q=${query}`;
     }
+  }
+
+  if (searchIcon) {
+    searchIcon.addEventListener("click", performSearch);
   }
 
   if (searchInput) {
@@ -19,13 +23,6 @@ document.addEventListener("DOMContentLoaded", function () {
         e.preventDefault();
         performSearch();
       }
-    });
-  }
-
-  if (searchIcon) {
-    searchIcon.style.cursor = "pointer";
-    searchIcon.addEventListener("click", function () {
-      performSearch();
     });
   }
 });
