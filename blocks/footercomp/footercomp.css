@@ -75,3 +75,39 @@ display: inline-block;
 .footercomp-wrapper p:has(&nbsp;) {
   display: none;
 }
+
+@media (max-width: 767px) {
+  .footercomp-wrapper {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+
+    .footercomp-wrapper {
+    background-color: #c4c4c4;
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+    height: 125px;
+    width: 117%;
+    }
+
+.footercomp-wrapper p {
+    margin-top: 7px;
+    margin-bottom: 0;
+    text-align: center;
+    color: #666;
+    font-size: 11px ! important;
+    font-family: Verdana;
+    position: absolute;
+  
+}
+
+
+}
+
+
