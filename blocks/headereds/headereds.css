@@ -32,7 +32,7 @@
     margin-bottom: 26px;
 }
 
-[data-aue-prop="topLink3Text"] {
+.headereds > div:nth-child(7) > div > p {
     border-right: none;
     margin-left: -1px;
     font-size: 13px;
@@ -88,7 +88,7 @@
     color: #666666;
 }
 
-[data-aue-prop="topLink2Text"] {
+.headereds > div:nth-child(5) > div > p {
     margin-left: -5px;
     font-size: 13px;
     color: #666666;
