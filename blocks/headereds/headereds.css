@@ -7,45 +7,47 @@ body {
 /* Header wrapper */
 .headereds-wrapper {
   display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+
+/* Top section: logo and links */
+.headereds.block > div:nth-child(1) {
+  display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 30px;
-  background-color: #fff;
-  border-bottom: 1px solid #ccc;
 }
 
-/* Logo */
-.headereds-wrapper picture img {
+.headereds.block > div:nth-child(1) picture img {
   height: 70px;
 }
 
-/* Top navigation links */
-.top-nav {
-  display: flex;
-  gap: 20px;
-  align-items: center;
+/* Right-side links (Sign In, Pay Bill, etc.) */
+.headereds.block > div:nth-child(n+3):nth-child(-n+11) {
+  display: inline-block;
+  margin: 0 10px;
 }
 
-.top-nav a {
-  text-decoration: none;
-  color: #0073cf;
+.headereds.block > div:nth-child(n+3):nth-child(-n+11) p {
+  margin: 5px 0;
   font-weight: bold;
+  color: #0073cf;
 }
 
 /* Search bar */
-.search-container {
+.headereds.block > div:nth-child(13) {
   display: flex;
   justify-content: center;
-  align-items: center;
   margin: 20px 0;
 }
 
-.search-box {
+.headereds.block > div:nth-child(13) .search-box {
   position: relative;
   width: 300px;
 }
 
-.search-box input {
+.headereds.block > div:nth-child(13) .search-box input {
   width: 100%;
   padding: 10px 40px 10px 15px;
   border: 1px solid #ccc;
@@ -53,7 +55,7 @@ body {
   font-size: 16px;
 }
 
-.search-box img {
+.headereds.block > div:nth-child(13) .search-box img {
   position: absolute;
   right: 10px;
   top: 50%;
@@ -62,17 +64,24 @@ body {
   height: 20px;
 }
 
-/* Navbar */
-.navbar {
+/* Navbar with background image */
+.headereds.block > div:nth-child(n+15) {
   display: flex;
   justify-content: space-around;
   align-items: center;
   background-image: url('https://michigan.aaa.com/assets/images/Global/background.png');
   background-size: cover;
   padding: 15px 0;
+  flex-wrap: wrap;
 }
 
-.navbar a {
+.headereds.block > div:nth-child(n+15) p {
+  margin: 0;
+  font-weight: bold;
+  color: white;
+}
+
+.headereds.block > div:nth-child(n+15) a {
   color: white;
   text-decoration: none;
   font-weight: bold;
@@ -80,7 +89,7 @@ body {
   transition: background 0.3s;
 }
 
-.navbar a:hover {
+.headereds.block > div:nth-child(n+15) a:hover {
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 5px;
 }
