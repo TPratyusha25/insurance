@@ -3,7 +3,7 @@
   background-image: url(https://michigan.aaa.com/assets/images/Global/background.png);
 }
 
-/* Top Bar Styling (first 15 divs inside .headereds block) */
+/* Top Bar Styling (first 15 divs) */
 .headereds-wrapper > .headereds.block > div:nth-of-type(-n+15) {
   display: flex;
   align-items: center;
@@ -13,7 +13,7 @@
   margin-top: -57px;
 }
 
-/* Logo image */
+/* Logo */
 .headereds-wrapper picture img {
   width: 140px;
   height: auto;
@@ -37,15 +37,7 @@
   margin-bottom: 26px;
 }
 
-/* Last top link (no border) */
-.headereds-wrapper > .headereds.block > div:nth-of-type(11) {
-  border-right: none;
-  margin-left: -1px;
-  font-size: 13px;
-  color: #666666;
-}
-
-/* Join Button */
+/* Last top link (Join AAA) */
 .headereds-wrapper > .headereds.block > div:nth-of-type(11) {
   background-color: #d40000;
   color: white;
@@ -95,7 +87,7 @@
 }
 
 /* Hover effect for top links */
-.headereds-wrapper > .headereds.block > div:hover {
+.headereds-wrapper > .headereds.block > div:nth-of-type(-n+15):hover {
   color: #005999;
 }
 
@@ -107,7 +99,7 @@
   flex-wrap: wrap;
 }
 
-/* Nav Items */
+/* Nav Items (Membership to Community) */
 .headereds-wrapper > .headereds.block > div:nth-of-type(n+16) p:first-child {
   color: white;
   font-weight: bold;
@@ -129,6 +121,7 @@
 .headereds-wrapper > .headereds.block > div:nth-of-type(11) + div {
   display: none !important;
 }
+
 
 
   
