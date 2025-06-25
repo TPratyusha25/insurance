@@ -21,7 +21,7 @@
 
 .videocta-wrapper h2 {
  font-size: 1.8rem;
-    color: #1d4c8f;
+   color: #0065a4;
     margin-bottom: 1rem;
     flex: 1 1 50%;
     order: 1;
@@ -38,7 +38,7 @@
 
 .videocta-wrapper p {
 font-size: 1rem;
-    color: #333;
+   color: #666666;
     line-height: 1.6;
     flex: 1 1 50%;
     order: 1;
