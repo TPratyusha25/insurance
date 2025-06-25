@@ -16,12 +16,7 @@ body {
   width: 100%;
 }
 
-/* Header blocks */
-.headereds > div {
-  display: inline-block;
-  vertical-align: middle;
-  padding: 10px 8px;
-}
+/* --- TOP HEADER STYLES --- */
 
 /* Logo */
 .headereds > div:nth-child(1) picture img {
@@ -29,23 +24,29 @@ body {
   height: 70px;
 }
 
-/* Right-top text links */
+/* Sign In, Pay Bill, Roadside Assistance — shown text only */
 .headereds > div:nth-child(3),
 .headereds > div:nth-child(5),
 .headereds > div:nth-child(7) {
   color: #333;
   font-size: 14px;
+  padding: 10px 8px;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
 }
 
-.headereds > div:nth-child(4) a,
-.headereds > div:nth-child(6) a,
-.headereds > div:nth-child(8) a {
-  color: #d32f2f;
-  font-size: 14px;
-  text-decoration: none;
+.headereds > div:nth-child(4),
+.headereds > div:nth-child(6),
+.headereds > div:nth-child(8) {
+  position: absolute;
+  opacity: 0;
+  pointer-events: auto;
+  width: 100px;
+  height: 20px;
 }
 
-/* JOIN AAA button */
+/* JOIN AAA Button */
 .headereds > div:nth-child(9) p {
   background-color: #d32f2f;
   color: #fff;
@@ -53,13 +54,16 @@ body {
   padding: 6px 16px;
   border-radius: 20px;
   font-size: 14px;
+  cursor: pointer;
+  display: inline-block;
 }
 
+/* Hide Join AAA Link */
 .headereds > div:nth-child(10) a {
   display: none;
 }
 
-/* Search */
+/* Search Box */
 .headereds > div:nth-child(12) {
   display: flex;
   align-items: center;
@@ -75,7 +79,8 @@ body {
   height: 24px;
 }
 
-/* Menu Bar Section */
+/* --- NAVIGATION MENU --- */
+
 .headereds > div:nth-child(n+14) {
   display: inline-block;
   background-color: #2c64aa;
@@ -85,7 +90,7 @@ body {
   font-size: 14px;
   text-align: center;
   border-right: 1px solid #21548d;
-  position: relative; /* needed for absolute link inside */
+  position: relative;
   cursor: pointer;
 }
 
@@ -97,7 +102,7 @@ body {
   background-color: #1f4f88;
 }
 
-/* Hide link visually but keep it clickable */
+/* Hide nav links visually but keep clickable */
 .headereds > div:nth-child(n+14) a {
   position: absolute;
   width: 100%;
@@ -108,6 +113,13 @@ body {
   z-index: 1;
   text-decoration: none;
 }
+
+/* Optional: make sure all links don't show underline or default styles */
+.headereds a {
+  text-decoration: none;
+  color: inherit;
+}
+
 
 
 
