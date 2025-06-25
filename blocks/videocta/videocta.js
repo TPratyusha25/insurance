@@ -1,35 +1,37 @@
-
 document.addEventListener("DOMContentLoaded", function () {
-  const wrapper = document.querySelector(".videocta-wrapper");
-  if (!wrapper) return;
+  const videoCtaData = {
+    title: document.querySelector('[data-field="title"]')?.textContent || "",
+    subtitle: document.querySelector('[data-field="subtitle"]')?.textContent || "",
+    paragraph: document.querySelector('[data-field="paragraph"]')?.innerHTML || "",
+    thumbnailImage: document.querySelector('[data-field="thumbnailImage"]')?.getAttribute("data-src") || "",
+    videoUrl: document.querySelector('[data-field="videoUrl"]')?.textContent || ""
+  };
 
-  const img = wrapper.querySelector("picture img");
-  const link = wrapper.querySelector("a[href*='youtube.com']");
+  const wrapper = document.createElement("div");
+  wrapper.className = "videocta-wrapper";
 
-  if (!img || !link) {
-    console.warn("Thumbnail image or YouTube link not found.");
-    return;
-  }
+  wrapper.innerHTML = `
+    <h1>${videoCtaData.title}</h1>
+    <h2>${videoCtaData.subtitle}</h2>
+    <div>${videoCtaData.paragraph}</div>
+    <div id="video-container">
+      <img id="video-thumbnail" src="${videoCtaData.thumbnailImage}" alt="Video Thumbnail">
+    </div>
+  `;
 
-  const embedUrl = link.href.replace("watch?v=", "embed/") + "?autoplay=1";
+  document.body.appendChild(wrapper);
 
-  img.style.cursor = "pointer";
+  const thumbnail = document.getElementById("video-thumbnail");
+  const container = document.getElementById("video-container");
 
-  img.addEventListener("click", () => {
+  thumbnail?.addEventListener("click", function () {
+    const embedUrl = videoCtaData.videoUrl.replace("watch?v=", "embed/") + "?autoplay=1";
     const iframe = document.createElement("iframe");
     iframe.src = embedUrl;
-    iframe.width = img.width;
-    iframe.height = img.height;
-    iframe.setAttribute("frameborder", "0");
     iframe.setAttribute("allowfullscreen", "");
     iframe.setAttribute("allow", "autoplay; encrypted-media");
 
-    const picture = img.closest("picture");
-    if (picture && picture.parentElement) {
-      picture.parentElement.replaceChild(iframe, picture);
-    } else {
-      console.error("Picture element not found.");
-    }
+    container.innerHTML = "";
+    container.appendChild(iframe);
   });
 });
-
