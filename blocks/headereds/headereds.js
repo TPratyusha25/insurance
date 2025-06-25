@@ -62,7 +62,7 @@ document.querySelectorAll('[data-aue-prop^="nav"]').forEach((el) => {
   });
   
   // JOIN AAA
-  const joinTextEl = document.querySelector('[data-aue-prop="joinText"]');
+  const joinTextEl = document.querySelector('.headereds > div:nth-child(9) > div > p');
   const joinOuterDiv = joinTextEl?.closest('div');
   const joinContainer = joinOuterDiv?.parentElement;
   const joinSibling = joinContainer?.nextElementSibling;
