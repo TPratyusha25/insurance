@@ -359,7 +359,7 @@
       },
 
    {
-        "id":  "footereds",
+        "id":  "footercomp",
         "fields": [
 
             {
@@ -369,16 +369,15 @@
                 "label": "Text",
                 "valueType": "string"
               },
-
-            {
-                "component": "richtext",
-                "name": "text2",
-                "value": "",
-                "label": "Text",
-                "valueType": "string"
-              }
         
-       
+        
+          {
+            "component": "richtext",
+            "name": "text2",
+            "value": "",
+            "label": "Text2",
+            "valueType": "string"
+          }
         ]
       }
 
