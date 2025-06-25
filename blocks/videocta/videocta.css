@@ -170,7 +170,40 @@ margin-top: -240px;
     order: 2;
     margin-left: 724px;
     position: absolute;
-    margin-top: -349px;
+   margin-top: -443px;
     width: 78%;
 }
+
+
+.videocta-wrapper h1 {
+    font-size: 43px ! important;
+    line-height: 34px;
+    /* font-style: italic; */
+    font-family: "Mission Gothic bold Italic", Arial Narrow Bold;
+    overflow: visible;
+    font-weight: bold;
+    padding: 20px 0px;
+    margin: 0px;
+    letter-spacing: -0.03em;
+    margin-left: 226px;
+    width: 115%;
+}
+
+
+    .videocta-wrapper h2 {
+          width: 59%;
+
+    }
+
+
+    .videocta-wrapper p {
+     font-size: 24px !important;
+    line-height: 36px !important;
+    font-family: Verdana, Arial Narrow Bold;
+    width: 72%;
+    margin-left: 131px;
+    margin-top: 19px;
+
+    }
+    
 }
