@@ -16,50 +16,6 @@ body {
   width: 100%;
 }
 
-
-
-/* Container for search */
-.headereds-search {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  margin-top: 16px;
-}
-
-/* Input field */
-.headereds-search input[type="text"] {
-  padding: 8px 12px;
-  font-size: 14px;
-  width: 240px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-/* Search button */
-.headereds-search button {
-  background-color: #0078d4;
-  color: white;
-  border: none;
-  padding: 8px 16px;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.headereds-search button:hover {
-  background-color: #005a9e;
-}
-
-/* Validation message */
-.headereds-search .validation-message {
-  color: red;
-  font-size: 12px;
-  margin-left: 12px;
-  display: none;
-}
-rsor: pointer;
-}
-
-
 /* --- TOP HEADER STYLES --- */
 
 /* Logo */
@@ -78,7 +34,6 @@ rsor: pointer;
   display: inline-block;
   position: relative;
   cursor: pointer;
-  border-left: 0.5px solid grey;
 }
 
 .headereds > div:nth-child(4),
@@ -91,31 +46,16 @@ rsor: pointer;
   height: 20px;
 }
 
-.headereds > div:nth-child(3) p {
-  margin-left: 623px;
-}
-
-.headereds > div:nth-child(4) p {
-  margin-left: 10px;
-}
-
-.headereds > div:nth-child(5) p {
-  margin-left: 10px;
-}
-
 /* JOIN AAA Button */
 .headereds > div:nth-child(9) p {
   background-color: #d32f2f;
   color: #fff;
   font-weight: bold;
-  padding: 6px 10px;
+  padding: 6px 16px;
   border-radius: 20px;
   font-size: 14px;
   cursor: pointer;
-  margin-left: 951px;
-  margin-top: -35px;
-  width: 10%;
-  text-align: center;
+  display: inline-block;
 }
 
 /* Hide Join AAA Link */
@@ -123,7 +63,7 @@ rsor: pointer;
   display: none;
 }
 
-/* Search Label */
+/* Search Box */
 .headereds > div:nth-child(12) {
   display: flex;
   align-items: center;
@@ -131,41 +71,16 @@ rsor: pointer;
 }
 
 .headereds > div:nth-child(12) p {
-  display: block;
+  display: none;
 }
 
-/* --- SEARCH INPUT + ICON --- */
-.headereds > div:nth-child(13) {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 20px 0;
-}
-
-.headereds > div:nth-child(13) > div {
-  position: relative;
-  width: 300px;
-}
-
-.headereds > div:nth-child(13) input[type="text"] {
-  width: 100%;
-  padding: 10px 40px 10px 15px;
-  border: 1px solid #ccc;
-  border-radius: 25px;
-  font-size: 14px;
-}
-
-.headereds > div:nth-child(13) img {
-  position: absolute;
-  right: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 20px;
-  height: 20px;
-  pointer-events: none;
+.headereds > div:nth-child(13) picture img {
+  width: 24px;
+  height: 24px;
 }
 
 /* --- NAVIGATION MENU --- */
+
 .headereds > div:nth-child(n+14) {
   display: inline-block;
   background-color: #2c64aa;
@@ -205,16 +120,6 @@ rsor: pointer;
   color: inherit;
 }
 
-/* Nav text color */
-.headereds > div:nth-child(14) p,
-.headereds > div:nth-child(15) p,
-.headereds > div:nth-child(16) p,
-.headereds > div:nth-child(17) p,
-.headereds > div:nth-child(18) p,
-.headereds > div:nth-child(19) p,
-.headereds > div:nth-child(20) p {
-  color: white;
-}
 
 
 
