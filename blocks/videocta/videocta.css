@@ -7,8 +7,16 @@
   align-items: flex-start;
 }
 
-.videocta-wrapper > div {
+/* Text on the left */
+.videocta-text {
+  flex: 1 1 50%;
+  order: 1;
+}
+
+/* Image on the right */
+.videocta-image {
   flex: 1 1 45%;
+  order: 2;
 }
 
 .videocta-wrapper h2 {
