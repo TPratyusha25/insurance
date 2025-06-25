@@ -48,7 +48,35 @@ document.querySelectorAll('[data-aue-prop^="nav"]').forEach((el) => {
   });
   
   // TOP LINKS (Sign In, Pay Bill, etc.)
-  document.querySelectorAll('[data-aue-prop^="topLink"]').forEach((el) => {
+  document.querySelectorAll('.headereds > div:nth-child(3) > div > p').forEach((el) => {
+    const outerDiv = el.closest('div'); // <div><p data-aue-prop...></p></div>
+    const containerDiv = outerDiv?.parentElement; // wrapping <div>
+    const siblingDiv = containerDiv?.nextElementSibling; // next <div>
+    const link = siblingDiv?.querySelector('a');
+    if (link) {
+      el.style.cursor = 'pointer';
+      el.addEventListener('click', () => {
+        window.open(link.href, '_blank');
+      });
+    }
+  });
+
+  // PayBill
+   document.querySelectorAll('.headereds > div:nth-child(5) > div > p').forEach((el) => {
+    const outerDiv = el.closest('div'); // <div><p data-aue-prop...></p></div>
+    const containerDiv = outerDiv?.parentElement; // wrapping <div>
+    const siblingDiv = containerDiv?.nextElementSibling; // next <div>
+    const link = siblingDiv?.querySelector('a');
+    if (link) {
+      el.style.cursor = 'pointer';
+      el.addEventListener('click', () => {
+        window.open(link.href, '_blank');
+      });
+    }
+  });
+
+  // road-assisstance
+   document.querySelectorAll('.headereds > div:nth-child(7) > div > p').forEach((el) => {
     const outerDiv = el.closest('div'); // <div><p data-aue-prop...></p></div>
     const containerDiv = outerDiv?.parentElement; // wrapping <div>
     const siblingDiv = containerDiv?.nextElementSibling; // next <div>
