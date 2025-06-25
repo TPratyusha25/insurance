@@ -140,7 +140,7 @@
     margin: 0;
 }
 
-[data-aue-prop^="nav"] {
+.headereds > div:nth-child(16) > div > p{
     color: white;
     font-weight: bold;
     text-transform: uppercase;
