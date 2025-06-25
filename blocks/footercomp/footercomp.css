@@ -24,13 +24,10 @@ width: 100%;
 .footercomp-wrapper li {
 display: inline-block;
     margin: 0 8px;
-   
     position: relative;
     text-decoration: none;
-   
-    margin-top: 10px;
+    margin-top: 37px;
     margin-bottom: 0;
-    
     text-align: center;
     color: #666;
     font-size: 11px;
@@ -62,14 +59,14 @@ display: inline-block;
 
 
 .footercomp-wrapper p {
-    margin-top: 10px;
+  margin-top: 7px;
     margin-bottom: 0;
-   
-   
     text-align: center;
     color: #666;
-   font-size: 11px ! important;
+    font-size: 11px ! important;
     font-family: Verdana;
+    position: absolute;
+    margin-left: 452px;
 }
 
 
