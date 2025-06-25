@@ -33,10 +33,16 @@
 }
 
 .headereds > div:nth-child(7) > div > p {
-    border-right: none;
     margin-left: -1px;
-    font-size: 13px;
+/*     font-size: 13px; */
     color: #666666;
+    padding: 0 10px;
+    border-right: 1.5px solid #ccc;
+    cursor: pointer;
+    display: inline-block;
+    /* margin-left: 106px; */
+    margin-top: -9px;
+    margin-bottom: 26px;
 }
 
 [data-aue-prop="joinText"] {
@@ -86,12 +92,26 @@
     position: relative;
     font-size: 13px;
     color: #666666;
+    padding: 0 10px;
+    border-right: 1.5px solid #ccc;
+    cursor: pointer;
+    display: inline-block;
+    /* margin-left: 106px; */
+    margin-top: -9px;
+    margin-bottom: 26px;
 }
 
 .headereds > div:nth-child(5) > div > p {
-    margin-left: -5px;
+   margin-left: -5px;
     font-size: 13px;
     color: #666666;
+    padding: 0 10px;
+    border-right: 1.5px solid #ccc;
+    cursor: pointer;
+    display: inline-block;
+    /* margin-left: 106px; */
+    margin-top: -9px;
+    margin-bottom: 26px;
 }
 
 .headereds-wrapper a[href*="michigan.aaa.com"] {
