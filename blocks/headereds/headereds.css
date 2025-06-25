@@ -296,55 +296,77 @@
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-     .headereds-wrapper {
+    .headereds-wrapper {
     font-family: Mission Gothic, Arial, sans-serif;
     background-image: url(https://michigan.aaa.com/assets/images/Global/background.png);
+    width: 110%;
   }
 
   .headereds-wrapper > div:nth-of-type(-n+15) {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    margin-left: 40px;
+    margin-left: 68px;
     position: initial;
-    margin-top: -40px;
+    margin-top: -57px;
   }
 
   .headereds > div:nth-child(1) > div > picture > img {
-    width: 120px;
+    width: 140px;
     height: auto;
-    margin-left: 60px;
-    margin-top: 10px;
+    margin-left: 97px;
+    margin-top: 15px;
   }
 
-  [data-aue-prop^="topLink"],
   .headereds > div:nth-child(3) > div > p,
   .headereds > div:nth-child(5) > div > p,
   .headereds > div:nth-child(7) > div > p {
     font-size: 13px;
-    color: #333;
-    padding: 0 8px;
-    border-right: 1px solid #ccc;
+    color: #666666;
+    padding: 0 10px;
+    border-right: 1.5px solid #ccc;
     cursor: pointer;
     display: inline-block;
-    margin-left: 40px;
-    margin-top: -8px;
-    margin-bottom: 20px;
+    margin-top: -9px;
+    margin-bottom: 26px;
+    font-family: "Mission Gothic", Arial Narrow, Verdana;
+  }
+
+  .headereds > div:nth-child(3) > div > p {
+    margin-left: 24px;
+  }
+
+  .headereds > div:nth-child(5) > div > p {
+    margin-left: 27px;
+  }
+
+  .headereds > div:nth-child(7) > div > p {
+    margin-left: 26px;
+    border-right: none;
   }
 
   .headereds > div:nth-child(9) > div > p {
     background-color: #d40000;
     color: white;
-    padding: 0px 14px;
+    padding: 0px 16px;
     border-radius: 20px;
     font-weight: bold;
     font-size: 12px;
     cursor: pointer;
     display: inline-block;
-    margin-left: 10px;
+    margin-left: 21px;
     position: relative;
-    margin-top: -24px;
-    margin-bottom: 24px;
+    margin-top: -28px;
+    margin-bottom: 28px;
+    width: 59%;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .headereds > div:nth-child(12) > div > p {
+    margin-left: -325px;
+    margin-top: 50px;
+    font: 12px / 24px Arial, Verdana, Geneva, sans-serif;
+    color: #999;
   }
 
   .headereds > div:nth-child(13) > div > picture > img {
@@ -352,22 +374,11 @@
     align-items: center;
     border: 2px solid #d40000;
     border-radius: 20px;
-    padding: 0 8px 6px 140px;
+    padding: 0 8px 6px 178px;
     height: 14px;
     position: absolute;
-    margin-left: -160px;
+    margin-left: -201px;
     margin-top: 8px;
-  }
-
-  .headereds > div:nth-child(12) > div > p {
-    margin-left: -260px;
-    margin-top: 40px;
-    font: 12px / 24px Arial, Verdana, Geneva, sans-serif;
-    color: #999;
-  }
-
-  .headereds-wrapper a[href*="michigan.aaa.com"] {
-    display: none !important;
   }
 
   .headereds-wrapper > div:nth-of-type(n+15) {
@@ -378,11 +389,11 @@
     overflow-x: auto;
   }
 
-  .headereds > div:nth-child(n+16):nth-child(-n+22) > div > p {
+  .headereds > div:nth-child(n+16):nth-child(-n+22) > div > p:first-child {
     color: white;
     text-transform: uppercase;
-    font-size: 13px;
-    padding: 10px 16px;
+    font-size: 14px;
+    padding: 12px 20px;
     cursor: pointer;
     white-space: nowrap;
     background-color: #2562ad;
@@ -393,7 +404,7 @@
     background-image: url(https://michigan.aaa.com/assets/Images/Global/MainNav.png);
   }
 
-  .headereds > div:nth-child(22) > div > p {
+  .headereds > div:nth-child(22) > div > p:first-child {
     border-right: 1px solid;
   }
 
