@@ -1,34 +1,52 @@
 document.addEventListener("DOMContentLoaded", () => {
-  document.querySelectorAll(".videocta.block").forEach(block => {
-    const videoIdElem = block.querySelector('[data-aue-prop="videoId"]');
-    const thumbnailImg = block.querySelector('img[data-aue-prop="thumbnailImage"]');
+  document.querySelectorAll(".videocta-wrapper").forEach(wrapper => {
+    const block = wrapper.querySelector(".videocta.block");
 
-    if (videoIdElem && thumbnailImg) {
-      const videoId = videoIdElem.textContent.trim();
+    if (!block) return;
 
-      // Hide the videoId text
-      videoIdElem.style.display = "none";
+    // Identify inner divs
+    const innerDivs = block.querySelectorAll(":scope > div > div");
 
-      // Wrap image in a video container
-      const wrapper = document.createElement("div");
-      wrapper.className = "video-wrapper";
-      wrapper.dataset.videoId = videoId;
+    let imageDiv = null;
+    let videoIdDiv = null;
 
-      wrapper.appendChild(thumbnailImg.cloneNode());
+    innerDivs.forEach(div => {
+      // Identify image block
+      if (!imageDiv && div.querySelector("img")) {
+        imageDiv = div;
+      }
 
-      // Remove original image and append the wrapper
-      thumbnailImg.closest("div").remove();
-      block.appendChild(wrapper);
+      // Identify YouTube ID by matching 11-char alphanumeric string
+      if (!videoIdDiv && div.textContent.trim().match(/^[a-zA-Z0-9_-]{11}$/)) {
+        videoIdDiv = div;
+      }
+    });
 
-      wrapper.addEventListener("click", () => {
+    if (imageDiv && videoIdDiv) {
+      const videoId = videoIdDiv.textContent.trim();
+      videoIdDiv.style.display = "none"; // Hide ID from being visible
+
+      const img = imageDiv.querySelector("img");
+      const videoWrapper = document.createElement("div");
+      videoWrapper.className = "video-wrapper";
+      videoWrapper.dataset.videoId = videoId;
+      videoWrapper.appendChild(img.cloneNode(true));
+
+      imageDiv.remove(); // Remove original image div
+      block.appendChild(videoWrapper); // Insert new clickable wrapper
+
+      // On click, replace image with iframe
+      videoWrapper.addEventListener("click", () => {
         const iframe = document.createElement("iframe");
         iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0`;
         iframe.setAttribute("frameborder", "0");
         iframe.setAttribute("allow", "autoplay; encrypted-media");
         iframe.setAttribute("allowfullscreen", "true");
-        wrapper.innerHTML = "";
-        wrapper.appendChild(iframe);
+
+        videoWrapper.innerHTML = "";
+        videoWrapper.appendChild(iframe);
       });
     }
   });
 });
+
