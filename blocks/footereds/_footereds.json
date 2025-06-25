@@ -29,18 +29,17 @@
                 "valueType": "string"
               },
         
-          {
-            "component": "text",
-            "valueType": "string",
-            "name": "imageAlt",
-            "label": "Alt",
-            "value": ""
-          },
+         {
+           "component": "text",
+           "name": "joinText", 
+           "label": "Text" 
+         },
+          
           {
             "component": "richtext",
-            "name": "text",
+            "name": "text2",
             "value": "",
-            "label": "Text",
+            "label": "Text2",
             "valueType": "string"
           }
         ]
