@@ -37,8 +37,7 @@
 
         { "component": "text", "name": "searchPlaceholder", "label": "Search Placeholder" },
         { "component": "reference", "name": "searchIcon", "label": "Search Icon" },
-        { "component": "text", "name": "searchButtonTitle", "label": "Search Button Title" },
-        { "component": "text", "name": "searchValidationMessage", "label": "Search Validation Message" },
+      
 
         { "component": "text", "name": "nav1_text", "label": "Nav Item 1 Text" },
         { "component": "aem-content", "name": "nav1_url", "label": "Nav Item 1 URL" },
