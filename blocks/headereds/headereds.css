@@ -97,6 +97,11 @@ margin-left:10px;
   display: none;
 }
 
+
+.headereds > div:nth-child(14) p {
+ color: white;
+}
+
 .headereds > div:nth-child(13) picture img {
   width: 24px;
   height: 24px;
