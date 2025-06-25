@@ -34,6 +34,7 @@ body {
   display: inline-block;
   position: relative;
   cursor: pointer;
+  border-left: 0.5px solid grey;
 }
 
 .headereds > div:nth-child(4),
@@ -49,7 +50,7 @@ body {
 .headereds > div:nth-child(3) p {
 
 
-margin-left:10px;
+margin-left: 623px;
 }
 
 .headereds > div:nth-child(4) p {
