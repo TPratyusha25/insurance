@@ -130,10 +130,11 @@ margin-top: -258px;
 
   .videocta-wrapper picture img {
     position: static !important;
-    margin: 1rem -37px -7px -20px
-    width: 100%;
-    height: auto;
-    max-width: 153% ! important;
+   
+         max-width: 199% ! important;
+        margin-left: -18px;
+        margin-top: -44px;
+        width: 153%;
   }
 
   .videocta-wrapper h1{
