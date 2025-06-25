@@ -417,6 +417,7 @@
             "valueType": "string",
             "name": "videoId",
             "label": "YouTube Video ID",
+               "visible" : false,
             "value": ""
           }
         ]
