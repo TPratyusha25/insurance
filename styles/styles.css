@@ -322,7 +322,7 @@ a.button:any-link, button {
     text-align: center;
     box-sizing: border-box;
     display: inline-block;
-    max-width: 171%;
+          max-width: 174%
     margin: 5px 20px;
     border: 2px solid transparent;
     /* border-radius: 0.4em; */
@@ -339,7 +339,7 @@ a.button:any-link, button {
     /* overflow: hidden; */
     text-overflow: ellipsis;
     /* white-space: nowrap; */
-    width: 115%;
+   width: 195% ! important;
     margin-left: -19px;
 
 }
