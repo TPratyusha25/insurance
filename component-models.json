@@ -217,42 +217,43 @@
   },
 
    {
-        "id": "headereds",
-        "fields": [
-          { "component": "reference", "valueType": "string", "name": "logo", "label": "Logo Image" },
-          { "component": "text", "valueType": "string", "name": "logoAlt", "label": "Logo Alt Text" },
-          { "component": "text", "valueType": "string", "name": "tagline", "label": "Logo Tagline" },
-  
-          { "component": "text", "name": "topLink1Text", "label": "Top Link 1 Text" },
-          { "component": "aem-content", "name": "topLink1Url", "label": "Top Link 1 URL" },
-          { "component": "text", "name": "topLink2Text", "label": "Top Link 2 Text" },
-          { "component": "aem-content", "name": "topLink2Url", "label": "Top Link 2 URL" },
-          { "component": "text", "name": "topLink3Text", "label": "Top Link 3 Text" },
-          { "component": "aem-content", "name": "topLink3Url", "label": "Top Link 3 URL" },
-  
-          { "component": "text", "name": "joinText", "label": "Join Button Text" },
-          { "component": "aem-content", "name": "joinUrl", "label": "Join Button URL" },
-          { "component": "reference", "name": "joinIcon", "label": "Join Button Icon" },
-  
-          { "component": "text", "name": "searchPlaceholder", "label": "Search Placeholder" },
-          { "component": "reference", "name": "searchIcon", "label": "Search Icon" },
-  
-          { "component": "text", "name": "nav1_text", "label": "Nav Item 1 Text" },
-          { "component": "aem-content", "name": "nav1_url", "label": "Nav Item 1 URL" },
-          { "component": "text", "name": "nav2_text", "label": "Nav Item 2 Text" },
-          { "component": "aem-content", "name": "nav2_url", "label": "Nav Item 2 URL" },
-          { "component": "text", "name": "nav3_text", "label": "Nav Item 3 Text" },
-          { "component": "aem-content", "name": "nav3_url", "label": "Nav Item 3 URL" },
-          { "component": "text", "name": "nav4_text", "label": "Nav Item 4 Text" },
-          { "component": "aem-content", "name": "nav4_url", "label": "Nav Item 4 URL" },
-          { "component": "text", "name": "nav5_text", "label": "Nav Item 5 Text" },
-          { "component": "aem-content", "name": "nav5_url", "label": "Nav Item 5 URL" },
-          { "component": "text", "name": "nav6_text", "label": "Nav Item 6 Text" },
-          { "component": "aem-content", "name": "nav6_url", "label": "Nav Item 6 URL" },
-          { "component": "text", "name": "nav7_text", "label": "Nav Item 7 Text" },
-          { "component": "aem-content", "name": "nav7_url", "label": "Nav Item 7 URL" }
-        ]
-      },
+      "id": "headereds",
+      "fields": [
+        { "component": "reference", "valueType": "string", "name": "logo", "label": "Logo Image" },
+        { "component": "text", "valueType": "string", "name": "logoAlt", "label": "Logo Alt Text" },
+        { "component": "text", "valueType": "string", "name": "tagline", "label": "Logo Tagline" },
+
+        { "component": "text", "name": "topLink1Text", "label": "Top Link 1 Text" },
+        { "component": "aem-content", "name": "topLink1Url", "label": "Top Link 1 URL" },
+        { "component": "text", "name": "topLink2Text", "label": "Top Link 2 Text" },
+        { "component": "aem-content", "name": "topLink2Url", "label": "Top Link 2 URL" },
+        { "component": "text", "name": "topLink3Text", "label": "Top Link 3 Text" },
+        { "component": "aem-content", "name": "topLink3Url", "label": "Top Link 3 URL" },
+
+        { "component": "text", "name": "joinText", "label": "Join Button Text" },
+        { "component": "aem-content", "name": "joinUrl", "label": "Join Button URL" },
+        { "component": "reference", "name": "joinIcon", "label": "Join Button Icon" },
+
+        { "component": "text", "name": "searchPlaceholder", "label": "Search Placeholder" },
+        { "component": "reference", "name": "searchIcon", "label": "Search Icon" },
+
+
+        { "component": "text", "name": "nav1_text", "label": "Nav Item 1 Text" },
+        { "component": "aem-content", "name": "nav1_url", "label": "Nav Item 1 URL" },
+        { "component": "text", "name": "nav2_text", "label": "Nav Item 2 Text" },
+        { "component": "aem-content", "name": "nav2_url", "label": "Nav Item 2 URL" },
+        { "component": "text", "name": "nav3_text", "label": "Nav Item 3 Text" },
+        { "component": "aem-content", "name": "nav3_url", "label": "Nav Item 3 URL" },
+        { "component": "text", "name": "nav4_text", "label": "Nav Item 4 Text" },
+        { "component": "aem-content", "name": "nav4_url", "label": "Nav Item 4 URL" },
+        { "component": "text", "name": "nav5_text", "label": "Nav Item 5 Text" },
+        { "component": "aem-content", "name": "nav5_url", "label": "Nav Item 5 URL" },
+        { "component": "text", "name": "nav6_text", "label": "Nav Item 6 Text" },
+        { "component": "aem-content", "name": "nav6_url", "label": "Nav Item 6 URL" },
+        { "component": "text", "name": "nav7_text", "label": "Nav Item 7 Text" },
+        { "component": "aem-content", "name": "nav7_url", "label": "Nav Item 7 URL" }
+      ]
+    },
 
 
 
@@ -331,8 +332,34 @@
             "valueType": "string"
           }
         ]
+      },
+
+   {
+        "id": "videoblock",
+        "fields": [
+          {
+            "component": "text",
+            "valueType": "string",
+            "name": "title",
+            "label": "Title"
+          },
+          {
+            "component": "richtext",
+            "valueType": "string",
+            "name": "description",
+            "label": "Description"
+          },
+          {
+            "component": "text",
+            "valueType": "string",
+            "name": "videoId",
+            "label": "YouTube Video ID"
+          }
+        ]
       }
 
+
+  
 
   
 

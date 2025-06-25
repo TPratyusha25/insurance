@@ -1,3 +1,41 @@
+document.addEventListener('DOMContentLoaded', function () {
+  const searchInput = document.getElementById('ctl00_HeaderMenus_SiteSearchBox_searchTextBox');
+  const searchButton = document.getElementById('ctl00_HeaderMenus_SiteSearchBox_GoImageButton');
+  const validationMessage = document.getElementById('ctl00_HeaderMenus_SiteSearchBox_searchboxRequiredFieldValidator');
+
+  // Clear input on click
+  searchInput.addEventListener('click', function () {
+    this.value = '';
+    this.select();
+    validationMessage.style.display = 'none';
+  });
+
+  // Handle search submission
+  searchButton.addEventListener('click', function (e) {
+    e.preventDefault();
+    const query = searchInput.value.trim();
+
+    if (!query) {
+      validationMessage.textContent = 'Please enter a search term.';
+      validationMessage.style.display = 'inline';
+      return;
+    }
+
+    validationMessage.style.display = 'none';
+
+    // Simulate search action
+    console.log('Searching for:', query);
+    // You can replace this with actual form submission or AJAX call
+  });
+});
+
+
+
+
+
+
+
+
 // NAV items (already working)
 document.querySelectorAll('[data-aue-prop^="nav"]').forEach((el) => {
     const link = el.nextElementSibling?.querySelector('a');
@@ -36,3 +74,6 @@ document.querySelectorAll('[data-aue-prop^="nav"]').forEach((el) => {
       window.open(joinLink.href, '_blank');
     });
   }
+
+
+
