@@ -36,7 +36,7 @@
           { "component": "reference", "name": "joinIcon", "label": "Join Button Icon" },
   
          
-      { "component": "text", "name": "searchPlaceholder", "label": "Search Placeholder" },
+        { "component": "text", "name": "searchPlaceholder", "label": "Search Placeholder" },
         { "component": "reference", "name": "searchIcon", "label": "Search Icon" },
         { "component": "text", "name": "searchButtonTitle", "label": "Search Button Title" },
         { "component": "text", "name": "searchValidationMessage", "label": "Search Validation Message" },
