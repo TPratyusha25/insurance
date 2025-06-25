@@ -104,12 +104,15 @@ h3,
 h4,
 h5,
 h6 {
-  margin-top: 0.8em;
-  margin-bottom: 0.25em;
-  font-family: var(--heading-font-family);
-  font-weight: 600;
-  line-height: 1.25;
-  scroll-margin: 40px;
+    font-size: 28px !important;
+    line-height: 32px !important;
+    font-family: "Mission Gothic Bold Italic", Arial Narrow Bold !important;
+    font-weight: bold !important;
+    font-style: inherit !important;
+    text-align: center;
+    color: #0065a4;
+    margin-top: -13px;
+    margin-right: 62px;
 }
 
 h1 { font-size: var(--heading-font-size-xxl); }
@@ -125,8 +128,13 @@ ol,
 ul,
 pre,
 blockquote {
-  margin-top: 0.8em;
-  margin-bottom: 0.25em;
+ font-size: 15px !important;
+    line-height: 19px !important;
+    font-family: Verdana, Arial Narrow Bold;
+    text-align: center;
+    color: #666666;
+    margin-top: -11px;
+    line-height: 1.6 ! important;
 }
 
 code,
@@ -180,7 +188,7 @@ button {
     margin: 12px 0;
     border: 2px solid transparent;
     /* border-radius: 0.4em; */
-    padding: 0.5em 1.2em;
+   padding: 0.2em 1.2em;
     font-family: var(--body-font-family);
     font-style: normal;
     font-weight: 500;
@@ -194,16 +202,18 @@ button {
     text-overflow: ellipsis;
     white-space: nowrap;
     width: 67%;
-    margin-left: 167px;
+  margin-left: 5px;
+    white-space: normal;
+    word-break: break-word;
 }
 
-a.button:hover,
+/*  a.button:hover, 
 a.button:focus,
 button:hover,
 button:focus {
   background-color: var(--link-hover-color);
   cursor: pointer;
-}
+} */
 
 button:disabled,
 button:disabled:hover {
@@ -250,16 +260,116 @@ main > .section:first-of-type {
   margin-top: 0;
 }
 
-@media (width >= 900px) {
-  main > .section > div {
-    padding: 0 32px;
-  }
+@media (max-width: 767px) {
+a.button:any-link, button {
+
+        margin-left: -26px;
+        white-space: normal;
+        word-break: break-word;
+        line-height: 1.2 ! important;
+        font-size: 42px !important;
+        width: 576px;
+       height: auto;
+
 }
 
-/* section metadata */
-main .section.light,
-main .section.highlight {
-  background-color: var(--light-color);
-  margin: 0;
-  padding: 40px 0;
+   h3 { 
+
+       margin-left: 27px;
+        width: 129%;
+        font-size: 2.3rem ! important;
+    }
+
+   
+    
+
+    h2 {
+
+    white-space: normal;
+    word-break: break-word;
+    line-height: 1.2 ! important;
+    font-size: 42px !important;
+    width: 519px;
+    height: 120px;
+    margin-left: 1px;
+    }
+
+    p {
+
+    font-size: 22px !important;
+    line-height: 19px !important;
+    font-family: Verdana, Arial Narrow Bold;
+    text-align: center;
+    color: #666666;
+    margin-top: -11px;
+    line-height: 1.6 ! important;
+    width: 148%;
+    }
 }
+
+
+@media (min-width: 768px) and (max-width: 1024px)  {
+
+a.button:any-link, button {
+ 
+
+   font-family: "Mission Gothic Bold Italic", Arial Narrow Bold !important;
+    font-size: 28px !important;
+    line-height: 32px !important;
+    font-weight: bold !important;
+    font-style: inherit !important;
+    text-align: center;
+    box-sizing: border-box;
+    display: inline-block;
+    max-width: 171%;
+    margin: 5px 20px;
+    border: 2px solid transparent;
+    /* border-radius: 0.4em; */
+    padding: 0.2em 1.2em;
+    font-family: var(--body-font-family);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2.25;
+    /* text-align: center; */
+    text-decoration: none;
+    background-color: #d40000;
+    color: var(--background-color);
+    cursor: pointer;
+    /* overflow: hidden; */
+    text-overflow: ellipsis;
+    /* white-space: nowrap; */
+    width: 115%;
+    margin-left: -19px;
+
+}
+
+     h3 {
+
+        margin-left: 27px;
+        width: 104%;
+        font-size: 2.1rem ! important;
+    }
+
+
+    h2 {
+
+        margin-left: 27px;
+        width: 104%;
+        font-size: 2.1rem ! important;
+    }
+
+    p{
+   font-size: 15px !important;
+    line-height: 19px !important;
+    font-family: Verdana, Arial Narrow Bold;
+    text-align: center;
+    color: #666666;
+    margin-top: -11px;
+    line-height: 1.6 ! important;
+    width: 105%;
+
+    }
+}
+    
+
+
