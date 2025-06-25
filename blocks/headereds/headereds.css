@@ -18,37 +18,45 @@ body {
 
 
 
-/* Search container (13th div) */
-.headereds.block > div:nth-child(13) {
+/* Container for search */
+.headereds-search {
   display: flex;
-  justify-content: center;
   align-items: center;
-  margin: 20px 0;
+  gap: 8px;
+  margin-top: 16px;
 }
 
-.headereds.block > div:nth-child(13) > div {
-  position: relative;
-  width: 300px;
-}
-
-/* Search input field */
-.headereds.block > div:nth-child(13) input[type="text"] {
-  width: 100%;
-  padding: 10px 40px 10px 15px;
-  border: 1px solid #ccc;
-  border-radius: 25px;
+/* Input field */
+.headereds-search input[type="text"] {
+  padding: 8px 12px;
   font-size: 14px;
+  width: 240px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
-/* Search icon inside input */
-.headereds.block > div:nth-child(13) img {
-  position: absolute;
-  right: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 20px;
-  height: 20px;
+/* Search button */
+.headereds-search button {
+  background-color: #0078d4;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
   cursor: pointer;
+}
+
+.headereds-search button:hover {
+  background-color: #005a9e;
+}
+
+/* Validation message */
+.headereds-search .validation-message {
+  color: red;
+  font-size: 12px;
+  margin-left: 12px;
+  display: none;
+}
+rsor: pointer;
 }
 
 
