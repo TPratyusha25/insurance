@@ -81,7 +81,7 @@
     text-indent: 10px;
 }
 
-[data-aue-prop="topLink1Text"] {
+.headereds > div:nth-child(3) > div > p {
     margin-left: 449px;
     position: relative;
     font-size: 13px;
