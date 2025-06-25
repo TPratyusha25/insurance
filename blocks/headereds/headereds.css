@@ -70,11 +70,30 @@ body {
   gap: 4px;
 }
 
-.headereds > div:nth-child(12) p {
-  display: none;
+.headereds > div:nth-child(16) p {
+ color: white;
 }
 
-.headereds > div:nth-child(13) picture img {
+.headereds > div:nth-child(17) p {
+  color: white;
+}
+.headereds > div:nth-child(18) p {
+  color: white;
+}
+.headereds > div:nth-child(19) p {
+  color: white;
+}
+.headereds > div:nth-child(20) p {
+  color: white;
+}
+.headereds > div:nth-child(21) p {
+   color: white;
+}
+.headereds > div:nth-child(22) p {
+  color: white;
+}
+
+.headereds > div:nth-child(23) picture img {
   width: 24px;
   height: 24px;
 }
