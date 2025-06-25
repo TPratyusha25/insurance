@@ -346,9 +346,12 @@ a.button:any-link, button {
 
      h3 {
 
-        margin-left: 27px;
+              
         width: 104%;
         font-size: 2.1rem ! important;
+        margin-left: 266px;
+        line-height: 50px ! important;
+        margin-top: 39px
     }
 
 
@@ -360,7 +363,7 @@ a.button:any-link, button {
     }
 
     p{
-         font-size: 17px !important;
+             font-size: 25px !important;
         line-height: 19px !important;
         font-family: Verdana, Arial Narrow Bold;
         /* text-align: center; */
