@@ -4,7 +4,8 @@
     background-image: url(https://michigan.aaa.com/assets/images/Global/background.png);
 }
 
-.headereds-wrapper > div {
+/* Flex container for header blocks */
+.headereds.block {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -12,6 +13,7 @@
     margin-top: -57px;
 }
 
+/* Logo image */
 .headereds-wrapper picture img {
     width: 140px;
     height: auto;
@@ -19,6 +21,7 @@
     margin-top: 15px;
 }
 
+/* General paragraph styling */
 .headereds-wrapper p {
     font-size: 14px;
     color: #333;
@@ -31,6 +34,7 @@
     margin-bottom: 26px;
 }
 
+/* Last paragraph in a block */
 .headereds-wrapper p:last-child {
     border-right: none;
     margin-left: -1px;
@@ -38,6 +42,7 @@
     color: #666666;
 }
 
+/* Join button */
 .headereds-wrapper .join {
     background-color: #d40000;
     color: white;
@@ -53,6 +58,7 @@
     margin-bottom: 28px;
 }
 
+/* Search box */
 .headereds-wrapper .search {
     display: flex;
     align-items: center;
@@ -72,6 +78,7 @@
     margin-right: 6px;
 }
 
+/* Search placeholder */
 .headereds-wrapper .search-placeholder {
     margin-left: -196px;
     margin-top: 45px;
@@ -80,13 +87,16 @@
     text-indent: 10px;
 }
 
+/* Navigation bar container */
 .headereds-wrapper .nav {
     display: flex;
+    flex-wrap: nowrap;
     justify-content: center;
     background-color: #2562ad;
-    flex-wrap: wrap;
+    overflow-x: auto;
 }
 
+/* Navigation items */
 .headereds-wrapper .nav-item {
     color: white;
     font-weight: bold;
@@ -102,16 +112,26 @@
     background-image: url(https://michigan.aaa.com/assets/Images/Global/MainNav.png);
 }
 
-.headereds-wrapper a[href*="michigan.aaa.com"] {
-    display: none !important;
+/* Hide anchor links but preserve functionality */
+.headereds-wrapper .nav-item a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-indent: -9999px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
+/* Responsive: hide on small screens */
 @media (max-width: 767px) {
     .headereds-wrapper {
         display: none;
     }
 }
 
+/* Tablet view adjustments */
 @media (min-width: 768px) and (max-width: 1024px) {
     .headereds-wrapper {
         width: 110%;
