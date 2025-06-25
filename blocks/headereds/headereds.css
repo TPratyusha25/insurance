@@ -1,4 +1,4 @@
-/* Reset default browser styles */
+/* Reset */
 * {
   margin: 0;
   padding: 0;
@@ -6,63 +6,64 @@
   font-family: Arial, sans-serif;
 }
 
+/* Body */
 body {
   background-color: #fff;
 }
 
-/* Header Container */
+/* Wrapper */
 .headereds-wrapper {
   width: 100%;
 }
 
-/* Top Header (logo + actions) */
-.headereds > div:nth-child(1),
-.headereds > div:nth-child(2),
-.headereds > div:nth-child(3),
-.headereds > div:nth-child(4),
-.headereds > div:nth-child(5),
-.headereds > div:nth-child(6),
-.headereds > div:nth-child(7),
-.headereds > div:nth-child(8),
-.headereds > div:nth-child(9),
-.headereds > div:nth-child(10),
-.headereds > div:nth-child(11) {
+/* Header blocks */
+.headereds > div {
   display: inline-block;
   vertical-align: middle;
-  margin-right: 15px;
-  padding: 10px 5px;
+  padding: 10px 8px;
 }
 
-.headereds picture img {
-  vertical-align: middle;
+/* Logo */
+.headereds > div:nth-child(1) picture img {
+  width: 145px;
+  height: 70px;
 }
 
-/* Top nav right side links */
-.headereds p {
-  font-size: 14px;
+/* Right-top text links */
+.headereds > div:nth-child(3),
+.headereds > div:nth-child(5),
+.headereds > div:nth-child(7) {
   color: #333;
-  margin: 0;
+  font-size: 14px;
 }
 
-.headereds a {
-  text-decoration: none;
+.headereds > div:nth-child(4) a,
+.headereds > div:nth-child(6) a,
+.headereds > div:nth-child(8) a {
   color: #d32f2f;
+  font-size: 14px;
+  text-decoration: none;
 }
 
 /* JOIN AAA button */
 .headereds > div:nth-child(9) p {
   background-color: #d32f2f;
-  color: white;
+  color: #fff;
   font-weight: bold;
-  padding: 6px 14px;
-  border-radius: 18px;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 14px;
 }
 
-/* Search bar */
+.headereds > div:nth-child(10) a {
+  display: none;
+}
+
+/* Search */
 .headereds > div:nth-child(12) {
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 4px;
 }
 
 .headereds > div:nth-child(12) p {
@@ -72,10 +73,9 @@ body {
 .headereds > div:nth-child(13) picture img {
   width: 24px;
   height: 24px;
-  margin-left: -8px;
 }
 
-/* Main Nav Bar */
+/* Menu Bar Section */
 .headereds > div:nth-child(n+14) {
   display: inline-block;
   background-color: #2c64aa;
@@ -85,6 +85,8 @@ body {
   font-size: 14px;
   text-align: center;
   border-right: 1px solid #21548d;
+  position: relative; /* needed for absolute link inside */
+  cursor: pointer;
 }
 
 .headereds > div:nth-child(n+14):last-child {
@@ -93,15 +95,18 @@ body {
 
 .headereds > div:nth-child(n+14):hover {
   background-color: #1f4f88;
-  cursor: pointer;
 }
 
+/* Hide link visually but keep it clickable */
 .headereds > div:nth-child(n+14) a {
-  color: white;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 1;
   text-decoration: none;
-  display: block;
-  margin-top: 5px;
-  font-size: 12px;
 }
 
 
