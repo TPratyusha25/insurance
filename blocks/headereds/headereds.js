@@ -1,31 +1,34 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const searchInput = document.querySelector(
-    '.headereds.block > div:nth-child(13) input[type="text"]'
-  );
-  const searchIcon = document.querySelector(
-    '.headereds.block > div:nth-child(13) img'
-  );
+document.addEventListener('DOMContentLoaded', function () {
+  const searchInput = document.getElementById('ctl00_HeaderMenus_SiteSearchBox_searchTextBox');
+  const searchButton = document.getElementById('ctl00_HeaderMenus_SiteSearchBox_GoImageButton');
+  const validationMessage = document.getElementById('ctl00_HeaderMenus_SiteSearchBox_searchboxRequiredFieldValidator');
 
-  function performSearch() {
-    const query = encodeURIComponent(searchInput?.value.trim());
-    if (query) {
-      window.location.href = `https://www.acg.aaa.com/search.html?q=${query}`;
+  // Clear input on click
+  searchInput.addEventListener('click', function () {
+    this.value = '';
+    this.select();
+    validationMessage.style.display = 'none';
+  });
+
+  // Handle search submission
+  searchButton.addEventListener('click', function (e) {
+    e.preventDefault();
+    const query = searchInput.value.trim();
+
+    if (!query) {
+      validationMessage.textContent = 'Please enter a search term.';
+      validationMessage.style.display = 'inline';
+      return;
     }
-  }
 
-  if (searchIcon) {
-    searchIcon.addEventListener("click", performSearch);
-  }
+    validationMessage.style.display = 'none';
 
-  if (searchInput) {
-    searchInput.addEventListener("keypress", function (e) {
-      if (e.key === "Enter") {
-        e.preventDefault();
-        performSearch();
-      }
-    });
-  }
+    // Simulate search action
+    console.log('Searching for:', query);
+    // You can replace this with actual form submission or AJAX call
+  });
 });
+
 
 
 
