@@ -173,6 +173,11 @@
     margin-top: -6px;
     background-image: url(https://michigan.aaa.com/assets/Images/Global/MainNav.png);
 }
+
+.headereds > div:nth-child(17) > div > p:nth-child(2){
+    display: none !important;
+}
+
 .headereds > div:nth-child(18) > div > p{
     color: white;
     font-weight: bold;
@@ -186,6 +191,83 @@
     position: relative;
     margin-top: -6px;
     background-image: url(https://michigan.aaa.com/assets/Images/Global/MainNav.png);
+}
+
+.headereds > div:nth-child(18) > div > p:nth-child(2){
+    display: none !important;
+}
+
+.headereds > div:nth-child(19) > div > p{
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 12px 20px;
+    cursor: pointer;
+    white-space: nowrap;
+    background-color: #2562ad;
+    border-top: 1px solid #1e4f8f;
+    position: relative;
+    margin-top: -6px;
+    background-image: url(https://michigan.aaa.com/assets/Images/Global/MainNav.png);
+}
+.headereds > div:nth-child(19) > div > p:nth-child(2){
+    display: none !important;
+}
+
+.headereds > div:nth-child(20) > div > p{
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 12px 20px;
+    cursor: pointer;
+    white-space: nowrap;
+    background-color: #2562ad;
+    border-top: 1px solid #1e4f8f;
+    position: relative;
+    margin-top: -6px;
+    background-image: url(https://michigan.aaa.com/assets/Images/Global/MainNav.png);
+}
+.headereds > div:nth-child(20) > div > p:nth-child(2){
+    display: none !important;
+}
+
+.headereds > div:nth-child(21) > div > p{
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 12px 20px;
+    cursor: pointer;
+    white-space: nowrap;
+    background-color: #2562ad;
+    border-top: 1px solid #1e4f8f;
+    position: relative;
+    margin-top: -6px;
+    background-image: url(https://michigan.aaa.com/assets/Images/Global/MainNav.png);
+}
+.headereds > div:nth-child(21) > div > p:nth-child(2){
+    display: none !important;
+}
+
+.headereds > div:nth-child(22) > div > p{
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 12px 20px;
+    cursor: pointer;
+    white-space: nowrap;
+    background-color: #2562ad;
+    border-top: 1px solid #1e4f8f;
+    position: relative;
+    margin-top: -6px;
+    background-image: url(https://michigan.aaa.com/assets/Images/Global/MainNav.png);
+}
+
+.headereds > div:nth-child(22) > div > p:nth-child(2){
+    display: none !important;
 }
 
 [data-aue-prop^="nav"] + p > a,
