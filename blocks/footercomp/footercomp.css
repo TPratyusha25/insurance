@@ -106,27 +106,49 @@
 
  
 .footercomp-wrapper {
-  background-color: #c4c4c4; 
-  padding: 20px 0;
-  font-family: Arial, sans-serif;
-  font-size: 14px;
-  color: #333;
-  text-align: center;
-    height: 125px;
-    width:120%;
+        background-color: #c4c4c4;
+        padding: 20px 0;
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        color: #333;
+        text-align: center;
+        height: 125px;
+        width: 192% ! important;
+        hight: 30px ! important;
+        height: 202px;
+        max-width: 169% ! important;
 }
 
 .footercomp-wrapper > div:first-child p {
-  font-size: 11px ! important;
+        font-size: 21px ! important;
+        color: #666666;
+        text-decoration: none;
+        margin-left: -9px;
+        font-family: Verdana;
+        margin-top: 1px;
+        position: absolute;
+        margin-left: 210px;
+}
+    .footercomp-wrapper a {
+
+    font-size: 22px;
     color: #666666;
     text-decoration: none;
     margin-left: -9px;
     font-family: Verdana;
-    margin-top: 1px;
-    position: absolute;
-    margin-left: 10px;
 }
-    
+.footercomp-wrapper > div:last-child ul li {
+ display: inline;
+   
+    font-size: 22px;
+    color: #666666;
+    text-decoration: none;
+    margin-left: -9px;
+    font-family: Verdana;
+}
 
 
+     
 }
+
+
