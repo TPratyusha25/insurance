@@ -379,6 +379,47 @@
             "valueType": "string"
           }
         ]
+      },
+
+   {
+        "id": "videocta",
+        "fields": [
+          {
+            "component": "text",
+            "valueType": "string",
+            "name": "title",
+            "label": "Title",
+            "value": ""
+          },
+          {
+            "component": "text",
+            "valueType": "string",
+            "name": "subtitle",
+            "label": "Subtitle",
+            "value": ""
+          },
+          {
+            "component": "richtext",
+            "valueType": "string",
+            "name": "paragraph",
+            "label": "Body Content",
+            "value": ""
+          },
+          {
+            "component": "reference",
+            "valueType": "string",
+            "name": "thumbnailImage",
+            "label": "Thumbnail Image",
+            "multi": false
+          },
+          {
+            "component": "text",
+            "valueType": "string",
+            "name": "videoId",
+            "label": "YouTube Video ID",
+            "value": ""
+          }
+        ]
       }
 
 
