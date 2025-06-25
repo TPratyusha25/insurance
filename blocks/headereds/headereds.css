@@ -1,97 +1,107 @@
-/* Reset and base styles */
-body {
+/* Reset default browser styles */
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: Arial, sans-serif;
 }
 
-/* Header wrapper */
-.headereds-wrapper {
-  display: flex;
-  flex-direction: column;
+body {
   background-color: #fff;
 }
 
-/* Top section: logo and links */
-.headereds.block > div:nth-child(1) {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 30px;
+/* Header Container */
+.headereds-wrapper {
+  width: 100%;
 }
 
-.headereds.block > div:nth-child(1) picture img {
-  height: 70px;
-}
-
-/* Right-side links (Sign In, Pay Bill, etc.) */
-.headereds.block > div:nth-child(n+3):nth-child(-n+11) {
+/* Top Header (logo + actions) */
+.headereds > div:nth-child(1),
+.headereds > div:nth-child(2),
+.headereds > div:nth-child(3),
+.headereds > div:nth-child(4),
+.headereds > div:nth-child(5),
+.headereds > div:nth-child(6),
+.headereds > div:nth-child(7),
+.headereds > div:nth-child(8),
+.headereds > div:nth-child(9),
+.headereds > div:nth-child(10),
+.headereds > div:nth-child(11) {
   display: inline-block;
-  margin: 0 10px;
+  vertical-align: middle;
+  margin-right: 15px;
+  padding: 10px 5px;
 }
 
-.headereds.block > div:nth-child(n+3):nth-child(-n+11) p {
-  margin: 5px 0;
+.headereds picture img {
+  vertical-align: middle;
+}
+
+/* Top nav right side links */
+.headereds p {
+  font-size: 14px;
+  color: #333;
+  margin: 0;
+}
+
+.headereds a {
+  text-decoration: none;
+  color: #d32f2f;
+}
+
+/* JOIN AAA button */
+.headereds > div:nth-child(9) p {
+  background-color: #d32f2f;
+  color: white;
   font-weight: bold;
-  color: #0073cf;
+  padding: 6px 14px;
+  border-radius: 18px;
 }
 
 /* Search bar */
-.headereds.block > div:nth-child(13) {
+.headereds > div:nth-child(12) {
   display: flex;
-  justify-content: center;
-  margin: 20px 0;
-}
-
-.headereds.block > div:nth-child(13) .search-box {
-  position: relative;
-  width: 300px;
-}
-
-.headereds.block > div:nth-child(13) .search-box input {
-  width: 100%;
-  padding: 10px 40px 10px 15px;
-  border: 1px solid #ccc;
-  border-radius: 25px;
-  font-size: 16px;
-}
-
-.headereds.block > div:nth-child(13) .search-box img {
-  position: absolute;
-  right: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 20px;
-  height: 20px;
-}
-
-/* Navbar with background image */
-.headereds.block > div:nth-child(n+15) {
-  display: flex;
-  justify-content: space-around;
   align-items: center;
-  background-image: url('https://michigan.aaa.com/assets/images/Global/background.png');
-  background-size: cover;
-  padding: 15px 0;
-  flex-wrap: wrap;
+  gap: 6px;
 }
 
-.headereds.block > div:nth-child(n+15) p {
-  margin: 0;
-  font-weight: bold;
+.headereds > div:nth-child(12) p {
+  display: none;
+}
+
+.headereds > div:nth-child(13) picture img {
+  width: 24px;
+  height: 24px;
+  margin-left: -8px;
+}
+
+/* Main Nav Bar */
+.headereds > div:nth-child(n+14) {
+  display: inline-block;
+  background-color: #2c64aa;
+  padding: 14px 20px;
   color: white;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+  border-right: 1px solid #21548d;
 }
 
-.headereds.block > div:nth-child(n+15) a {
+.headereds > div:nth-child(n+14):last-child {
+  border-right: none;
+}
+
+.headereds > div:nth-child(n+14):hover {
+  background-color: #1f4f88;
+  cursor: pointer;
+}
+
+.headereds > div:nth-child(n+14) a {
   color: white;
   text-decoration: none;
-  font-weight: bold;
-  padding: 10px 15px;
-  transition: background 0.3s;
-}
-
-.headereds.block > div:nth-child(n+15) a:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-  border-radius: 5px;
+  display: block;
+  margin-top: 5px;
+  font-size: 12px;
 }
 
 
