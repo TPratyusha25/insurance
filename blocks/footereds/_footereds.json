@@ -28,22 +28,16 @@
                 "label": "Text",
                 "valueType": "string"
               },
+
+            {
+                "component": "richtext",
+                "name": "text2",
+                "value": "",
+                "label": "Text",
+                "valueType": "string"
+              }
         
-         {
-            "component": "richtext",
-            "name": "text2",
-            "value": "",
-            "label": "Text2",
-            "valueType": "string"
-          }
-          
-          {
-            "component": "richtext",
-            "name": "text3",
-            "value": "",
-            "label": "Text3",
-            "valueType": "string"
-          }
+       
         ]
       }
     ],
