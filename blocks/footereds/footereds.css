@@ -1,0 +1,78 @@
+/* Footer Container */
+.footer-eds-wrapper {
+  background-color: #c4c4c4; /* Matches the gray shown in the image */
+  padding: 20px 0;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #333;
+  text-align: center;
+}
+
+/* Upper Section - First div with nav links */
+.footer-eds-wrapper .footer-eds > div:first-child ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.footer-eds-wrapper .footer-eds > div:first-child ul li {
+  display: inline;
+  color: #333;
+}
+
+.footer-eds-wrapper .footer-eds > div:first-child ul li::after {
+  content: "|";
+  margin: 0 8px;
+  color: #666;
+}
+
+.footer-eds-wrapper .footer-eds > div:first-child ul li:last-child::after {
+  content: "";
+}
+
+/* Link styling */
+.footer-eds-wrapper .footer-eds a {
+  text-decoration: none;
+  color: #333;
+}
+
+.footer-eds-wrapper .footer-eds a:hover {
+  text-decoration: underline;
+}
+
+/* Subtext line */
+.footer-eds-wrapper .footer-eds > div:first-child p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Bottom Section - Second div with contact and copyright */
+.footer-eds-wrapper .footer-eds > div:last-child ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px auto 0 auto;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.footer-eds-wrapper .footer-eds > div:last-child ul li {
+  display: inline;
+  color: #333;
+}
+
+.footer-eds-wrapper .footer-eds > div:last-child ul li::after {
+  content: "|";
+  margin: 0 8px;
+  color: #666;
+}
+
+.footer-eds-wrapper .footer-eds > div:last-child ul li:last-child::after {
+  content: "";
+}
