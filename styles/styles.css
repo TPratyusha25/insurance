@@ -314,33 +314,33 @@ a.button:any-link, button {
 a.button:any-link, button {
  
 
-   font-family: "Mission Gothic Bold Italic", Arial Narrow Bold !important;
-    font-size: 28px !important;
-    line-height: 32px !important;
-    font-weight: bold !important;
-    font-style: inherit !important;
-    text-align: center;
-    box-sizing: border-box;
-    display: inline-block;
-          max-width: 176%;
-    margin: 5px 20px;
-    border: 2px solid transparent;
-    /* border-radius: 0.4em; */
-    padding: 0.2em 1.2em;
-    font-family: var(--body-font-family);
-    font-style: normal;
-    font-weight: 500;
-    line-height: 2.25;
-    /* text-align: center; */
-    text-decoration: none;
-    background-color: #d40000;
-    color: var(--background-color);
-    cursor: pointer;
-    /* overflow: hidden; */
-    text-overflow: ellipsis;
-    /* white-space: nowrap; */
- width: 211% ! important;
-    margin-left: -19px;
+          font-family: "Mission Gothic Bold Italic", Arial Narrow Bold !important;
+        font-size: 28px !important;
+        line-height: 32px !important;
+        font-weight: bold !important;
+        font-style: inherit !important;
+        text-align: center;
+        box-sizing: border-box;
+        display: inline-block;
+        max-width: 260% ! important;
+        /* margin: 5px 20px; */
+        border: 2px solid transparent;
+        /* border-radius: 0.4em; */
+        padding: 0.2em 1.2em;
+        font-family: var(--body-font-family);
+        font-style: normal;
+        font-weight: 500;
+        line-height: 2.25;
+        /* text-align: center; */
+        text-decoration: none;
+        background-color: #d40000;
+        color: var(--background-color);
+        cursor: pointer;
+        /* overflow: hidden; */
+        text-overflow: ellipsis;
+        /* white-space: nowrap; */
+        margin-left: -290px;
+        width: 176%;
 
 }
 
@@ -354,20 +354,21 @@ a.button:any-link, button {
 
     h2 {
 
-  margin-left: 237px;
+        margin-left: 264px;
         width: 111%;
         font-size: 35px ! important;
     }
 
     p{
-   font-size: 15px !important;
-    line-height: 19px !important;
-    font-family: Verdana, Arial Narrow Bold;
-    text-align: center;
-    color: #666666;
-    margin-top: -11px;
-    line-height: 1.6 ! important;
-    width: 105%;
+         font-size: 17px !important;
+        line-height: 19px !important;
+        font-family: Verdana, Arial Narrow Bold;
+        /* text-align: center; */
+        color: #666666;
+        margin-top: -11px;
+        line-height: 1.6 ! important;
+        width: 105%;
+        margin-left: 268px;
 
     }
 }
