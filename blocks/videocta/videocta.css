@@ -135,7 +135,13 @@ margin-top: -265px;
     height: auto;
   }
 
-  .videocta-wrapper h1,
+  .videocta-wrapper h1{
+
+ font-size: 24px !important;
+    line-height: 28px !important;
+
+
+  }
   .videocta-wrapper h2 {
     font-size: 24px !important;
     line-height: 28px !important;
