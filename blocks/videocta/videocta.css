@@ -20,19 +20,33 @@
 }
 
 .videocta-wrapper h2 {
-  font-size: 1.8rem;
-  color: #1d4c8f;
-  margin-bottom: 1rem;
-     flex: 1 1 50%;
-  order: 1;
+ font-size: 1.8rem;
+    color: #1d4c8f;
+    margin-bottom: 1rem;
+    flex: 1 1 50%;
+    order: 1;
+    font-size: 28px !important;
+    line-height: 32px !important;
+    font-family: "Mission Gothic Bold Italic", Arial Narrow Bold !important;
+    font-weight: bold !important;
+    font-style: inherit !important;
+    text-align: center;
+    width: 39%;
+    margin-top: 47px;
+    margin-left: 185px;
 }
 
 .videocta-wrapper p {
-  font-size: 1rem;
-  color: #333;
-  line-height: 1.6;
-     flex: 1 1 50%;
-  order: 1;
+font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+    flex: 1 1 50%;
+    order: 1;
+    font-size: 14px !important;
+    line-height: 20px !important;
+    font-family: Verdana, Arial Narrow Bold;
+    width: 50%;
+    margin-left: 131px;
 }
 
 /* Thumbnail image */
@@ -44,12 +58,15 @@
 }
 
 .videocta-wrapper picture img {
-  height: auto;
-  border-radius: 8px;
-  object-fit: cover;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      flex: 1 1 45%;
-  order: 2;
+     /* height: auto; */
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    flex: 1 1 45%;
+    order: 2;
+    margin-left: 750px;
+    position: absolute;
+    margin-top: -250px;
 }
 
 /* Hide raw YouTube link */
