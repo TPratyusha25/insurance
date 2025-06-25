@@ -36,8 +36,12 @@
 
 /* Link styling */
 .footercomp-wrapper a {
-  text-decoration: none;
-  color: #333;
+
+    font-size: 11px;
+    color: #666666;
+    text-decoration: none;
+    margin-left: -9px;
+    font-family: Verdana;
 }
 
 .footercomp-wrapper a:hover {
@@ -46,9 +50,11 @@
 
 /* Subtext line */
 .footercomp-wrapper > div:first-child p {
-  margin-top: 10px;
-  font-size: 14px;
-  color: #333;
+   font-size: 11px ! important;
+    color: #666666;
+    text-decoration: none;
+    margin-left: -9px;
+    font-family: Verdana;
 }
 
 /* Bottom Section - Second div with contact and copyright */
@@ -63,8 +69,13 @@
 }
 
 .footercomp-wrapper > div:last-child ul li {
-  display: inline;
-  color: #333;
+ display: inline;
+   
+    font-size: 11px;
+    color: #666666;
+    text-decoration: none;
+    margin-left: -9px;
+    font-family: Verdana;
 }
 
 .footercomp-wrapper > div:last-child ul li::after {
