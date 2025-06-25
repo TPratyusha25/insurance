@@ -16,6 +16,42 @@ body {
   width: 100%;
 }
 
+
+
+/* Search container (13th div) */
+.headereds.block > div:nth-child(13) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.headereds.block > div:nth-child(13) > div {
+  position: relative;
+  width: 300px;
+}
+
+/* Search input field */
+.headereds.block > div:nth-child(13) input[type="text"] {
+  width: 100%;
+  padding: 10px 40px 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  font-size: 14px;
+}
+
+/* Search icon inside input */
+.headereds.block > div:nth-child(13) img {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+
 /* --- TOP HEADER STYLES --- */
 
 /* Logo */
