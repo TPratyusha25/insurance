@@ -24,43 +24,6 @@ body {
   height: 70px;
 }
 
-
-/* Search container (13th div) */
-.headereds.block > div:nth-child(13) {
-  display: flex;
-  justify-content: center;
-  margin: 20px 0;
-}
-
-/* Inner wrapper */
-.headereds.block > div:nth-child(13) > div {
-  position: relative;
-  width: 300px;
-}
-
-/* Search input */
-.headereds.block > div:nth-child(13) input[type="text"] {
-  width: 100%;
-  padding: 10px 40px 10px 15px;
-  border: 1px solid #ccc;
-  border-radius: 25px;
-  font-size: 16px;
-}
-
-/* Search icon */
-.headereds.block > div:nth-child(13) img {
-  position: absolute;
-  right: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 20px;
-  height: 20px;
-  pointer-events: none;
-}
-
-
-
-
 /* Sign In, Pay Bill, Roadside Assistance — shown text only */
 .headereds > div:nth-child(3),
 .headereds > div:nth-child(5),
@@ -85,37 +48,30 @@ body {
 }
 
 .headereds > div:nth-child(3) p {
-
-
-margin-left: 623px;
+  margin-left: 623px;
 }
 
 .headereds > div:nth-child(4) p {
-
-
-margin-left:10px;
+  margin-left: 10px;
 }
 
 .headereds > div:nth-child(5) p {
-
-
-margin-left:10px;
+  margin-left: 10px;
 }
-
 
 /* JOIN AAA Button */
 .headereds > div:nth-child(9) p {
-     background-color: #d32f2f;
-    color: #fff;
-    font-weight: bold;
-    padding: 6px -1px;
-    border-radius: 20px;
-    font-size: 14px;
-    cursor: pointer;
-    /* display: inline-block; */
-    margin-left: 951px;
-    margin-top: -35px;
-    width: 10%;
+  background-color: #d32f2f;
+  color: #fff;
+  font-weight: bold;
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-left: 951px;
+  margin-top: -35px;
+  width: 10%;
+  text-align: center;
 }
 
 /* Hide Join AAA Link */
@@ -123,7 +79,7 @@ margin-left:10px;
   display: none;
 }
 
-/* Search Box */
+/* Search Label */
 .headereds > div:nth-child(12) {
   display: flex;
   align-items: center;
@@ -134,38 +90,38 @@ margin-left:10px;
   display: block;
 }
 
-
-.headereds > div:nth-child(14) p {
- color: white;
-}
-.headereds > div:nth-child(15) p {
- color: white;
-}
-.headereds > div:nth-child(16) p {
- color: white;
-}
-.headereds > div:nth-child(17) p {
- color: white;
-}
-.headereds > div:nth-child(18) p {
- color: white;
-}
-.headereds > div:nth-child(19) p {
- color: white;
-}
-.headereds > div:nth-child(20) p {
- color: white;
+/* --- SEARCH INPUT + ICON --- */
+.headereds > div:nth-child(13) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
 }
 
+.headereds > div:nth-child(13) > div {
+  position: relative;
+  width: 300px;
+}
 
+.headereds > div:nth-child(13) input[type="text"] {
+  width: 100%;
+  padding: 10px 40px 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  font-size: 14px;
+}
 
-.headereds > div:nth-child(13) picture img {
-  width: 24px;
-  height: 24px;
+.headereds > div:nth-child(13) img {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  pointer-events: none;
 }
 
 /* --- NAVIGATION MENU --- */
-
 .headereds > div:nth-child(n+14) {
   display: inline-block;
   background-color: #2c64aa;
@@ -204,6 +160,18 @@ margin-left:10px;
   text-decoration: none;
   color: inherit;
 }
+
+/* Nav text color */
+.headereds > div:nth-child(14) p,
+.headereds > div:nth-child(15) p,
+.headereds > div:nth-child(16) p,
+.headereds > div:nth-child(17) p,
+.headereds > div:nth-child(18) p,
+.headereds > div:nth-child(19) p,
+.headereds > div:nth-child(20) p {
+  color: white;
+}
+
 
 
 
