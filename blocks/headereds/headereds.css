@@ -53,7 +53,7 @@
   margin-bottom: 28px;
 }
 
-/* Search Icon */
+/* Search Icon (13th div) */
 .headereds-wrapper > .headereds.block > div:nth-of-type(13) {
   display: flex;
   align-items: center;
@@ -72,13 +72,20 @@
   margin-right: 6px;
 }
 
-/* Horizontal container for 14th to 20th divs */
+/* Search Placeholder (14th div) */
+.headereds-wrapper > .headereds.block > div:nth-of-type(14) {
+  margin-left: -196px;
+  margin-top: 45px;
+  font: 12px / 24px Arial, Verdana, Geneva, sans-serif;
+  color: #999;
+  text-indent: 10px;
+}
+
+/* Horizontal layout for 14th to 20th divs */
 .headereds-wrapper > .headereds.block {
   display: flex;
   flex-wrap: wrap;
 }
-
-/* Force 14th to 20th divs into a single row */
 .headereds-wrapper > .headereds.block > div:nth-of-type(n+14):nth-of-type(-n+20) {
   display: flex;
   align-items: center;
@@ -89,7 +96,7 @@
   margin: 0;
 }
 
-/* Nav Items (14th and onward) */
+/* Nav Items (14th to 20th) */
 .headereds-wrapper > .headereds.block > div:nth-of-type(n+14):nth-of-type(-n+20) p:first-child {
   color: white;
   font-weight: bold;
@@ -116,6 +123,7 @@
 .headereds-wrapper > .headereds.block > div:nth-of-type(11) + div {
   display: none !important;
 }
+
 
 
 
