@@ -24,6 +24,43 @@ body {
   height: 70px;
 }
 
+
+/* Search container (13th div) */
+.headereds.block > div:nth-child(13) {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+/* Inner wrapper */
+.headereds.block > div:nth-child(13) > div {
+  position: relative;
+  width: 300px;
+}
+
+/* Search input */
+.headereds.block > div:nth-child(13) input[type="text"] {
+  width: 100%;
+  padding: 10px 40px 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  font-size: 16px;
+}
+
+/* Search icon */
+.headereds.block > div:nth-child(13) img {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  pointer-events: none;
+}
+
+
+
+
 /* Sign In, Pay Bill, Roadside Assistance — shown text only */
 .headereds > div:nth-child(3),
 .headereds > div:nth-child(5),
