@@ -36,8 +36,74 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-// NAV items (already working)
-document.querySelectorAll('[data-aue-prop^="nav"]').forEach((el) => {
+// NAV items (already working) - Membership
+document.querySelectorAll('.headereds > div:nth-child(16) > div > p').forEach((el) => {
+    const link = el.nextElementSibling?.querySelector('a');
+    if (link) {
+      el.style.cursor = 'pointer';
+      el.addEventListener('click', () => {
+        window.open(link.href, '_blank');
+      });
+    }
+  });
+
+//insurance
+document.querySelectorAll('.headereds > div:nth-child(17) > div > p').forEach((el) => {
+    const link = el.nextElementSibling?.querySelector('a');
+    if (link) {
+      el.style.cursor = 'pointer';
+      el.addEventListener('click', () => {
+        window.open(link.href, '_blank');
+      });
+    }
+  });
+
+//travel
+document.querySelectorAll('.headereds > div:nth-child(18) > div > p').forEach((el) => {
+    const link = el.nextElementSibling?.querySelector('a');
+    if (link) {
+      el.style.cursor = 'pointer';
+      el.addEventListener('click', () => {
+        window.open(link.href, '_blank');
+      });
+    }
+  });
+
+//discounts
+document.querySelectorAll('.headereds > div:nth-child(19) > div > p').forEach((el) => {
+    const link = el.nextElementSibling?.querySelector('a');
+    if (link) {
+      el.style.cursor = 'pointer';
+      el.addEventListener('click', () => {
+        window.open(link.href, '_blank');
+      });
+    }
+  });
+
+//automotive
+document.querySelectorAll('.headereds > div:nth-child(20) > div > p').forEach((el) => {
+    const link = el.nextElementSibling?.querySelector('a');
+    if (link) {
+      el.style.cursor = 'pointer';
+      el.addEventListener('click', () => {
+        window.open(link.href, '_blank');
+      });
+    }
+  });
+
+//banking
+document.querySelectorAll('.headereds > div:nth-child(21) > div > p').forEach((el) => {
+    const link = el.nextElementSibling?.querySelector('a');
+    if (link) {
+      el.style.cursor = 'pointer';
+      el.addEventListener('click', () => {
+        window.open(link.href, '_blank');
+      });
+    }
+  });
+
+//community
+document.querySelectorAll('.headereds > div:nth-child(22) > div > p').forEach((el) => {
     const link = el.nextElementSibling?.querySelector('a');
     if (link) {
       el.style.cursor = 'pointer';
