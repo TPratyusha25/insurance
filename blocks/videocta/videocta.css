@@ -7,13 +7,12 @@
   align-items: flex-start;
 }
 
-/* Text on the left */
+
 .videocta-text {
   flex: 1 1 50%;
   order: 1;
 }
 
-/* Image on the right */
 .videocta-wrapper picture img {
   flex: 1 1 45%;
   order: 2;
@@ -33,6 +32,7 @@
     padding: 20px 0px;
     margin: 0px;
     letter-spacing: -0.03em;
+    margin-left: 172px;
 }
 
 
@@ -40,7 +40,20 @@
 
 
 .videocta-wrapper h2 {
- font-size: 1.8rem;
+    font-size: 1.8rem;
+    color: #0065a4;
+    margin-bottom: 1rem;
+    flex: 1 1 50%;
+    order: 1;
+    font-size: 28px !important;
+    line-height: 32px !important;
+    font-family: "Mission Gothic Bold Italic", Arial Narrow Bold !important;
+    font-weight: bold !important;
+    font-style: inherit !important;
+    text-align: center;
+    width: 39%;
+    margin-top: -3px;
+    margin-left: 185px; font-size: 1.8rem;
    color: #0065a4;
     margin-bottom: 1rem;
     flex: 1 1 50%;
@@ -58,7 +71,7 @@
 
 .videocta-wrapper p {
 font-size: 1rem;
-   color: #666666;
+    color: #666666;
     line-height: 1.6;
     flex: 1 1 50%;
     order: 1;
@@ -67,9 +80,10 @@ font-size: 1rem;
     font-family: Verdana, Arial Narrow Bold;
     width: 50%;
     margin-left: 131px;
+    margin-top: 19px;
 }
 
-/* Thumbnail image */
+
 .videocta-wrapper picture {
   display: block;
   width: 100%;
@@ -84,12 +98,12 @@ font-size: 1rem;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     flex: 1 1 45%;
     order: 2;
-    margin-left: 750px;
+   margin-left: 681px;
     position: absolute;
-    margin-top: -250px;
+    margin-top: -265px;
 }
 
-/* Hide raw YouTube link */
+
 .videocta-wrapper a[href*="youtube.com"] {
   display: none;
 }
