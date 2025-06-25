@@ -131,7 +131,7 @@ margin-left:10px;
 }
 
 .headereds > div:nth-child(12) p {
-  display: none;
+  display: block;
 }
 
 
