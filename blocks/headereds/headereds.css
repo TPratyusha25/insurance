@@ -297,120 +297,145 @@
 
 @media (min-width: 768px) and (max-width: 1023px) {
     .headereds-wrapper {
-    font-family: Mission Gothic, Arial, sans-serif;
-    background-image: url(https://michigan.aaa.com/assets/images/Global/background.png);
-    width: 110%;
-  }
+        font-family: Mission Gothic, Arial, sans-serif;
+        background-image: url(https://michigan.aaa.com/assets/images/Global/background.png);
+        width: 110%;
+    }
 
-  .headereds-wrapper > div:nth-of-type(-n+15) {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-left: 68px;
-    position: initial;
-    margin-top: -57px;
-  }
+    .headereds-wrapper > div:nth-of-type(-n+15) {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-left: 68px;
+        position: initial;
+        margin-top: -57px;
+    }
 
-  .headereds > div:nth-child(1) > div > picture > img {
-    width: 140px;
-    height: auto;
-    margin-left: 97px;
-    margin-top: 15px;
-  }
+    [data-aue-prop="logo"] {
+        width: 140px;
+        height: auto;
+        margin-left: 97px;
+        margin-top: 15px;
+    }
 
-  .headereds > div:nth-child(3) > div > p,
-  .headereds > div:nth-child(5) > div > p,
-  .headereds > div:nth-child(7) > div > p {
-    font-size: 13px;
-    color: #666666;
-    padding: 0 10px;
-    border-right: 1.5px solid #ccc;
-    cursor: pointer;
-    display: inline-block;
-    margin-top: -9px;
-    margin-bottom: 26px;
-    font-family: "Mission Gothic", Arial Narrow, Verdana;
-  }
+    [data-aue-prop^="topLink"] {
+        font-size: 14px;
+        color: #333;
+        padding: 0 10px;
+        border-right: 1.5px solid #ccc;
+        cursor: pointer;
+        display: inline-block;
+        margin-left: 106px;
+        margin-top: -9px;
+        margin-bottom: 26px;
+    }
 
-  .headereds > div:nth-child(3) > div > p {
-    margin-left: 24px;
-  }
+    [data-aue-prop="topLink3Text"] {
+        border-right: none;
+        margin-left: 26px;
+        font-size: 13px;
+        color: #666666;
+    }
 
-  .headereds > div:nth-child(5) > div > p {
-    margin-left: 27px;
-  }
+    [data-aue-prop="joinText"] {
+        background-color: #d40000;
+        color: white;
+        padding: 0px 16px;
+        border-radius: 20px;
+        font-weight: bold;
+        font-size: 14px;
+        cursor: pointer;
+        display: inline-block;
+        margin-left: 21px;
+        position: relative;
+        margin-top: -28px;
+        margin-bottom: 28px;
+        width: 59%;
+    }
 
-  .headereds > div:nth-child(7) > div > p {
-    margin-left: 26px;
-    border-right: none;
-  }
+    [data-aue-prop="searchIcon"] {
+        display: flex;
+        align-items: center;
+        border: 2px solid #d40000;
+        border-radius: 20px;
+        padding: 0 8px 6px 178px;
+        height: 14px;
+        position: absolute;
+        margin-left: -201px;
+        margin-top: 8px;
+    }
 
-  .headereds > div:nth-child(9) > div > p {
-    background-color: #d40000;
-    color: white;
-    padding: 0px 16px;
-    border-radius: 20px;
-    font-weight: bold;
-    font-size: 12px;
-    cursor: pointer;
-    display: inline-block;
-    margin-left: 21px;
-    position: relative;
-    margin-top: -28px;
-    margin-bottom: 28px;
-    width: 59%;
-    font-family: Arial, Helvetica, sans-serif;
-  }
+    [data-aue-prop="searchIcon"]::before {
+        content: "Search";
+        color: #999;
+        font-size: 14px;
+        margin-right: 6px;
+    }
 
-  .headereds > div:nth-child(12) > div > p {
-    margin-left: -325px;
-    margin-top: 50px;
-    font: 12px / 24px Arial, Verdana, Geneva, sans-serif;
-    color: #999;
-  }
+    [data-aue-prop="searchPlaceholder"] {
+        margin-left: -196px;
+        margin-top: 45px;
+        font: 12px / 24px Arial, Verdana, Geneva, sans-serif;
+        color: #999;
+        text-indent: 10px;
+    }
 
-  .headereds > div:nth-child(13) > div > picture > img {
-    display: flex;
-    align-items: center;
-    border: 2px solid #d40000;
-    border-radius: 20px;
-    padding: 0 8px 6px 178px;
-    height: 14px;
-    position: absolute;
-    margin-left: -201px;
-    margin-top: 8px;
-  }
+    [data-aue-prop="topLink1Text"] {
+        margin-left: 24px;
+        position: relative;
+        font-size: 13px;
+        color: #666666;
+    }
 
-  .headereds-wrapper > div:nth-of-type(n+15) {
-    display: flex;
-    justify-content: center;
-    background-color: #2562ad;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-  }
+    [data-aue-prop="topLink2Text"] {
+        margin-left: 27px;
+        font-size: 13px;
+        color: #666666;
+    }
 
-  .headereds > div:nth-child(n+16):nth-child(-n+22) > div > p:first-child {
-    color: white;
-    text-transform: uppercase;
-    font-size: 14px;
-    padding: 12px 20px;
-    cursor: pointer;
-    white-space: nowrap;
-    background-color: #2562ad;
-    border-top: 1px solid #1e4f8f;
-    position: relative;
-    margin-top: -6px;
-    border-left: 1px solid;
-    background-image: url(https://michigan.aaa.com/assets/Images/Global/MainNav.png);
-  }
+    .headereds-wrapper a[href*="michigan.aaa.com"] {
+        display: none !important;
+    }
 
-  .headereds > div:nth-child(22) > div > p:first-child {
-    border-right: 1px solid;
-  }
+    [data-aue-prop^="topLink"]:hover {
+        color: #005999;
+    }
 
-  .headereds > div:nth-child(n+16):nth-child(-n+22) > div > p:nth-child(2) {
-    display: none !important;
-  }
+    [data-aue-prop="nav1_text"] {
+        color: white;
+    }
+
+    .headereds-wrapper > div:nth-of-type(n+15) {
+        display: flex;
+        justify-content: center;
+        background-color: #2562ad;
+        flex-wrap: wrap;
+    }
+
+    .nav-bar {
+        display: flex;
+        flex-direction: column;
+        background-color: #2562ad;
+        padding: 0;
+        margin: 0;
+    }
+
+    [data-aue-prop^="nav"] {
+        color: white;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 14px;
+        padding: 10px 12px;
+        cursor: pointer;
+        white-space: nowrap;
+        background-color: #2562ad;
+        border-top: 1px solid #1e4f8f;
+        position: relative;
+        margin-top: -6px;
+        background-image: url(https://michigan.aaa.com/assets/Images/Global/MainNav.png);
+        margin-left: -26px;
+        margin-right: 0px;
+    }
 
     [data-aue-prop^="nav"] + p > a,
     [data-aue-prop^="topLink"] + div,
@@ -418,3 +443,4 @@
         display: none !important;
     }
 }
+
