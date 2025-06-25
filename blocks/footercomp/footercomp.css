@@ -2,7 +2,7 @@
 width: 100%;
 }
 
-/* === FOOTER CONTAINER === */
+
 .footercomp-wrapper {
   background-color: #c4c4c4;
   padding: 20px 0;
@@ -12,48 +12,68 @@ width: 100%;
   text-align: center;
 }
 
-/* === RESET LIST STYLE === */
+
 .footercomp-wrapper ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-/* === INLINE LINK ITEMS === */
+
 .footercomp-wrapper li {
-  display: inline-block;
-  margin: 0 8px;
-  color: #333;
-  position: relative;
+display: inline-block;
+    margin: 0 8px;
+   
+    position: relative;
+    text-decoration: none;
+   
+    margin-top: 10px;
+    margin-bottom: 0;
+    
+    text-align: center;
+    color: #666;
+    font-size: 11px;
+    font-family: Verdana;
 }
 
-/* === DIVIDER AFTER EACH ITEM EXCEPT LAST === */
+
 .footercomp-wrapper li:not(:last-child)::after {
   content: "|";
   margin-left: 10px;
   color: #666;
 }
 
-/* === LINK STYLING === */
+
 .footercomp-wrapper a {
-  text-decoration: none;
-  color: #333;
+ text-decoration: none;
+ 
+    margin-top: 10px;
+    margin-bottom: 0;
+    
+  
+    text-align: center;
+    color: #666;
+    font-size: 11px;
+    font-family: Verdana;
 }
 
 .footercomp-wrapper a:hover {
   text-decoration: underline;
 }
 
-/* === PARAGRAPH (Serving AAA...) === */
+
 .footercomp-wrapper p {
-  margin-top: 10px;
-  margin-bottom: 0;
-  color: #333;
-  font-size: 14px;
-  text-align: center;
+    margin-top: 10px;
+    margin-bottom: 0;
+   
+   
+    text-align: center;
+    color: #666;
+    font-size: 11px;
+    font-family: Verdana;
 }
 
-/* === REMOVE EMPTY PARAGRAPH SPACING FROM RTE === */
+
 .footercomp-wrapper p:empty,
 .footercomp-wrapper p:has(br),
 .footercomp-wrapper p:has(&nbsp;) {
