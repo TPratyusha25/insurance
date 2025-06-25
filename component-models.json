@@ -412,14 +412,12 @@
             "label": "Thumbnail Image",
             "multi": false
           },
-          {
-            "component": "text",
-            "valueType": "string",
-            "name": "videoId",
-            "label": "YouTube Video ID",
-               "visible" : false,
-            "value": ""
-          }
+         {
+          "component": "text",
+          "name": "videoUrl",
+          "label": "YouTube Video URL",
+          "valueType": "string"
+        }
         ]
       }
 
