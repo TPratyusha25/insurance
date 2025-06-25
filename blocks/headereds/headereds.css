@@ -3,8 +3,8 @@
   background-image: url(https://michigan.aaa.com/assets/images/Global/background.png);
 }
 
-/* Top Bar Styling (first 15 divs) */
-.headereds-wrapper > .headereds.block > div:nth-of-type(-n+15) {
+/* Top Bar Styling (first 13 divs) */
+.headereds-wrapper > .headereds.block > div:nth-of-type(-n+13) {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -37,7 +37,7 @@
   margin-bottom: 26px;
 }
 
-/* Last top link (Join AAA) */
+/* Join Button */
 .headereds-wrapper > .headereds.block > div:nth-of-type(11) {
   background-color: #d40000;
   color: white;
@@ -72,26 +72,9 @@
   margin-right: 6px;
 }
 
-/* Search Placeholder */
-.headereds-wrapper > .headereds.block > div:nth-of-type(14) {
-  margin-left: -196px;
-  margin-top: 45px;
-  font: 12px / 24px Arial, Verdana, Geneva, sans-serif;
-  color: #999;
-  text-indent: 10px;
-}
-
-/* Hide raw anchor links */
-.headereds-wrapper a[href*="michigan.aaa.com"] {
-  display: none !important;
-}
-
-/* Hover effect for top links */
-.headereds-wrapper > .headereds.block > div:nth-of-type(-n+15):hover {
-  color: #005999;
-}
-
-/* Navigation Bar (from 16th div onward) */
+/* Treat 14th and 15th divs as nav items */
+.headereds-wrapper > .headereds.block > div:nth-of-type(14),
+.headereds-wrapper > .headereds.block > div:nth-of-type(15),
 .headereds-wrapper > .headereds.block > div:nth-of-type(n+16) {
   display: flex;
   justify-content: center;
@@ -99,8 +82,8 @@
   flex-wrap: wrap;
 }
 
-/* Nav Items (Membership to Community) */
-.headereds-wrapper > .headereds.block > div:nth-of-type(n+16) p:first-child {
+/* Nav Items (14th and onward) */
+.headereds-wrapper > .headereds.block > div:nth-of-type(n+14) p:first-child {
   color: white;
   font-weight: bold;
   text-transform: uppercase;
@@ -115,12 +98,18 @@
   background-image: url(https://michigan.aaa.com/assets/Images/Global/MainNav.png);
 }
 
+/* Hide raw anchor links */
+.headereds-wrapper a[href*="michigan.aaa.com"] {
+  display: none !important;
+}
+
 /* Hide link elements, not the button text */
-.headereds-wrapper > .headereds.block > div:nth-of-type(n+16) p + p a,
-.headereds-wrapper > .headereds.block > div:nth-of-type(-n+15) p + div,
+.headereds-wrapper > .headereds.block > div:nth-of-type(n+14) p + p a,
+.headereds-wrapper > .headereds.block > div:nth-of-type(-n+13) p + div,
 .headereds-wrapper > .headereds.block > div:nth-of-type(11) + div {
   display: none !important;
 }
+
 
 
 
