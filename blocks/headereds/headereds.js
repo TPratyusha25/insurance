@@ -1,21 +1,35 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // Locate the search input field (13th div is the search container)
   const searchInput = document.querySelector(
     '.headereds.block > div:nth-child(13) input[type="text"]'
   );
+  const searchIcon = document.querySelector(
+    '.headereds.block > div:nth-child(13) img'
+  );
+
+  function performSearch() {
+    const query = encodeURIComponent(searchInput.value.trim());
+    if (query) {
+      window.location.href = `https://www.acg.aaa.com/search.html?q=${query}`;
+    }
+  }
 
   if (searchInput) {
     searchInput.addEventListener("keypress", function (e) {
       if (e.key === "Enter") {
         e.preventDefault();
-        const query = encodeURIComponent(searchInput.value.trim());
-        if (query) {
-          window.location.href = `https://www.acg.aaa.com/search.html?q=${query}`;
-        }
+        performSearch();
       }
     });
   }
+
+  if (searchIcon) {
+    searchIcon.style.cursor = "pointer";
+    searchIcon.addEventListener("click", function () {
+      performSearch();
+    });
+  }
 });
+
 
 
 
