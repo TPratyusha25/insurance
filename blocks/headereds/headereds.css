@@ -14,7 +14,90 @@ body {
 /* Wrapper */
 .headereds-wrapper {
   width: 100%;
+ position: relative;
+ height: 84px;
 }
+
+.headereds {
+    height: 140px;
+    overflow: visible;
+}
+.headereds > div > div {
+    display: inline;
+    float: left;
+}
+
+.headereds > div:nth-child(3) {
+    position: relative;
+    left: 47%;
+    padding-top: 6px;
+    /* padding-right: 12px; */
+    font-family: "Mission Gothic", Arial Narrow, Verdana;
+    /* font-weight: normal; */
+    /* font-style: normal; */
+    font-size: 13px;
+    width: 25%;
+    border-right: 0.5px solid black;
+}
+.headereds > div:nth-child(3) > div > p {
+    cursor: pointer;
+    /* font-size: 13px; */
+    font-size: 13px !important;
+}
+
+.headereds > div:nth-child(5) {
+    position: relative;
+    left: 47%;
+    padding-top: 6px;
+    /* padding-right: 12px; */
+    font-family: "Mission Gothic", Arial Narrow, Verdana;
+    /* font-weight: normal; */
+    /* font-style: normal; */
+    font-size: 13px;
+    width: 25%;
+    border-right: 0.5px solid black;
+}
+.headereds > div:nth-child(5) > div > p {
+    cursor: pointer;
+    /* font-size: 13px; */
+    font-size: 13px !important;
+}
+
+.headereds > div:nth-child(7) {
+    position: relative;
+    left: 47%;
+    padding-top: 6px;
+    /* padding-right: 12px; */
+    font-family: "Mission Gothic", Arial Narrow, Verdana;
+    /* font-weight: normal; */
+    /* font-style: normal; */
+    font-size: 13px;
+    width: 25%;
+    border-right: 0.5px solid black;
+}
+.headereds > div:nth-child(7) > div > p {
+    cursor: pointer;
+    /* font-size: 13px; */
+    font-size: 13px !important;
+}
+
+.headereds >div:nth-child(13) > div > img {
+        top: 4px;
+    left: 106%;
+    display: flex;
+    align-items: center;
+    border: 2px solid #d40000;
+    border-radius: 20px;
+    padding: 0 8px 6px 178px;
+    height: 27px;
+    position: absolute;
+    margin-left: -201px;
+    margin-top: 25px;
+}
+
+
+
+
 
 /* --- TOP HEADER STYLES --- */
 
@@ -65,9 +148,15 @@ body {
 
 /* Search Box */
 .headereds > div:nth-child(12) {
-  display: flex;
-  align-items: center;
-  gap: 4px;
+      width: 10rem;
+    position: absolute;
+    /* bottom: 58px; */
+    /* height: 30px; */
+    /* left: 82%; */
+    background-color: white;
+    bottom: 32%;
+    left: 81%;
+    opacity: 1;
 }
 
 .headereds > div:nth-child(16) p {
