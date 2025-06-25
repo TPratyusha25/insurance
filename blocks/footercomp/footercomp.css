@@ -1,5 +1,5 @@
 /* Footer Container */
-.footer-eds-wrapper {
+.footercomp-wrapper {
   background-color: #c4c4c4; /* Matches the gray shown in the image */
   padding: 20px 0;
   font-family: Arial, sans-serif;
@@ -9,7 +9,7 @@
 }
 
 /* Upper Section - First div with nav links */
-.footer-eds-wrapper .footer-eds > div:first-child ul {
+.footercomp-wrapper  > div:first-child ul {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -19,40 +19,40 @@
   gap: 10px;
 }
 
-.footer-eds-wrapper .footer-eds > div:first-child ul li {
+.footercomp-wrapper > div:first-child ul li {
   display: inline;
   color: #333;
 }
 
-.footer-eds-wrapper .footer-eds > div:first-child ul li::after {
+.footercomp-wrapper > div:first-child ul li::after {
   content: "|";
   margin: 0 8px;
   color: #666;
 }
 
-.footer-eds-wrapper .footer-eds > div:first-child ul li:last-child::after {
+.footercomp-wrapper > div:first-child ul li:last-child::after {
   content: "";
 }
 
 /* Link styling */
-.footer-eds-wrapper .footer-eds a {
+.footercomp-wrapper a {
   text-decoration: none;
   color: #333;
 }
 
-.footer-eds-wrapper .footer-eds a:hover {
+.footercomp-wrapper a:hover {
   text-decoration: underline;
 }
 
 /* Subtext line */
-.footer-eds-wrapper .footer-eds > div:first-child p {
+.footercomp-wrapper > div:first-child p {
   margin-top: 10px;
   font-size: 14px;
   color: #333;
 }
 
 /* Bottom Section - Second div with contact and copyright */
-.footer-eds-wrapper .footer-eds > div:last-child ul {
+.footercomp-wrapper > div:last-child ul {
   list-style: none;
   padding: 0;
   margin: 10px auto 0 auto;
@@ -62,17 +62,17 @@
   gap: 10px;
 }
 
-.footer-eds-wrapper .footer-eds > div:last-child ul li {
+.footercomp-wrapper > div:last-child ul li {
   display: inline;
   color: #333;
 }
 
-.footer-eds-wrapper .footer-eds > div:last-child ul li::after {
+.footercomp-wrapper > div:last-child ul li::after {
   content: "|";
   margin: 0 8px;
   color: #666;
 }
 
-.footer-eds-wrapper .footer-eds > div:last-child ul li:last-child::after {
+.footercomp-wrapper > div:last-child ul li:last-child::after {
   content: "";
 }
