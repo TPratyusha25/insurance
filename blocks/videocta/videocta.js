@@ -1,3 +1,4 @@
+
 document.addEventListener("DOMContentLoaded", function () {
   const wrapper = document.querySelector(".videocta-wrapper");
   if (!wrapper) return;
@@ -17,8 +18,8 @@ document.addEventListener("DOMContentLoaded", function () {
   img.addEventListener("click", () => {
     const iframe = document.createElement("iframe");
     iframe.src = embedUrl;
-    iframe.width = "100%";
-    iframe.height = "100%";
+    iframe.width = img.width;
+    iframe.height = img.height;
     iframe.setAttribute("frameborder", "0");
     iframe.setAttribute("allowfullscreen", "");
     iframe.setAttribute("allow", "autoplay; encrypted-media");
@@ -31,3 +32,4 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
