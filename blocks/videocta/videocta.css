@@ -1,0 +1,55 @@
+.videocta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .videocta .text-content {
+    flex: 1 1 400px;
+    max-width: 600px;
+  }
+  
+  .videocta h2 {
+    font-size: 32px;
+    color: #2459a1;
+    margin-bottom: 10px;
+    font-style: italic;
+  }
+  
+  .videocta h3 {
+    font-size: 24px;
+    color: #0071ce;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .videocta p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .videocta .video-wrapper {
+    flex: 1 1 400px;
+    max-width: 640px;
+    position: relative;
+    cursor: pointer;
+    border: 4px solid #999;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    aspect-ratio: 16 / 9;
+    background-color: #000;
+  }
+  
+  .videocta .video-wrapper img,
+  .videocta .video-wrapper iframe {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+  }
+  
