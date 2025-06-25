@@ -159,7 +159,7 @@ body {
 }
 
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1023px) {
 .headereds-wrapper {
     font-family: Mission Gothic, Arial, sans-serif;
       background-image: url(https://michigan.aaa.com/assets/images/Global/background.png);
