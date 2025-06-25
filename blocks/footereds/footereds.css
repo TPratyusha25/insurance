@@ -1,70 +1,57 @@
-/* FOOTER CONTAINER */
+/* FOOTER WRAPPER */
 .footer-eds-wrapper {
-  background-color: #c4c4c4; /* Light gray background */
+  background-color: #c4c4c4; /* light gray as shown */
   padding: 20px 0;
   font-family: Arial, sans-serif;
-  color: #333;
   font-size: 14px;
+  color: #333;
   text-align: center;
 }
 
-/* TOP LINKS (ONLINE HELP, CONTACT US...) */
-.footer-eds-wrapper .footereds > div:first-child ul {
+/* GENERAL RESET */
+.footer-eds-wrapper ul {
   list-style: none;
   margin: 0;
   padding: 0;
-  display: inline-block;
 }
 
-.footer-eds-wrapper .footereds > div:first-child ul li {
+.footer-eds-wrapper ul li {
   display: inline-block;
   margin: 0 8px;
   position: relative;
   color: #333;
 }
 
-/* Add divider bar after each list item except last */
-.footer-eds-wrapper .footereds > div:first-child ul li:not(:last-child)::after {
+/* DIVIDER BAR AFTER ALL EXCEPT LAST */
+.footer-eds-wrapper ul li:not(:last-child)::after {
   content: "|";
   margin-left: 10px;
   color: #666;
 }
 
-/* Footer links */
-.footer-eds-wrapper .footereds a {
+/* FOOTER LINKS */
+.footer-eds-wrapper a {
   text-decoration: none;
   color: #333;
 }
 
-.footer-eds-wrapper .footereds a:hover {
+.footer-eds-wrapper a:hover {
   text-decoration: underline;
 }
 
-/* Subtext (Serving AAA...) */
-.footer-eds-wrapper .footereds > div:first-child p {
-  margin-top: 10px;
+/* NESTED DIVs Compatibility (for Author instance) */
+.footer-eds-wrapper .footer-eds div div {
+  text-align: center;
+}
+
+/* SUBTEXT (Serving AAA Members...) */
+.footer-eds-wrapper .footer-eds p {
+  margin: 10px 0 0;
   color: #333;
   font-size: 14px;
 }
 
-/* BOTTOM ROW (Other AAA Clubs, Phone, Copyright) */
-.footer-eds-wrapper .footereds > div:last-child ul {
-  list-style: none;
-  margin: 10px 0 0;
-  padding: 0;
-  display: inline-block;
-}
-
-.footer-eds-wrapper .footereds > div:last-child ul li {
-  display: inline-block;
-  margin: 0 8px;
-  position: relative;
-  color: #333;
-}
-
-/* Divider bars between bottom items */
-.footer-eds-wrapper .footereds > div:last-child ul li:not(:last-child)::after {
-  content: "|";
-  margin-left: 10px;
-  color: #666;
+/* Remove extra vertical gaps sometimes added in author richtext */
+.footer-eds-wrapper .footer-eds p:empty {
+  display: none;
 }
