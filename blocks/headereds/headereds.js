@@ -1,3 +1,27 @@
+document.addEventListener("DOMContentLoaded", function () {
+  // Locate the search input field (13th div is the search container)
+  const searchInput = document.querySelector(
+    '.headereds.block > div:nth-child(13) input[type="text"]'
+  );
+
+  if (searchInput) {
+    searchInput.addEventListener("keypress", function (e) {
+      if (e.key === "Enter") {
+        e.preventDefault();
+        const query = encodeURIComponent(searchInput.value.trim());
+        if (query) {
+          window.location.href = `https://www.acg.aaa.com/search.html?q=${query}`;
+        }
+      }
+    });
+  }
+});
+
+
+
+
+
+
 // NAV items (already working)
 document.querySelectorAll('[data-aue-prop^="nav"]').forEach((el) => {
     const link = el.nextElementSibling?.querySelector('a');
@@ -36,3 +60,6 @@ document.querySelectorAll('[data-aue-prop^="nav"]').forEach((el) => {
       window.open(joinLink.href, '_blank');
     });
   }
+
+
+
