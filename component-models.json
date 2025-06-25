@@ -331,6 +331,31 @@
             "valueType": "string"
           }
         ]
+      },
+
+
+   {
+        "id": "videoblock",
+        "fields": [
+          {
+            "component": "text",
+            "valueType": "string",
+            "name": "title",
+            "label": "Title"
+          },
+          {
+            "component": "richtext",
+            "valueType": "string",
+            "name": "description",
+            "label": "Description"
+          },
+          {
+            "component": "text",
+            "valueType": "string",
+            "name": "videoId",
+            "label": "YouTube Video ID"
+          }
+        ]
       }
 
 
