@@ -159,3 +159,18 @@ margin-top: -240px;
   }
 }
 
+@media (min-width: 767px) and @media (max-width: 1023px) {
+
+.videocta-wrapper picture img {
+    /* height: auto; */
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    flex: 1 1 45%;
+    order: 2;
+    margin-left: 724px;
+    position: absolute;
+    margin-top: -349px;
+    width: 78%;
+}
+}
