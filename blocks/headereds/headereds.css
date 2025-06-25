@@ -154,6 +154,11 @@
     margin-top: -6px;
     background-image: url(https://michigan.aaa.com/assets/Images/Global/MainNav.png);
 }
+
+.headereds > div:nth-child(16) > div > p:nth-child(2){
+    display: none !important;
+}
+
 .headereds > div:nth-child(17) > div > p{
     color: white;
     font-weight: bold;
