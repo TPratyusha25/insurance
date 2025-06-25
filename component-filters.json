@@ -16,13 +16,7 @@
       "cards",
       "columns",
       "fragment",
-      "headereds",
-      "hero50-50",
-      "videocomp",
-      "textblock",
-      "richtextcomp"
-      
-     
+       "headereds"
     ]
   },
   {
@@ -46,4 +40,6 @@
       "title"
     ]
   }
+
+  
 ]
