@@ -72,18 +72,25 @@
   margin-right: 6px;
 }
 
-/* Treat 14th and 15th divs as nav items */
-.headereds-wrapper > .headereds.block > div:nth-of-type(14),
-.headereds-wrapper > .headereds.block > div:nth-of-type(15),
-.headereds-wrapper > .headereds.block > div:nth-of-type(n+16) {
+/* Horizontal container for 14th to 20th divs */
+.headereds-wrapper > .headereds.block {
   display: flex;
-  justify-content: center;
-  background-color: #2562ad;
   flex-wrap: wrap;
 }
 
+/* Force 14th to 20th divs into a single row */
+.headereds-wrapper > .headereds.block > div:nth-of-type(n+14):nth-of-type(-n+20) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2562ad;
+  flex: 0 0 auto;
+  padding: 0;
+  margin: 0;
+}
+
 /* Nav Items (14th and onward) */
-.headereds-wrapper > .headereds.block > div:nth-of-type(n+14) p:first-child {
+.headereds-wrapper > .headereds.block > div:nth-of-type(n+14):nth-of-type(-n+20) p:first-child {
   color: white;
   font-weight: bold;
   text-transform: uppercase;
@@ -104,11 +111,12 @@
 }
 
 /* Hide link elements, not the button text */
-.headereds-wrapper > .headereds.block > div:nth-of-type(n+14) p + p a,
+.headereds-wrapper > .headereds.block > div:nth-of-type(n+14):nth-of-type(-n+20) p + p a,
 .headereds-wrapper > .headereds.block > div:nth-of-type(-n+13) p + div,
 .headereds-wrapper > .headereds.block > div:nth-of-type(11) + div {
   display: none !important;
 }
+
 
 
 
