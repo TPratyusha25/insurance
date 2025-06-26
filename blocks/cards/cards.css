@@ -109,57 +109,45 @@ position: absolute;
     flex-direction: column;
     width: 100%;
     margin: 0 auto;
-    gap: 12px;
+    gap: 0;
   }
 
   .cards.block > div {
-    border: none;
-    box-shadow: none;
-    border-top: 6px solid white;
-  }
-
-  .cards.block > div > div:nth-child(2) {
+    background-color: #2c68ab;
     padding: 16px;
-    background: #2c68ab;
-    height: auto;
+    border-top: 8px solid white;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     position: relative;
+    cursor: pointer;
   }
 
-  .cards.block > div > div:nth-child(2) p {
-    font-size: 16px !important;
-    line-height: 1.3 !important;
-    margin: 0;
-    padding: 0;
+  /* Hide image and hover content on mobile */
+  .cards.block > div picture,
+  .cards.block > div > div:nth-child(1),
+  .cards.block > div > div:nth-child(3),
+  .cards.block > div > div:nth-child(4) {
+    display: none;
+  }
+
+  /* Text styling (child 2 is the main heading) */
+  .cards.block > div > div:nth-child(2) {
+    color: white;
+    font-size: 18px !important;
     font-weight: bold;
+    line-height: 1.3 !important;
     font-family: "Mission Gothic", Arial Narrow Bold !important;
+    flex: 1;
+    padding: 0;
   }
 
-  .cards.block > div > div:nth-child(2)::after {
+  /* Arrow (right direction) */
+  .cards.block > div::after {
     content: '';
     border: solid transparent;
     border-width: 8px 0 8px 10px;
-    border-left-color: #122a4a;
-    display: inline-block;
-    margin-left: auto;
-    margin-right: 10px;
-  }
-
-  .cards.block > div > div:nth-child(3) {
-    position: relative;
-    opacity: 1 !important;
-    display: none;
-    padding: 20px 16px;
-    background: #2c68ab;
-    color: #fff;
-    line-height: 1.4;
-  }
-
-  /* Optional: tap to toggle on mobile */
-  .cards.block > div.active > div:nth-child(3) {
-    display: block;
+    border-left-color: #0d274b; /* dark navy */
+    margin-left: 12px;
   }
 }
-
