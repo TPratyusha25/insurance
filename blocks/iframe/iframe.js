@@ -6,7 +6,7 @@ const iframeData = {
 
 function createIframeComponent(data) {
   const container = document.createElement("div");
-  container.className = "embed-container";
+  container.className = "iframe-wrapper";
 
   const img = document.createElement("img");
   img.src = data.image;
