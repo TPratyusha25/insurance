@@ -271,7 +271,7 @@
 
 
 .header > div:nth-child(4) > div p {
-          display: inline-block;
+               display: inline-block;
         height: 24px;
         position: relative;
         padding: 0 15px 0 15px;
@@ -284,7 +284,7 @@
         text-align: center;
         border-radius: 20px;
         left: 86%;
-        bottom: -38px;
+        bottom: 45px;
         width: 11%;
 }
 
@@ -343,6 +343,31 @@
         width: 158% ! important;
 
     }
+
+
+    
+.header > div:nth-child(3) > div {
+    text-align: right;
+    float: right;
+    padding-top: 6px;
+    padding-right: 12px;
+    font-family: "Mission Gothic", Arial Narrow, Verdana;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 13px;
+    position: relative;
+    right: -42%;
+    margin-top: 20px;
+}
+
+    .header > div:nth-child(3) > div ul {
+    display: flex
+;
+    padding-left: 0 !important;
+    gap: 6px;
+    list-style-type: none;
+    margin-top: 94px;
+}
     
 }
     
