@@ -246,7 +246,11 @@
 }
 
     
-
+@media (max-width: 767px) {
+    .header-wrapper {
+        display: none;
+    }
+}
     
 
     
