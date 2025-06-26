@@ -36,6 +36,12 @@
     color: #666666;
     font-family: "Mission Gothic", Arial Narrow, Verdana;
      }
+
+    .header > div:nth-child(3) > div > ul > li:nth-child(1) > a::after {
+        content: " |";
+        padding: 0px 9px;
+    font-size: 14px;
+    }
     .header > div:nth-child(4) > div > p {
     display: inline-block;
     height: 24px;
