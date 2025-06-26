@@ -113,85 +113,16 @@ position: absolute;
 
 @media screen and (max-width: 767px) {
   .cards.block {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin: 0 auto;
-    gap: 0;
-  }
-
-  .cards.block > div {
-                background-color: #2c68ab;
-        padding: 16px;
-        border-top: 8px solid white;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        position: relative;
-        cursor: pointer;
-        width: 196%;
-        margin-bottom: 15px;
-        margin-left: -18px;
-  }
-
-  /* Hide image and hover content on mobile */
-  .cards.block > div picture,
-  .cards.block > div > div:nth-child(1),
-  .cards.block > div > div:nth-child(3),
-  .cards.block > div > div:nth-child(4) {
     display: none;
-  }
 
-  /* Text styling (child 2 is the main heading) */
-  .cards.block > div > div:nth-child(2) {
-          color: white;
-        font-size: 18px !important;
-        font-weight: bold;
-        line-height: 1.3 !important;
-        font-family: "Mission Gothic", Arial Narrow Bold !important;
-        flex: 1;
-        padding: 0;
-        margin-right: 347px;
-        align-items: start;
-        margin-top: 5px;
   }
-
-    .cards.block > div > div:nth-child(2) p {
-          color: white;
-        width: 100%;
-        padding: 6px;
-        font-size: 25px !important;
-        font-weight: bold;
-        font-family: "Mission Gothic", Arial Narrow Bold ! important;
-        margin-top: 13px;
-        line-height: 28px ! important;
-        text-align: left !important;
-        height: 35px;
-        /* width: 68px; */
-        margin-top: -5px;
-        margin-left: 156px;
 }
 
-
-    .cards.block > div > div:nth-child(2)::after {
-             content: "";
-        background: url(https://michigan.aaa.com/assets/Images/Travel/TR-toggle-Left-blue.png) no-repeat;
-        height: 38px;
-        width: 63px;
-        margin-top: -5px;
-        /* position: fixed; */
-        display: block !important;
-        position: relative;
-        bottom: 70px;
-        left: 44%;
-        margin-left: 421px;
-
-    }
 
     
 
 
-}
+
 
 
 @media screen and (max-width: 1023px) and (min-width: 768px) {
