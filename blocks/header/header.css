@@ -216,13 +216,34 @@
     right: 0;
     }
 
-    .header > div:nth-child(9) > div ul li:nth-child(1) a:hover {
-    background-position: center -200px; /* adjust based on your sprite */
-}
     .header > div:nth-child(9) > div ul li:nth-child(1):hover {
-    background-position: center -200px; /* adjust based on your sprite */
+    cursor: pointer
+    background-color: #2D72B8;
 }
-
+    .header > div:nth-child(9) > div ul li:nth-child(2):hover {
+    cursor: pointer
+    background-color: #2D72B8;
+}
+    .header > div:nth-child(9) > div ul li:nth-child(3):hover {
+    cursor: pointer
+    background-color: #2D72B8;
+}
+    .header > div:nth-child(9) > div ul li:nth-child(4):hover {
+    cursor: pointer
+    background-color: #2D72B8;
+}
+    .header > div:nth-child(9) > div ul li:nth-child(5):hover {
+    cursor: pointer
+    background-color: #2D72B8;
+}
+    .header > div:nth-child(9) > div ul li:nth-child(6):hover {
+    cursor: pointer
+    background-color: #2D72B8;
+}
+    .header > div:nth-child(9) > div ul li:nth-child(7):hover {
+    cursor: pointer
+    background-color: #2D72B8;
+}
 
     
 
