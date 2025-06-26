@@ -5,24 +5,31 @@
 }
 
 .cards.block > div {
+  position: relative;
+  overflow: hidden;
   border: 1px solid #dadada;
   background: #fff;
-  overflow: hidden;
   display: flex;
   flex-direction: column;
 }
 
-/* Image container */
-.cards.block > div > div:nth-child(1) {
-  position: relative;
-  overflow: hidden;
+.cards.block picture,
+.cards.block img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
-/* Hover overlay – on image only */
+.cards.block > div > div:nth-child(2) {
+  padding: 16px;
+  background-color: #fff;
+  z-index: 1;
+}
+
 .cards.block > div > div:nth-child(3) {
   position: absolute;
   inset: 0;
-  background-color: rgba(0, 51, 102, 0.85);
+  background-color: rgba(0, 51, 102, 0.85); /* dark blue overlay */
   color: #fff;
   padding: 30px 20px;
   display: flex;
@@ -35,23 +42,15 @@
   z-index: 2;
 }
 
-/* Trigger only on image hover */
-.cards.block > div > div:nth-child(1):hover + div + div {
+.cards.block > div:hover > div:nth-child(3) {
   opacity: 1;
   pointer-events: auto;
 }
 
-/* Optional: CTA link styling */
 .cards.block > div > div:nth-child(3) a {
   color: #fff;
   font-weight: bold;
   text-decoration: underline;
   margin-top: 12px;
-}
-
-/* Image full size */
-.cards.block img {
-  width: 100%;
-  height: auto;
-  display: block;
+  display: inline-block;
 }
