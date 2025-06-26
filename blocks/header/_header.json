@@ -31,11 +31,18 @@
                 "value": "",
                 "label": "Text",
                 "valueType": "string"
-              }
+              },
 
-       { "component": "text","valueType": "string", "name": "joinText", "label": "Join Button Text" },
-        { "component": "aem-content","valueType": "string", "name": "joinUrl", "label": "Join Button URL" },
-        { "component": "reference","valueType": "string", "name": "joinIcon", "label": "Join Button Icon" },
+        {
+          "component": "aem-content",
+          "name": "link",
+          "label": "Link"
+        },
+        {
+          "component": "text",
+          "name": "linkText",
+          "label": "Text"
+        },
 
          
 
