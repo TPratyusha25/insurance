@@ -25,13 +25,13 @@
     position: relative;
     right: 12%;
     }
-     .header > div:nth-child(3) > div > div > ul {
+     .header > div:nth-child(3) > div > ul {
     display: flex;
     padding-left: 0 !important;
     gap: 6px;
     list-style-type: none;
      }
-     .header > div:nth-child(3) > div > div > li {
+     .header > div:nth-child(3) > div > li {
     font-size: 15px;
     color: #666666;
     font-family: "Mission Gothic", Arial Narrow, Verdana;
