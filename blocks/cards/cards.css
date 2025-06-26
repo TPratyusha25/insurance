@@ -161,7 +161,7 @@ position: absolute;
 
 }
 
-    .cards.block > div > div:nth-child(2) p::after {
+    .cards.block > div > div:nth-child(2)::after {
 
      height: 35px;
     width: 35px;
