@@ -285,6 +285,21 @@
     bottom: 49px;
     width: 11%;
 }
+
+
+    .header > div:nth-child(9) > div {
+    position: relative;
+    left: 39%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    width: 100vw;
+    background-image: url(https://michigan.aaa.com/assets/images/Global/background.png);
+    /* background-size: cover; */
+    /* background-position: center; */
+    z-index: 0;
+    width: 187%;
+}
     
 }
     
