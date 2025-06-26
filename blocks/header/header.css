@@ -1,5 +1,5 @@
 
-    .header-wrapper > div:nth-of-type(-n+15) {
+ .header-wrapper > div:nth-of-type(-n+15) {
             height: 140px;
     overflow: visible;
     /* width: 965px; */
