@@ -241,7 +241,7 @@ position: absolute;
   }
 
   .cards.block > div > div:nth-child(3) a {
-    font-size: 10px;
+           font-size: 15px;
   }
 
     .cards.block > div > div:nth-child(2) {
