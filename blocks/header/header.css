@@ -333,6 +333,12 @@
     left: 456px;
     background-color: #d1232A;
 }
+
+    .header > div:nth-child(1) > div img {
+
+        margin-top: 10px;
+
+    }
     
 }
     
