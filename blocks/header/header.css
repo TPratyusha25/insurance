@@ -216,6 +216,7 @@
     height: 56px;
     position: absolute;
     left: 0;
+    bottom: 0;
     }
 
     .header > div:nth-child(9) > div ul li::after {
@@ -227,6 +228,7 @@
     height: 56px;
     position: absolute;
     right: 0;
+    bottom: 0;
     }
 
     .header > div:nth-child(9) > div ul li:nth-child(1):hover {
