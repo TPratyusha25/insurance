@@ -180,7 +180,7 @@
     right: 0;
     }
 
-    .header > div:nth-child(9) > div > div > ul > li::after {
+    .header > div:nth-child(9) > div > div > ul > li ::after {
     width: 3px;
     background-image: url(https://michigan.aaa.com/assets/Images/Global/Navigation.png?v=2);
     background-repeat: no-repeat;
