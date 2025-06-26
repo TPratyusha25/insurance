@@ -1,4 +1,4 @@
-.embed-container {
+iframe-wrapper {
   position: relative;
   padding-bottom: 56.25%;
   height: 0;
@@ -8,7 +8,7 @@
   max-width: 100%;
 }
 
-.embed-container iframe {
+iframe-wrapper iframe {
   position: absolute;
   top: 0;
   left: 0;
@@ -17,7 +17,7 @@
   border: 0;
 }
 
-.embed-container img {
+iframe-wrapper img {
   position: absolute;
   top: 0;
   left: 0;
@@ -29,7 +29,7 @@
   transition: opacity 0.3s ease;
 }
 
-.embed-container.playing img {
+iframe-wrapper.playing img {
   opacity: 0;
   pointer-events: none;
 }
