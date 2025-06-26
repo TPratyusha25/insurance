@@ -32,6 +32,15 @@
      
     ]
   },
+
+
+    {
+    "id": "triplecards",
+    "components": [
+      "card"
+    ]
+  },
+  
   {
     "id": "cards",
     "components": [
