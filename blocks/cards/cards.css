@@ -61,10 +61,11 @@
 
 
 .cards.block > div > div:nth-child(2) > div p {
-   color: white;
-   width: 100%;
+  color: white;
+    width: 100%;
     padding: 6px;
-    font-size: 16px !important;
+    font-size: 18px !important;
     font-weight: bold;
     font-family: "Mission Gothic", Arial Narrow Bold ! important;
+    margin-top: -19px;
 }
