@@ -422,32 +422,34 @@
       },
 
 
- {
-      "id": "iframe",
-      "fields": [
-        {
-          "component": "reference",
-          "valueType": "string",
-          "name": "image",
-          "label": "Overlay Image",
-          "value": "/assets/Images/Careers/career-ea-video-overlay.jpg"
-        },
-        {
-          "component": "text",
-          "valueType": "string",
-          "name": "imageAlt",
-          "label": "Image Alt Text",
-          "value": "Video"
-        },
-        {
-          "component": "iframe",
-          "valueType": "string",
-          "name": "videoEmbed",
-          "label": "YouTube Embed",
-          "value": "<iframe id='eaVideo' src='https://www.youtube.com/embed/6XT_TMEJR7Q?rel=0&enablejsapi=1&origin=https://michigan.aaa.com' allowfullscreen frameborder='0' title='Join Our Club as a AAA Entrepreneurial Agent'></iframe>"
-        }
-      ]
-    },
+
+{
+      "id": "iframe",
+      "fields": [
+        {
+          "component": "reference",
+          "valueType": "string",
+          "name": "image",
+          "label": "Overlay Image",
+          "value": "/assets/Images/Careers/career-ea-video-overlay.jpg"
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "imageAlt",
+          "label": "Image Alt Text",
+          "value": "Video"
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "videoUrl",
+          "label": "YouTube Video URL",
+          "value": "https://www.youtube.com/embed/6XT_TMEJR7Q"
+        }
+      ]
+    },
+
 
    {
       "id": "header",
