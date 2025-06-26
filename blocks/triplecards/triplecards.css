@@ -1,10 +1,11 @@
 .triplecards.block {
-       display: grid;
+   display: grid
+;
     grid-template-columns: repeat(auto-fill, minmax(281px, 1fr));
     gap: 9px;
-    width: 159%;
-    margin-left: 127px;
- margin-bottom: 49px;
+    width: 78%;
+    margin-left: 143px;
+    margin-bottom: 49px;
     margin-top: 45px;
 }
 
