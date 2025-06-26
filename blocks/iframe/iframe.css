@@ -2,7 +2,6 @@
   max-width: 640px;
   margin: 30px auto;
   text-align: center;
-  font-family: Arial, sans-serif;
 }
 
 .iframe-wrapper img {
@@ -18,4 +17,11 @@
 
 .iframe-video-container {
   margin-top: 16px;
+}
+
+.iframe-video-container iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: none;
+  border-radius: 12px;
 }
