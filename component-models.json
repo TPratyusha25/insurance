@@ -419,6 +419,34 @@
           "valueType": "string"
         }
         ]
+      },
+
+
+   {
+        "id": "iframe",
+        "fields": [
+          {
+            "component": "reference",
+            "valueType": "string",
+            "name": "image",
+            "label": "Image",
+            "value": ""
+          },
+          {
+            "component": "text",
+            "valueType": "string",
+            "name": "imageAlt",
+            "label": "Alt",
+            "value": ""
+          },
+          {
+            "component": "richtext",
+            "name": "videoEmbed",
+            "label": "YouTube Video",
+            "valueType": "string",
+            "value": ""
+          }
+        ]
       }
 
 
