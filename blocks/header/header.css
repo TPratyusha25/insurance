@@ -31,8 +31,8 @@
     gap: 6px;
     list-style-type: none;
      }
-     .header > div:nth-child(3) > div > li {
-    font-size: 15px;
+     .header > div:nth-child(3) > div > ul > li {
+    font-size: 13px;
     color: #666666;
     font-family: "Mission Gothic", Arial Narrow, Verdana;
      }
