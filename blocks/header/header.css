@@ -110,8 +110,8 @@
     position: relative;
     float: left;
     /* height: 100%; */
-    left: 15%;
-    padding: 15px;
+    left: 13%;
+    padding: 15px 18px;
     }
 
      .header > div:nth-child(9) > div > div > ul > li:nth-child(1) > a {
