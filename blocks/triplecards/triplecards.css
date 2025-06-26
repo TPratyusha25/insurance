@@ -196,7 +196,7 @@ position: absolute;
 
 @media screen and (max-width: 1023px) and (min-width: 768px) {
   .triplecards.block {
-        grid-template-columns: repeat(auto-fill, minmax(446px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(428px, 1fr));
         width: 185%;
         margin-left: -19px;
         gap: 12px;
