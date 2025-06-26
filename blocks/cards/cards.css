@@ -43,7 +43,7 @@
   opacity: 0;
   transition: opacity 0.4s ease;
   pointer-events: none;
-  z-index: 2;
+ 
 }
 
 .cards.block > div:hover > div:nth-child(3) {
@@ -57,6 +57,10 @@
   text-decoration: underline;
   margin-top: 12px;
   display: inline-block;
+}
+
+.cards.block > div > div:nth-child(3) p {
+  color: #fff;
 }
 
 
