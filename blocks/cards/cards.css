@@ -165,7 +165,19 @@ position: absolute;
 }
 
 
+    .cards.block > div > div:nth-child(2)::after {
+       content: "";
+        background: url(https://michigan.aaa.com/assets/Images/Travel/TR-toggle-Left-blue.png) no-repeat;
+        height: 35px;
+        width: 35px;
+        margin-top: -5px;
+        /* position: fixed; */
+        display: block !important;
+        position: relative;
+        bottom: 70px;
+        left: 44%;
 
+    }
 
     
 
