@@ -25,6 +25,14 @@
         { "component": "text", "valueType": "string", "name": "logoAlt", "label": "Logo Alt Text" },
         { "component": "text", "valueType": "string", "name": "tagline", "label": "Logo Tagline" },
 
+         {
+                "component": "richtext",
+                "name": "text",
+                "value": "",
+                "label": "Text",
+                "valueType": "string"
+              }
+
        { "component": "text", "name": "joinText", "label": "Join Button Text" },
         { "component": "aem-content", "name": "joinUrl", "label": "Join Button URL" },
         { "component": "reference", "name": "joinIcon", "label": "Join Button Icon" },
