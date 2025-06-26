@@ -50,8 +50,8 @@
     font-size: 14px;
     }
 
-    .header > div:nth-child(4) > div p a {
-       display: inline-block;
+    .header > div:nth-child(4) > div  p {
+    display: inline-block;
     height: 24px;
     position: relative;
     padding: 0 15px 0 15px;
@@ -63,9 +63,8 @@
     color: white;
     text-align: center;
     border-radius: 20px;
-    left: 49%;
-    bottom: 39px;
-    width: 10%;
+    left: 75%;
+    bottom: 7px;
 }
     .header > div:nth-child(5) > div > p {
         display: none;
