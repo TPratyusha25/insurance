@@ -460,7 +460,7 @@
                 "component": "richtext",
                 "name": "text",
                 "value": "",
-                "label": "Text1",
+                "label": "Text",
                 "valueType": "string"
               },
 
