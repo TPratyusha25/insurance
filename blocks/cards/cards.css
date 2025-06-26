@@ -129,7 +129,7 @@ position: absolute;
         justify-content: space-between;
         position: relative;
         cursor: pointer;
-       width: 165%;
+            width: 200%;
         margin-bottom: 15px;
         margin-left: -25px;
   }
@@ -157,19 +157,19 @@ position: absolute;
   }
 
     .cards.block > div > div:nth-child(2) p {
-          color: white;
+            color: white;
         width: 100%;
-        padding: 6px;
-        font-size: 25px !important;
+        padding: -12px;
+        font-size: 34px !important;
         font-weight: bold;
         font-family: "Mission Gothic", Arial Narrow Bold ! important;
         margin-top: 13px;
         line-height: 28px ! important;
         text-align: left !important;
         height: 35px;
-        /* width: 68px; */
+        width: 61px !;
         margin-top: -5px;
-        margin-left: 156px;
+        margin-left: 127px;
 }
 
 
