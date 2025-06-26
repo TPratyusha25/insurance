@@ -80,6 +80,95 @@
     height: 14px;
     position: relative;
     }
+
+    .header > div:nth-child(9) {
+        position: relative;
+    }
+
+    .header > div:nth-child(9) > div {
+            position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    width: 100vw;
+    background-image: url(https://michigan.aaa.com/assets/images/Global/background.png);
+    /* background-size: cover; */
+    /* background-position: center; */
+    z-index: 0;
+    }
+
+    .header > div:nth-child(9) > div > div > ul {
+        list-style-type: none;
+    padding-left: 0 !important;
+    background-image: url(https://michigan.aaa.com/assets/Images/Global/MainNav.png);
+    height: 56px;
+    }
+
+    .header > div:nth-child(9) > div > div > ul > li {
+        list-style: none;
+    position: relative;
+    float: left;
+    /* height: 100%; */
+    left: 15%;
+    padding: 15px;
+    }
+
+     .header > div:nth-child(9) > div > div > ul > li > a:nth-child(1) {
+    background-image: url(https://michigan.aaa.com/assets/Images/Global/MainNav.png);
+    /* height: 100%; */
+    background-repeat: no-repeat;
+    background-position: center -186px;
+    color: transparent;
+     }
+
+    .header > div:nth-child(9) > div > div > ul > li > a:nth-child(2) {
+    background-image: url(https://michigan.aaa.com/assets/Images/Global/MainNav.png);
+    /* height: 100%; */
+    background-repeat: no-repeat;
+    background-position: center -242px;
+    color: transparent;
+     }
+
+    .header > div:nth-child(9) > div > div > ul > li > a:nth-child(3) {
+    background-image: url(https://michigan.aaa.com/assets/Images/Global/MainNav.png);
+    /* height: 100%; */
+    background-repeat: no-repeat;
+    background-position: center -298px;
+    color: transparent;
+     }
+
+    .header > div:nth-child(9) > div > div > ul > li > a:nth-child(4) {
+    background-image: url(https://michigan.aaa.com/assets/Images/Global/MainNav.png);
+    /* height: 100%; */
+    background-repeat: no-repeat;
+    background-position: center -354px;
+    color: transparent;
+     }
+
+    .header > div:nth-child(9) > div > div > ul > li > a:nth-child(5) {
+    background-image: url(https://michigan.aaa.com/assets/Images/Global/MainNav.png);
+    /* height: 100%; */
+    background-repeat: no-repeat;
+    background-position: center -466px;
+    color: transparent;
+     }
+
+    .header > div:nth-child(9) > div > div > ul > li > a:nth-child(6) {
+    background-image: url(https://michigan.aaa.com/assets/Images/Global/MainNav.png);
+    /* height: 100%; */
+    background-repeat: no-repeat;
+    background-position: center -578px;
+    color: transparent;
+     }
+
+    .header > div:nth-child(9) > div > div > ul > li > a:nth-child(7) {
+    background-image: url(https://michigan.aaa.com/assets/Images/Global/MainNav.png);
+    /* height: 100%; */
+    background-repeat: no-repeat;
+    background-position: center -634px;
+    color: transparent;
+     }
     
     
 
