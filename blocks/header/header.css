@@ -216,6 +216,11 @@
     right: 0;
     }
 
+    .header > div:nth-child(9) > div ul li:nth-child(1) a:hover {
+    background-position: center -200px; /* adjust based on your sprite */
+}
+
+
     
 
     
