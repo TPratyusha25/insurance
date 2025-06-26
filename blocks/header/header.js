@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (searchText) {
       searchText.addEventListener("click", function () {
         searchText.setAttribute("contenteditable", "true");
-        searchText.focus();
+        searchText.focus(); 
       });
     } else {
       console.warn("Search text component not found.");
