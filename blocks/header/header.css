@@ -36,6 +36,7 @@
     font-size: 13px;
     color: #666666;
     font-family: "Mission Gothic", Arial Narrow, Verdana;
+    font-weight: 600;
      }
 
     .header > div:nth-child(3) > div ul li:nth-child(1) a::after {
