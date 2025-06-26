@@ -1,3 +1,9 @@
+.header-wrapper {
+
+    margin-top: -48px;
+}
+
+
 
  .header-wrapper > div:nth-of-type(-n+15) {
             height: 140px;
@@ -25,6 +31,7 @@
     font-size: 13px;
     position: relative;
     right: 10%;
+    margin-top: 24px;
     }
      .header > div:nth-child(3) > div ul {
     display: flex;
@@ -52,7 +59,7 @@
     }
 
     .header > div:nth-child(4) > div  p {
-    display: inline-block;
+       display: inline-block;
     height: 24px;
     position: relative;
     padding: 0 15px 0 15px;
@@ -65,14 +72,14 @@
     text-align: center;
     border-radius: 20px;
     left: 75%;
-    bottom: 7px;
+    bottom: -19px;
 }
     .header > div:nth-child(5) > div > p {
         display: none;
     }
 
     .header > div:nth-child(7) > div > p {
-    font: 12px / 24px Arial, Verdana, Geneva, sans-serif;
+      font: 12px / 24px Arial, Verdana, Geneva, sans-serif;
     color: #999;
     width: 15%;
     position: relative;
@@ -80,7 +87,7 @@
     border: 2px solid #d40000;
     float: left;
     text-align: left;
-    top: 3px;
+    top: 26px;
     border-radius: 20px 0px 0px 20px;
     padding-left: 8px;
     }
@@ -97,7 +104,7 @@
      }
 
     .header > div:nth-child(8) > div > picture > img {
-    display: flex;
+       display: flex;
     align-items: center;
     border: 2px solid #d40000;
     border-radius: 20px;
@@ -105,9 +112,9 @@
     height: 14px;
     position: relative;
     border-radius: 0px 20px 20px 0px;
-    top: 6.7px;
+    top: 29.7px;
     left: 29px;
-    background-color: #d40000;
+    background-color: #d1232A;
     }
 
     .header > div:nth-child(9) {
