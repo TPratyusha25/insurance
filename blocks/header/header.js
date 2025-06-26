@@ -1,13 +1,26 @@
 
 document.addEventListener("DOMContentLoaded", function () {
-    const searchText = document.querySelector('.header > div:nth-child(7) > div > p');
+    const targetSelector = ".header > div:nth-child(7) > div > p";
 
-    if (searchText) {
-      searchText.addEventListener("click", function () {
+    function makeEditable() {
+      const searchText = document.querySelector(targetSelector);
+      if (searchText) {
         searchText.setAttribute("contenteditable", "true");
-        searchText.focus(); 
-      });
-    } else {
-      console.warn("Search text component not found.");
+        searchText.style.cursor = "text";
+        searchText.addEventListener("click", () => searchText.focus());
+      }
     }
+
+    // Initial attempt
+    makeEditable();
+
+    // Watch for DOM changes and reapply if needed
+    const observer = new MutationObserver(() => {
+      makeEditable();
+    });
+
+    observer.observe(document.body, {
+      childList: true,
+      subtree: true
+    });
   });
