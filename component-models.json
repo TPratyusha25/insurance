@@ -447,6 +447,39 @@
           "value": "https://www.youtube.com/embed/6XT_TMEJR7Q"
         }
       ]
+    },
+
+   {
+      "id": "header",
+      "fields": [
+        { "component": "reference", "valueType": "string", "name": "logo", "label": "Logo Image" },
+        { "component": "text", "valueType": "string", "name": "logoAlt", "label": "Logo Alt Text" },
+        { "component": "text", "valueType": "string", "name": "tagline", "label": "Logo Tagline" },
+
+        {
+                "component": "richtext",
+                "name": "text",
+                "value": "",
+                "label": "Text1",
+                "valueType": "string"
+              },
+
+        { "component": "text", "name": "joinText", "label": "Join Button Text" },
+        { "component": "aem-content", "name": "joinUrl", "label": "Join Button URL" },
+        { "component": "reference", "name": "joinIcon", "label": "Join Button Icon" },
+
+        { "component": "text", "name": "searchPlaceholder", "label": "Search Placeholder" },
+        { "component": "reference", "name": "searchIcon", "label": "Search Icon" },
+      
+
+        {
+                "component": "richtext",
+                "name": "text",
+                "value": "",
+                "label": "Text2",
+                "valueType": "string"
+              },
+      ]
     }
 
 
