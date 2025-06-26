@@ -264,13 +264,14 @@ main > .section:first-of-type {
 @media (max-width: 767px) {
 a.button:any-link, button {
 
-        margin-left: -26px;
+     margin-left: -26px;
         white-space: normal;
         word-break: break-word;
         line-height: 1.2 ! important;
         font-size: 42px !important;
-        width: 576px;
-       height: auto;
+        width: 663px;
+        height: auto;
+        position: relative;
 
 }
 
@@ -297,14 +298,14 @@ a.button:any-link, button {
 
     p {
 
-    font-size: 22px !important;
-    line-height: 19px !important;
-    font-family: Verdana, Arial Narrow Bold;
-    text-align: center;
-    color: #666666;
-    margin-top: -11px;
-    line-height: 1.6 ! important;
-    width: 148%;
+   font-size: 22px !important;
+        line-height: 19px !important;
+        font-family: Verdana, Arial Narrow Bold;
+        text-align: center;
+        color: #666666;
+        margin-top: -11px;
+        line-height: 1.6 ! important;
+        width: 146%;
     }
 }
 
