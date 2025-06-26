@@ -478,13 +478,9 @@
                 "valueType": "string"
               },
 
-            {
-                "component": "richtext",
-                "name": "text2",
-                "value": "",
-                "label": "Text2",
-                "valueType": "string"
-              },
+            { "component": "text", "name": "joinText", "label": "Join Button Text" },
+        { "component": "aem-content", "name": "joinUrl", "label": "Join Button URL" },
+        { "component": "reference", "name": "joinIcon", "label": "Join Button Icon" },
 
         { "component": "text", "name": "searchPlaceholder", "label": "Search Placeholder" },
         { "component": "reference", "name": "searchIcon", "label": "Search Icon" },
@@ -492,9 +488,9 @@
 
         {
                 "component": "richtext",
-                "name": "text3",
+                "name": "text2",
                 "value": "",
-                "label": "Text3",
+                "label": "Text2",
                 "valueType": "string"
               }
       ]
