@@ -85,10 +85,10 @@
     }
 
      .header > div:nth-child(8) {
-    width: 22%;
+    width:0%;
     position: relative;
     bottom: 48px;
-    left: 78%;
+    left: 98%;
      }
 
     .header > div:nth-child(8) > div > picture > img {
