@@ -150,32 +150,34 @@ position: absolute;
   }
 
     .cards.block > div > div:nth-child(2) p {
-    color: white;
-    width: 100%;
-    padding: 6px;
-    font-size: 25px !important;
-    font-weight: bold;
-    font-family: "Mission Gothic", Arial Narrow Bold ! important;
-    margin-top: 13px;
-    line-height: 28px ! important;
-    text-align: left !important;
-    height: 35px;
-    width: 35px;
-    margin-top: -5px;
+          color: white;
+        width: 100%;
+        padding: 6px;
+        font-size: 25px !important;
+        font-weight: bold;
+        font-family: "Mission Gothic", Arial Narrow Bold ! important;
+        margin-top: 13px;
+        line-height: 28px ! important;
+        text-align: left !important;
+        height: 35px;
+        /* width: 68px; */
+        margin-top: -5px;
+        margin-left: 156px;
 }
 
 
     .cards.block > div > div:nth-child(2)::after {
-       content: "";
+             content: "";
         background: url(https://michigan.aaa.com/assets/Images/Travel/TR-toggle-Left-blue.png) no-repeat;
-        height: 35px;
-        width: 35px;
+        height: 38px;
+        width: 63px;
         margin-top: -5px;
         /* position: fixed; */
         display: block !important;
         position: relative;
         bottom: 70px;
         left: 44%;
+        margin-left: 421px;
 
     }
 
