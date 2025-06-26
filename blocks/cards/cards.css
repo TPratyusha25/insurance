@@ -1,8 +1,8 @@
 .cards.block {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(309px, 1fr));
-    gap: 24px;
-    width: 76%;
+    gap: 9px;
+   width: 61%;
 }
 
 .cards.block > div {
