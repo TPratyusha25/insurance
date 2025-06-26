@@ -73,9 +73,9 @@
     .header > div:nth-child(7) > div > p {
     font: 12px / 24px Arial, Verdana, Geneva, sans-serif;
     color: #999;
-    width: 17%;
+    width: 15%;
     position: relative;
-    left: 63%;
+    left: 65%;
     border: 2px solid #d40000;
     float: left;
     text-align: left;
