@@ -169,6 +169,16 @@
     background-position: center -634px;
     color: transparent;
      }
+
+    .header > div:nth-child(9) > div > div > ul > li:nth-child(1)::before {
+    width: 3px;
+    background-image: url(https://michigan.aaa.com/assets/Images/Global/Navigation.png?v=2);
+    background-repeat: no-repeat;
+    background-position: -0px -112px;
+    height: 56px;
+    position: absolute;
+    right: 0;
+    }
     
     
 
