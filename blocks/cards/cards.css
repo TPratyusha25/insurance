@@ -158,24 +158,28 @@ position: absolute;
     margin-top: 13px;
     line-height: 28px ! important;
     text-align: left !important;
+        height: 35px;
+    width: 35px;
+    margin-top: -5px;
+    background: url(https://michigan.aaa.com/assets/Images/Travel/TR-toggle-Left-blue.png) no-repeat;
 }
 
     .cards.block > div > div:nth-child(2) p::after {
 
-    background: url(https://michigan.aaa.com/assets/Images/Travel/TR-toggle-Left-blue.png) no-repeat;
-    height: 35px;
+     height: 35px;
     width: 35px;
     margin-top: -5px;
+    background: url(https://michigan.aaa.com/assets/Images/Travel/TR-toggle-Left-blue.png) no-repeat;
     }
 
 
     
-  /* Arrow (right direction) */
+
   .cards.block > div::after {
     content: '';
     border: solid transparent;
     border-width: 8px 0 8px 10px;
     border-left-color: #0d274b; /* dark navy */
     margin-left: 12px;
-  }
+  } 
 }
