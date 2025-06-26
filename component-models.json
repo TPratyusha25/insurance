@@ -423,29 +423,29 @@
 
 
 
- {
+  {
       "id": "iframe",
       "fields": [
         {
           "component": "reference",
           "valueType": "string",
           "name": "image",
-          "label": "Overlay Image",
-          "value": "/assets/Images/Careers/career-ea-video-overlay.jpg"
+          "label": "Thumbnail Image",
+          "value": "https://img.youtube.com/vi/dQw4w9WgXcQ/hqdefault.jpg"
         },
         {
           "component": "text",
           "valueType": "string",
           "name": "imageAlt",
-          "label": "Image Alt Text",
-          "value": "Video"
+          "label": "Thumbnail Alt",
+          "value": "Play Video"
         },
         {
           "component": "text",
+          "name": "videoId",
+          "label": "YouTube Video ID",
           "valueType": "string",
-          "name": "videoUrl",
-          "label": "YouTube Video URL",
-          "value": "https://www.youtube.com/embed/6XT_TMEJR7Q"
+          "value": "dQw4w9WgXcQ"
         }
       ]
     },
