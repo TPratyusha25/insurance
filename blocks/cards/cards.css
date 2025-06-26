@@ -100,3 +100,66 @@ position: absolute;
    margin-top: -16px;
     line-height: 18px ! important;
 }
+
+
+
+@media screen and (max-width: 767px) {
+  .cards.block {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    gap: 12px;
+  }
+
+  .cards.block > div {
+    border: none;
+    box-shadow: none;
+    border-top: 6px solid white;
+  }
+
+  .cards.block > div > div:nth-child(2) {
+    padding: 16px;
+    background: #2c68ab;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+
+  .cards.block > div > div:nth-child(2) p {
+    font-size: 16px !important;
+    line-height: 1.3 !important;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    font-family: "Mission Gothic", Arial Narrow Bold !important;
+  }
+
+  .cards.block > div > div:nth-child(2)::after {
+    content: '';
+    border: solid transparent;
+    border-width: 8px 0 8px 10px;
+    border-left-color: #122a4a;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: 10px;
+  }
+
+  .cards.block > div > div:nth-child(3) {
+    position: relative;
+    opacity: 1 !important;
+    display: none;
+    padding: 20px 16px;
+    background: #2c68ab;
+    color: #fff;
+    line-height: 1.4;
+  }
+
+  /* Optional: tap to toggle on mobile */
+  .cards.block > div.active > div:nth-child(3) {
+    display: block;
+  }
+}
+
