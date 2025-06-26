@@ -54,3 +54,9 @@
   margin-top: 12px;
   display: inline-block;
 }
+
+
+.cards.block > div > div:nth-child(2) > div p {
+   color: white;
+    backgroung-color: #0065a4;
+}
