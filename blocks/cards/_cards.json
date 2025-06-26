@@ -48,7 +48,20 @@
           "value": "",
           "label": "Text",
           "valueType": "string"
-        }
+        },
+
+         {
+      "component": "richtext",
+      "name": "hoverText",
+      "label": "Hover Text",
+      "valueType": "string"
+    },
+    {
+      "component": "text",
+      "name": "ctaLink",
+      "label": "CTA Link",
+      "valueType": "string"
+    }
       ]
     }
   ],
