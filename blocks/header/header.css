@@ -178,7 +178,7 @@
     background-position: -0px -112px;
     height: 56px;
     position: absolute;
-    right: 0;
+    left: 0;
     }
 
     .header > div:nth-child(9) > div > ul > li::after {
