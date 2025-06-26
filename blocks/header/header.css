@@ -81,15 +81,16 @@
     .header > div:nth-child(7) > div > p {
       font: 12px / 24px Arial, Verdana, Geneva, sans-serif;
     color: #999;
-    width: 15%;
+    width: 17%;
     position: relative;
-    left: 65%;
+    left: 64%;
     border: 2px solid #d40000;
     float: left;
     text-align: left;
     top: 26px;
     border-radius: 20px 0px 0px 20px;
     padding-left: 8px;
+    height: 21px;
     }
 
      .header > div:nth-child(8) {
@@ -107,9 +108,9 @@
        display: flex;
     align-items: center;
     border: 2px solid #d40000;
-    border-radius: 20px;
+/*     border-radius: 20px; */
     padding: 4px 8px 6px 6px;
-    height: 14px;
+    height: 12px;
     position: relative;
     border-radius: 0px 20px 20px 0px;
     top: 29.7px;
