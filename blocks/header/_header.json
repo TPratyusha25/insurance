@@ -33,9 +33,9 @@
                 "valueType": "string"
               }
 
-       { "component": "text", "name": "joinText", "label": "Join Button Text" },
-        { "component": "aem-content", "name": "joinUrl", "label": "Join Button URL" },
-        { "component": "reference", "name": "joinIcon", "label": "Join Button Icon" },
+       { "component": "text","valueType": "string", "name": "joinText", "label": "Join Button Text" },
+        { "component": "aem-content","valueType": "string", "name": "joinUrl", "label": "Join Button URL" },
+        { "component": "reference","valueType": "string", "name": "joinIcon", "label": "Join Button Icon" },
 
          
 
