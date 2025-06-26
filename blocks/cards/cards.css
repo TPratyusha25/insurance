@@ -40,8 +40,7 @@ position: absolute;
     background-color: #2c68ab;
     color: #fff;
     padding: 99px 12px;
-    display: flex
-;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
@@ -49,6 +48,10 @@ position: absolute;
     transition: opacity 0.4s ease;
     pointer-events: none;
     line-height: 35px ! important;
+        top: -4px;
+    height: 72px;
+    overflow: auto;
+    display: block;
  
 }
 
@@ -59,6 +62,10 @@ position: absolute;
 .cards.block > div:hover > div:nth-child(3) {
   opacity: 1;
   pointer-events: auto;
+        top: -4px;
+    height: 72px;
+    overflow: auto;
+    display: block;
 }
 
 .cards.block > div > div:nth-child(3) a {
@@ -205,6 +212,10 @@ position: absolute;
   .cards.block > div > div:nth-child(3) {
     padding: 30px 10px;
     line-height: 28px !important;
+          top: -4px;
+    height: 72px;
+    overflow: auto;
+    display: block;
   }
 
   .cards.block > div > div:nth-child(3) p {
