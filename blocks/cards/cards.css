@@ -177,3 +177,35 @@ position: absolute;
 
 
 }
+
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+  .cards.block {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 12px;
+  }
+
+  .cards.block > div > div:nth-child(2) p {
+    font-size: 16px !important;
+    line-height: 20px !important;
+  }
+
+  .cards.block > div > div:nth-child(3) {
+    padding: 30px 10px;
+    line-height: 28px !important;
+  }
+
+  .cards.block > div > div:nth-child(3) p {
+    font-size: 12px !important;
+  }
+
+  .cards.block > div > div:nth-child(3) a {
+    font-size: 10px;
+  }
+}
+
+
+
