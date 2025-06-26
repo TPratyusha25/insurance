@@ -478,16 +478,10 @@
                 "valueType": "string"
               },
 
-        {
-          "component": "aem-content",
-          "name": "link",
-          "label": "Link"
-        },
-        {
-          "component": "text",
-          "name": "linkText",
-          "label": "Text"
-        },
+      
+        { "component": "text", "name": "joinText", "label": "Join Button Text" },
+        { "component": "aem-content", "name": "joinUrl", "label": "Join Button URL" },
+        { "component": "reference", "name": "joinIcon", "label": "Join Button Icon" },
 
         { "component": "text", "name": "searchPlaceholder", "label": "Search Placeholder" },
         { "component": "reference", "name": "searchIcon", "label": "Search Icon" },
