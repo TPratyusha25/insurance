@@ -31,20 +31,27 @@
 }
 
 .cards.block > div > div:nth-child(3) {
-  position: absolute;
-  inset: 0;
-  background-color: rgba(0, 51, 102, 0.85); /* dark blue overlay */
-  color: #fff;
-  padding: 30px 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  opacity: 0;
-  transition: opacity 0.4s ease;
-  pointer-events: none;
+
+position: absolute;
+    /* inset: 0; */
+    background-color: rgba(0, 51, 102, 0.85);
+    color: #fff;
+    padding: 39px 12px;
+    display: flex
+;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    /* opacity: 0; */
+    transition: opacity 0.4s ease;
+    pointer-events: none;
+    line-height: 35px ! important;
  
 }
+
+
+
+
 
 .cards.block > div:hover > div:nth-child(3) {
   opacity: 1;
@@ -61,6 +68,7 @@
 
 .cards.block > div > div:nth-child(3) p {
   color: #fff;
+    font-size: 13px ! important;
 }
 
 
