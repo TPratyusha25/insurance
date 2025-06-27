@@ -1,4 +1,4 @@
-
+/* 
 .arrowbutton > div:nth-child(1) > div > p a {
 
     font-size: 28px !important;
@@ -6,6 +6,38 @@
     font-family: "Mission Gothic Bold Italic", Arial Narrow Bold !important;
     font-weight: bold !important;
     font-style: inherit !important;
+    background-color: #0065a4;
 
 
+} */
+
+
+.arrowbutton > div:nth-child(1) > div > p a {
+    position: relative;
+    display: inline-block;
+    font-size: 28px !important;
+    line-height: 32px !important;
+    font-family: "Mission Gothic Bold Italic", Arial Narrow Bold !important;
+    font-weight: bold !important;
+    font-style: inherit !important;
+    background-color: #0065a4;
+    color: white;
+    padding: 12px 24px 12px 36px; /* Extra left padding for arrow */
+    text-decoration: none;
+    border-radius: 4px;
 }
+
+/* Arrowhead on the left */
+.arrowbutton > div:nth-child(1) > div > p a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-right: 20px solid #0065a4;
+}
+
