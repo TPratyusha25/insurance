@@ -498,7 +498,38 @@
     }
 
 
-  
+    {
+      "id": "arrowbutton",
+      "fields": [
+
+
+         {
+          "component": "aem-content",
+          "name": "link",
+          "label": "Link"
+        },
+        {
+          "component": "text",
+          "name": "linkText",
+          "label": "Text"
+        },
+         {
+          "component": "richtext",
+          "name": "text",
+          "value": "",
+          "label": "Text",
+          "valueType": "string"
+        },
+       
+        {
+          "component": "richtext",
+          "name": "text2",
+          "value": "",
+          "label": "Text2",
+          "valueType": "string"
+        }
+      ]
+    }
 
 
   
