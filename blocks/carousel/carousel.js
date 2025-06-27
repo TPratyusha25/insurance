@@ -1,37 +1,37 @@
-<script>
-  (function () {
-    const selector = '.carousel-wrapper';
 
-    function isMobileView() {
-      return window.innerWidth <= 767;
+(function() {
+  const selector = '.carousel-wrapper';
+
+  function isMobile() {
+    return window.innerWidth <= 767;
+  }
+
+  function enforce() {
+    const el = document.querySelector(selector);
+    if (!el) return;
+
+    if (isMobile()) {
+      el.style.display = 'none';
+      el.classList.add('force-hidden');
+    } else {
+      el.style.removeProperty('display');
+      el.classList.remove('force-hidden');
     }
+  }
 
-    function handleCarouselDisplay() {
-      const carousel = document.querySelector(selector);
+  // Monitor initial load
+  document.addEventListener('DOMContentLoaded', () => {
+    setTimeout(enforce, 100);
+  });
 
-      if (!carousel) return;
+  // Monitor resizing
+  let rTimer;
+  window.addEventListener('resize', () => {
+    clearTimeout(rTimer);
+    rTimer = setTimeout(enforce, 100);
+  });
 
-      if (isMobileView()) {
-        // Fully hide the carousel on mobile
-        carousel.style.display = 'none';
-        carousel.setAttribute('aria-hidden', 'true');
-        carousel.classList.add('force-hidden');
-      } else {
-        // Show the carousel on tablet/desktop
-        carousel.style.display = 'block';
-        carousel.removeAttribute('aria-hidden');
-        carousel.classList.remove('force-hidden');
-      }
-    }
-
-    // Initial check on DOM ready
-    document.addEventListener('DOMContentLoaded', function () {
-      setTimeout(handleCarouselDisplay, 100); // slight delay for EDS rendering
-    });
-
-    // Re-check on resize
-    window.addEventListener('resize', function () {
-      setTimeout(handleCarouselDisplay, 100);
-    });
-  })();
-</script>
+  // Use MutationObserver to catch late carousel rendering
+  const observer = new MutationObserver(enforce);
+  observer.observe(document.body, { childList: true, subtree: true });
+})();
