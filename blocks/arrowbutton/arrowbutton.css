@@ -40,3 +40,10 @@
     border-bottom: 32px solid transparent;
     border-right: 40px solid #0065a4;
 }
+
+
+.arrowbutton > div:nth-child(1) {
+
+width:30%;
+
+}
