@@ -35,3 +35,13 @@
 width:30%;
 
 }
+
+
+
+.arrowbutton > div:nth-child(2) > div > p {
+    font-size: 15px !important;
+    line-height: 19px !important;
+    font-family: Verdana, Arial Narrow Bold;
+
+
+}
