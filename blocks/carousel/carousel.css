@@ -111,13 +111,13 @@
 }
 
 @media (max-width: 767px) {
-  .carousel-wrapper {
+  .carousel-wrapper,
+  .carousel-wrapper.force-hidden {
     display: none !important;
     visibility: hidden !important;
     opacity: 0 !important;
     height: 0 !important;
     overflow: hidden !important;
-    pointer-events: none !important;
   }
 }
 
