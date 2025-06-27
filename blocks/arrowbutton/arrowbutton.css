@@ -192,7 +192,7 @@ width:26%;
     }
 
     .arrowbutton > div:nth-child(1) > div > p a {
-        font-size: 18px !important;
+       font-size: 18px !important;
         padding: 10px 16px;
         margin: 0 10px;
         height: auto;
