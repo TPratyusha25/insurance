@@ -1,3 +1,4 @@
+if (window.innerWidth > 767) {
 const ul = document.querySelector('.carousel.block > div:nth-child(6) ul');
   const items = ul.children;
   const itemCount = items.length;
@@ -44,3 +45,4 @@ const ul = document.querySelector('.carousel.block > div:nth-child(6) ul');
       }, 400);
     }
   }
+}
