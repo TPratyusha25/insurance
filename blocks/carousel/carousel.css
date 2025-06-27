@@ -3,11 +3,11 @@
   width: 965px;
   height: 227px;
   padding: 20px;
-  color: white;
   font-family: Arial, sans-serif;
   position: relative;
   overflow: hidden;
   box-sizing: border-box;
+  color: #fff;
 }
 
 .carousel.block {
@@ -16,7 +16,7 @@
   height: 100%;
 }
 
-/* Title (5th div) */
+/* Title */
 .carousel.block > div:nth-child(5) {
   position: absolute;
   top: 10px;
@@ -27,13 +27,14 @@
 }
 
 .carousel.block > div:nth-child(5) h2 {
-  font-size: 26px;
-  font-style: italic;
-  font-weight: bold;
-  margin: 0;
+  font-size: 26px !important;
+  font-style: italic !important;
+  font-weight: bold !important;
+  margin: 0 !important;
+  color: #fff !important;
 }
 
-/* Navigation Buttons */
+/* Nav Buttons */
 .carousel.block > div:nth-child(2),
 .carousel.block > div:nth-child(4) {
   position: absolute;
@@ -58,13 +59,13 @@
   right: 0;
 }
 
-/* List container (6th div) */
+/* List container */
 .carousel.block > div:nth-child(6) {
   position: absolute;
   top: 70px;
-  left: 0;
-  right: 0;
-  height: 130px;
+  left: 25px; /* for padding between arrows */
+  width: 915px;
+  height: 100px;
   overflow: hidden;
 }
 
@@ -75,18 +76,19 @@
   padding: 0;
   margin: 0;
   list-style: none;
+  height: 100%;
 }
 
-/* Individual items */
+/* Individual item */
 .carousel.block > div:nth-child(6) ul li {
-  min-width: 300px;
-  max-width: 300px;
-  padding: 0 20px;
-  font-size: 18px;
-  line-height: 1.5;
-  border-left: 1px solid white;
-}
-
-.carousel.block > div:nth-child(6) ul li:first-child {
-  border-left: none;
+  display: block;
+  font-size: 14px;
+  margin-left: -1px;
+  min-width: 308px;
+  color: #fff;
+  background-color: #2860a2 !important;
+  padding: 15px 0 25px 0;
+  height: 100px;
+  text-align: center;
+  border-right: 2px rgba(255, 255, 255, 0.56) solid;
 }
