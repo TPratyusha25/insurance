@@ -1,10 +1,4 @@
-function handleCarousel() {
-  if (window.innerWidth <= 767) {
-    document.querySelector('.carousel-wrapper').style.display = 'none';
-  } else {
-    document.querySelector('.carousel-wrapper').style.display = 'block';
-    // your slider logic here (with checks to prevent double-running)
-    const ul = document.querySelector('.carousel.block > div:nth-child(6) ul');
+const ul = document.querySelector('.carousel.block > div:nth-child(6) ul');
   const items = ul.children;
   const itemCount = items.length;
   const visibleItems = 3;
@@ -50,8 +44,3 @@ function handleCarousel() {
       }, 400);
     }
   }
-  }
-}
-
-handleCarousel();
-window.addEventListener('resize', handleCarousel);
