@@ -103,3 +103,53 @@ width:26%;
    margin-top: -4px;
 
 }
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .arrowbutton > div:nth-child(1) > div > p a {
+        font-size: 20px !important;
+        line-height: 22px !important;
+        height: auto;
+        margin-left: 0;
+        padding: 12px 20px;
+        width: 90%;
+        display: block;
+        text-align: center;
+    }
+
+    .arrowbutton > div:nth-child(1) {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .arrowbutton > div:nth-child(2) > div > p {
+        font-size: 14px !important;
+        margin-left: 0;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .arrowbutton > div:nth-child(2) > div > h3 {
+        font-size: 18px;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .arrowbutton > div:nth-child(3) > div > p a {
+        font-size: 14px !important;
+        margin-left: 0;
+        text-align: center;
+        display: block;
+        padding: 10px;
+    }
+
+    .arrowbutton > div:nth-child(4) > div > p {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        font-size: 14px;
+    }
+}
+
