@@ -1,7 +1,7 @@
 
 
 .arrowbutton > div:nth-child(1) > div > p a {
-      display: inline-block;
+    display: inline-block;
     position: relative;
     background-color: #0065a4;
     color: white;
@@ -11,27 +11,28 @@
     font-weight: bold !important;
     font-style: inherit !important;
     text-decoration: none;
-    margin-left: -702px;
+    margin-left: -592px;
     height: 66px;
-    margin-top: -11px;
+    margin-top: -16px;
 }
 
 /* Create the arrow shape on the left */
 .arrowbutton > div:nth-child(1) {
-       content: "";
+         content: "";
     width: 0;
     height: 0;
-    border-top: 25px solid transparent;
-    border-left: 50px solid #0065a4;
-    border-bottom: 25px solid transparent;
-    margin-left: 419px;
+    border-top: 27.9px solid transparent;
+    border-left: 36px solid #0065a4;
+    border-bottom: 39px solid transparent;
+    margin-left: 464px;
+    margin-bottom: -6px;
    
 }
 
 
 .arrowbutton > div:nth-child(1) {
 
-width:30%;
+width:26%;
 
 }
 
@@ -42,7 +43,8 @@ width:30%;
     line-height: 20px !important;
     font-family: Verdana, Arial Narrow Bold;
      margin-left: 264px;
-     margin-top: -43px;
+    
+    margin-top: -70px;
     align-items: start;
 
 
