@@ -1,37 +1,57 @@
+function handleCarousel() {
+  if (window.innerWidth <= 767) {
+    document.querySelector('.carousel-wrapper').style.display = 'none';
+  } else {
+    document.querySelector('.carousel-wrapper').style.display = 'block';
+    // your slider logic here (with checks to prevent double-running)
+    const ul = document.querySelector('.carousel.block > div:nth-child(6) ul');
+  const items = ul.children;
+  const itemCount = items.length;
+  const visibleItems = 3;
+  const itemWidth = 308;
 
-(function() {
-  const selector = '.carousel-wrapper';
-
-  function isMobile() {
-    return window.innerWidth <= 767;
+  // Clone first visible items and append
+  for (let i = 0; i < visibleItems; i++) {
+    ul.appendChild(items[i].cloneNode(true));
   }
 
-  function enforce() {
-    const el = document.querySelector(selector);
-    if (!el) return;
+  let currentIndex = 0;
 
-    if (isMobile()) {
-      el.style.display = 'none';
-      el.classList.add('force-hidden');
+  document.querySelector('.carousel.block > div:nth-child(2)').addEventListener('click', () => {
+    if (currentIndex <= 0) {
+      currentIndex = itemCount; // jump to cloned end
+      ul.style.transition = 'none';
+      ul.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+      // force reflow to apply instantly
+      void ul.offsetWidth;
+      ul.style.transition = 'transform 0.4s ease-in-out';
+      currentIndex--;
     } else {
-      el.style.removeProperty('display');
-      el.classList.remove('force-hidden');
+      currentIndex--;
+    }
+    updateSlider();
+  });
+
+  document.querySelector('.carousel.block > div:nth-child(4)').addEventListener('click', () => {
+    currentIndex++;
+    updateSlider();
+  });
+
+  function updateSlider() {
+    ul.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+    ul.style.transition = 'transform 0.4s ease-in-out';
+
+    if (currentIndex >= itemCount) {
+      // at cloned end → jump to real start
+      setTimeout(() => {
+        ul.style.transition = 'none';
+        currentIndex = 0;
+        ul.style.transform = `translateX(0)`;
+      }, 400);
     }
   }
+  }
+}
 
-  // Monitor initial load
-  document.addEventListener('DOMContentLoaded', () => {
-    setTimeout(enforce, 100);
-  });
-
-  // Monitor resizing
-  let rTimer;
-  window.addEventListener('resize', () => {
-    clearTimeout(rTimer);
-    rTimer = setTimeout(enforce, 100);
-  });
-
-  // Use MutationObserver to catch late carousel rendering
-  const observer = new MutationObserver(enforce);
-  observer.observe(document.body, { childList: true, subtree: true });
-})();
+handleCarousel();
+window.addEventListener('resize', handleCarousel);
