@@ -111,17 +111,19 @@
     /* padding: 0 0px;
 }
 
-@media (min-width: 300px) and (max-width: 767px) {
-    .carousel-wrapper {
-        display: none !important;
-    }
-    .carousel{
-        display: none;
-    }
-    .carousel.block {
-        display: none;
-    }
+
+@media (min-width: 600px) {
+  .carousel.block > div {
+    flex: 1 1 48%;
+  }
 }
+
+@media (min-width: 900px) {
+  .carousel.block > div {
+    flex: 1 1 30%;
+  }
+}
+
 
 
 
