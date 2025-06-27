@@ -423,7 +423,7 @@
     border-radius: 20px 0px 0px 20px;
     padding-left: 8px;
     top: -15px !important;
-    left: 130% !important;
+    left: 110% !important;
     margin: 0 !important;
     width: 25% ! important;
     height: 30px !important;
@@ -465,6 +465,9 @@
     left: 10%;
     margin-top: -65px;
 }
+.header > div:nth-child(1) > div > picture  img {
+    margin-top: 32px;
 
+}
 
 }
