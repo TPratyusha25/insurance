@@ -111,7 +111,7 @@
     /* padding: 0 0px;
 }
 
-@media (max-width: 767px) {
+@media (min-width: 300px and max-width: 767px) {
     .carousel-wrapper {
         display: none !important;
     }
