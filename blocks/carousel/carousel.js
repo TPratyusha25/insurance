@@ -6,36 +6,32 @@
       return window.innerWidth <= 767;
     }
 
-    function hideCarousel() {
-      const carousel = document.querySelector(selector);
-      if (carousel) {
-        carousel.style.display = 'none';
-      }
-    }
-
-    function showCarousel() {
-      const carousel = document.querySelector(selector);
-      if (carousel) {
-        carousel.style.display = 'block';
-      }
-    }
-
     function handleCarouselDisplay() {
+      const carousel = document.querySelector(selector);
+
+      if (!carousel) return;
+
       if (isMobileView()) {
-        hideCarousel();
+        // Fully hide the carousel on mobile
+        carousel.style.display = 'none';
+        carousel.setAttribute('aria-hidden', 'true');
+        carousel.classList.add('force-hidden');
       } else {
-        showCarousel();
+        // Show the carousel on tablet/desktop
+        carousel.style.display = 'block';
+        carousel.removeAttribute('aria-hidden');
+        carousel.classList.remove('force-hidden');
       }
     }
 
-    // On DOM ready
-    document.addEventListener('DOMContentLoaded', handleCarouselDisplay);
+    // Initial check on DOM ready
+    document.addEventListener('DOMContentLoaded', function () {
+      setTimeout(handleCarouselDisplay, 100); // slight delay for EDS rendering
+    });
 
-    // On resize, debounce to avoid performance issues
-    let resizeTimeout;
+    // Re-check on resize
     window.addEventListener('resize', function () {
-      clearTimeout(resizeTimeout);
-      resizeTimeout = setTimeout(handleCarouselDisplay, 150);
+      setTimeout(handleCarouselDisplay, 100);
     });
   })();
 </script>
