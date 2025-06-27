@@ -1,79 +1,90 @@
 .carousel-wrapper {
   background-color: #265e9f;
-  padding: 50px 0;
-  font-family: Arial, sans-serif;
+  width: 965px;
+  height: 227px;
+  padding: 20px;
   color: white;
+  font-family: Arial, sans-serif;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
 }
 
 .carousel.block {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  max-width: 1200px;
-  margin: 0 auto;
   position: relative;
+  width: 100%;
+  height: 100%;
 }
 
-/* Left and right button styling */
-.carousel.block > div:nth-child(2),
-.carousel.block > div:nth-child(4) {
-  width: 60px;
-  height: 60px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  cursor: pointer;
-  flex: 0 0 auto;
-}
-
-.carousel.block > div:nth-child(2) {
-  background-image: url('https://michigan.aaa.com/assets/Images/Travel/btn-previous-opt.png');
-}
-
-.carousel.block > div:nth-child(4) {
-  background-image: url('https://michigan.aaa.com/assets/Images/Travel/btn-next-opt.png');
-}
-
-/* Title styling (5th div) */
+/* Title (5th div) */
 .carousel.block > div:nth-child(5) {
-  flex: 1 0 100%;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
   text-align: center;
-  margin-bottom: 40px;
 }
 
 .carousel.block > div:nth-child(5) h2 {
-  font-size: 30px;
+  font-size: 26px;
   font-style: italic;
   font-weight: bold;
   margin: 0;
 }
 
-/* Content columns (6th div) */
+/* Navigation Buttons */
+.carousel.block > div:nth-child(2),
+.carousel.block > div:nth-child(4) {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.carousel.block > div:nth-child(2) {
+  background-image: url('https://michigan.aaa.com/assets/Images/Travel/btn-previous-opt.png');
+  left: 0;
+}
+
+.carousel.block > div:nth-child(4) {
+  background-image: url('https://michigan.aaa.com/assets/Images/Travel/btn-next-opt.png');
+  right: 0;
+}
+
+/* List container (6th div) */
 .carousel.block > div:nth-child(6) {
-  display: flex;
-  justify-content: space-around;
-  flex: 1 0 100%;
-  padding: 0 40px;
-  box-sizing: border-box;
+  position: absolute;
+  top: 70px;
+  left: 0;
+  right: 0;
+  height: 130px;
+  overflow: hidden;
 }
 
 .carousel.block > div:nth-child(6) ul {
   display: flex;
-  width: 100%;
+  width: max-content;
+  transition: transform 0.4s ease-in-out;
   padding: 0;
   margin: 0;
   list-style: none;
-  justify-content: space-between;
-  text-align: center;
 }
 
+/* Individual items */
 .carousel.block > div:nth-child(6) ul li {
-  flex: 1;
+  min-width: 300px;
+  max-width: 300px;
   padding: 0 20px;
-  border-left: 1px solid white;
   font-size: 18px;
   line-height: 1.5;
+  border-left: 1px solid white;
 }
 
 .carousel.block > div:nth-child(6) ul li:first-child {
