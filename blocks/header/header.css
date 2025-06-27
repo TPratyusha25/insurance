@@ -290,7 +290,67 @@
     height: 56px;
     }
 
-    .header > div:nth-child(9) > div ul li {
+    .header > div:nth-child(9) > div ul li:nth-child(1) {
+    list-style: none !important;
+    position: relative !important;
+    float: left !important;
+    width: 10% !important;
+    /* height: 100%; */
+    left: 0% !important;
+    padding: 16px 21px !important;
+    }
+
+    .header > div:nth-child(9) > div ul li:nth-child(2) {
+    list-style: none !important;
+    position: relative !important;
+    float: left !important;
+    width: 10% !important;
+    /* height: 100%; */
+    left: 0% !important;
+    padding: 16px 21px !important;
+    }
+
+    .header > div:nth-child(9) > div ul li:nth-child(3) {
+    list-style: none !important;
+    position: relative !important;
+    float: left !important;
+    width: 10% !important;
+    /* height: 100%; */
+    left: 0% !important;
+    padding: 16px 21px !important;
+    }
+
+    .header > div:nth-child(9) > div ul li:nth-child(4) {
+    list-style: none !important;
+    position: relative !important;
+    float: left !important;
+    width: 15% !important;
+    /* height: 100%; */
+    left: 0% !important;
+    padding: 16px 21px !important;
+    }
+
+    .header > div:nth-child(9) > div ul li:nth-child(5) {
+    list-style: none !important;
+    position: relative !important;
+    float: left !important;
+    width: 10% !important;
+    /* height: 100%; */
+    left: 0% !important;
+    padding: 16px 21px !important;
+    }
+
+    .header > div:nth-child(9) > div ul li:nth-child(6) {
+    list-style: none !important;
+    position: relative !important;
+    float: left !important;
+    width: 10% !important;
+    /* height: 100%; */
+    left: 0% !important;
+    padding: 16px 21px !important;
+    }
+
+    .header > div:nth-child(9) > div ul li:nth-child(7) {
     list-style: none !important;
     position: relative !important;
     float: left !important;
@@ -325,19 +385,19 @@
 
     .header > div:nth-child(4) > div p {
     display: inline-block;
-    height: 24px;
-    position: relative;
-    padding: 0 15px 0 15px;
-    font: bold 12px / 24px Arial, Helvetica, sans-serif !important;
-    text-transform: uppercase;
-    text-shadow: none;
-    text-decoration: none !important;
-    background-color: #d40000;
-    color: white;
-    text-align: center;
-    border-radius: 20px;
-           left: 98%;
-        bottom: 105px;
+        height: 24px;
+        position: relative;
+        padding: 0 0px 0 0px;
+        font: bold 12px / 24px Arial, Helvetica, sans-serif !important;
+        text-transform: uppercase;
+        text-shadow: none;
+        text-decoration: none !important;
+        background-color: #d40000;
+        color: white;
+        text-align: center;
+        border-radius: 20px;
+        left: 111%;
+        bottom: 90px;
         width: 16%;
 }
 
