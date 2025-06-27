@@ -1,4 +1,4 @@
-
+<script>
   let carouselEnabled = false;
 
   function initCarousel() {
@@ -61,5 +61,7 @@
     }
   }
 
+  // Only the check runs on page load:
   checkViewport();
   window.addEventListener('resize', checkViewport);
+</script>
