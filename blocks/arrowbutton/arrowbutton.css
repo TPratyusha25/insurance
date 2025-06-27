@@ -171,7 +171,12 @@ width:26%;
     }
 
     /* Button and heading side by side */
-    .arrowbutton > div:nth-child(1),
+    .arrowbutton > div:nth-child(1){
+
+        margin: 10px 0;
+        margin-left: 196px;
+
+    }
     .arrowbutton > div:nth-child(2) {
         display: flex;
         flex-direction: row;
