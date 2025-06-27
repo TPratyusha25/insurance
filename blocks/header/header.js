@@ -7,6 +7,9 @@ document.addEventListener("DOMContentLoaded", function () {
       if (searchText) {
         searchText.setAttribute("contenteditable", "true");
         searchText.style.cursor = "text";
+        searchText.style.outline = "none"; // Prevent blue outline
+        searchText.style.border = "1px solid #ccc"; // Keep consistent border
+
         searchText.addEventListener("click", () => searchText.focus());
       }
     }
