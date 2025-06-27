@@ -341,7 +341,7 @@
         width: 16%;
 }
 
-    .header > div:nth-child(3) > div ul p {
+    .header > div:nth-child(3) > div p {
     width: 0 !important;
     margin: 0 !important;
     }
