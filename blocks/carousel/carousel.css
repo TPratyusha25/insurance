@@ -109,3 +109,11 @@
     line-height: 1.3;
     /* padding: 0 0px;
 }
+
+@media (max-width: 767px) {
+    .carousel-wrapper {
+        display: none;
+    }
+}
+
+
