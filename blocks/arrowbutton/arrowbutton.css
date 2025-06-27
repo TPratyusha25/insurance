@@ -17,7 +17,7 @@
 }
 
 /* Create the arrow shape on the left */
-.arrowbutton > div:nth-child(1)::after {
+.arrowbutton > div:nth-child(1) {
     content: "";
      width: 0;
 	 height: 0;
