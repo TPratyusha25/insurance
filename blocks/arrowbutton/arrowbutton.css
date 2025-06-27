@@ -64,8 +64,9 @@ width:30%;
 
 
 .arrowbutton > div:nth-child(3) > div > p a {
-     font-family: Verdana, Arial Narrow Bold;
-    font-size: 11px;
+     font-size: 15px !important;
+    line-height: 20px !important;
+    font-family: Verdana ! important;
     text-decoration: none;
     color: #666666;
     background-color: white;
