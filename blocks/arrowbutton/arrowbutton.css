@@ -63,7 +63,7 @@ width:30%;
 }
 
 
-.arrowbutton > div:nth-child(3) > div > p a {
+.arrowbutton > div:nth-child(3) > div > button-container a {
        font-size: 15px !important;
     line-height: 20px !important;
     text-decoration: none;
@@ -80,4 +80,10 @@ width:30%;
     margin-left: 65px;
     
     
+}
+
+
+.arrowbutton > div:nth-child(3) > div > button-container a:hover{
+  text-decoration: underline;
+
 }
