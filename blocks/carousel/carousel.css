@@ -8,6 +8,13 @@
   overflow: hidden;
   box-sizing: border-box;
   color: #fff;
+@media (max-width: 767px) {
+  .carousel-wrapper {
+  display: none;
+      color: #red;
+  }
+}
+}
 
 
 .carousel.block {
@@ -110,13 +117,5 @@
     /* padding: 0 0px;
 }
 
-
-@media (max-width: 767px) {
-  .carousel-wrapper {
-  display: none;
-      color: #red;
-  }
-}
-}
 
 
