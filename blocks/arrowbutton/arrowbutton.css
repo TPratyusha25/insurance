@@ -1,1 +1,11 @@
 
+.arrowbutton > div:nth-child(1) > div > p a {
+
+    font-size: 28px !important;
+    line-height: 32px !important;
+    font-family: "Mission Gothic Bold Italic", Arial Narrow Bold !important;
+    font-weight: bold !important;
+    font-style: inherit !important;
+
+
+}
