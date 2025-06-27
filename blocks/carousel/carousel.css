@@ -8,7 +8,7 @@
   overflow: hidden;
   box-sizing: border-box;
   color: #fff;
-}
+
 
 .carousel.block {
   position: relative;
@@ -110,12 +110,13 @@
     /* padding: 0 0px;
 }
 
+
 @media (max-width: 767px) {
   .carousel-wrapper {
   display: none;
       color: #red;
   }
 }
-
+}
 
 
