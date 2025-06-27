@@ -17,16 +17,13 @@
 }
 
 /* Create the arrow shape on the left */
-.arrowbutton > div:nth-child(1) > div > p a::before {
+.arrowbutton > div:nth-child(1) > div > p a::after {
     content: "";
-    position: absolute;
-    left: -40px;
-    top: 0;
-    width: 0;
-    height: 0;
-    border-top: 32px solid transparent;
-    border-bottom: 32px solid transparent;
-    border-right: 40px solid #0065a4;
+     width: 0;
+	 height: 0;
+	border-top: 25px solid transparent;
+	border-left: 50px solid #555;
+	border-bottom: 25px solid transparent;
 }
 
 
