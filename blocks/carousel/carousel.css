@@ -113,7 +113,7 @@
 
 @media (max-width: 767px) {
     .carousel-wrapper {
-        display: none;
+        display: none !important;
     }
 }
 
