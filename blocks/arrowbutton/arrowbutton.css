@@ -173,8 +173,11 @@ width:26%;
     /* Button and heading side by side */
     .arrowbutton > div:nth-child(1){
 
-        margin: 10px 0;
-        margin-left: 196px;
+       margin: 10px 0;
+        margin-left: 119px;
+        border-top: 32.9px solid transparent;
+        border-left: 37px solid #0065a4;
+        border-bottom: 41px solid transpare
 
     }
     .arrowbutton > div:nth-child(2) {
