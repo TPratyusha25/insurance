@@ -407,7 +407,11 @@
     }
 
     .header > div:nth-child(4) {
+        {
         height: 84px;
+        margin-top: 70px;
+        margin-left: 133px;
+    }
     }
 
     .header > div:nth-child(7) > div > p {
