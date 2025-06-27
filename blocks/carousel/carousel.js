@@ -1,87 +1,41 @@
+<script>
+  (function () {
+    const selector = '.carousel-wrapper';
 
-  let carouselEnabled = false;
-  let currentIndex = 0;
-
-  function initCarousel() {
-    const ul = document.querySelector('.carousel.block > div:nth-child(6) ul');
-    const items = ul.children;
-    const itemCount = items.length;
-    const visibleItems = 3;
-    const itemWidth = 308;
-
-    // Prevent double clones
-    if (!ul.dataset.cloned) {
-      for (let i = 0; i < visibleItems; i++) {
-        ul.appendChild(items[i].cloneNode(true));
-      }
-      ul.dataset.cloned = 'true';
+    function isMobileView() {
+      return window.innerWidth <= 767;
     }
 
-    const leftBtn = document.querySelector('.carousel.block > div:nth-child(2)');
-    const rightBtn = document.querySelector('.carousel.block > div:nth-child(4)');
-
-    // Prevent double listeners
-    if (!leftBtn.dataset.bound) {
-      leftBtn.addEventListener('click', () => {
-        if (currentIndex <= 0) {
-          currentIndex = itemCount;
-          ul.style.transition = 'none';
-          ul.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
-          void ul.offsetWidth;
-          ul.style.transition = 'transform 0.4s ease-in-out';
-          currentIndex--;
-        } else {
-          currentIndex--;
-        }
-        updateSlider();
-      });
-      leftBtn.dataset.bound = 'true';
-    }
-
-    if (!rightBtn.dataset.bound) {
-      rightBtn.addEventListener('click', () => {
-        currentIndex++;
-        updateSlider();
-      });
-      rightBtn.dataset.bound = 'true';
-    }
-
-    function updateSlider() {
-      ul.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
-      ul.style.transition = 'transform 0.4s ease-in-out';
-
-      if (currentIndex >= itemCount) {
-        setTimeout(() => {
-          ul.style.transition = 'none';
-          currentIndex = 0;
-          ul.style.transform = `translateX(0)`;
-        }, 400);
+    function hideCarousel() {
+      const carousel = document.querySelector(selector);
+      if (carousel) {
+        carousel.style.display = 'none';
       }
     }
 
-    carouselEnabled = true;
-  }
-
-  function destroyCarousel() {
-    // Do nothing here since your logic does not need teardown
-    // Just make sure the wrapper is hidden
-    document.querySelector('.carousel-wrapper').style.display = 'none';
-    carouselEnabled = false;
-  }
-
-  function checkViewport() {
-    if (window.innerWidth > 767) {
-      document.querySelector('.carousel-wrapper').style.display = 'block';
-      if (!carouselEnabled) {
-        initCarousel();
+    function showCarousel() {
+      const carousel = document.querySelector(selector);
+      if (carousel) {
+        carousel.style.display = 'block';
       }
-    } else {
-      destroyCarousel();
     }
-  }
 
-  // Initial check
-  checkViewport();
+    function handleCarouselDisplay() {
+      if (isMobileView()) {
+        hideCarousel();
+      } else {
+        showCarousel();
+      }
+    }
 
-  // Check on resize
-  window.addEventListener('resize', checkViewport);
+    // On DOM ready
+    document.addEventListener('DOMContentLoaded', handleCarouselDisplay);
+
+    // On resize, debounce to avoid performance issues
+    let resizeTimeout;
+    window.addEventListener('resize', function () {
+      clearTimeout(resizeTimeout);
+      resizeTimeout = setTimeout(handleCarouselDisplay, 150);
+    });
+  })();
+</script>
