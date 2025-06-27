@@ -13,31 +13,30 @@
 
 
 .arrowbutton > div:nth-child(1) > div > p a {
-    position: relative;
     display: inline-block;
+    position: relative;
+    background-color: #0065a4;
+    color: white;
     font-size: 28px !important;
     line-height: 32px !important;
     font-family: "Mission Gothic Bold Italic", Arial Narrow Bold !important;
     font-weight: bold !important;
     font-style: inherit !important;
-    background-color: #0065a4;
-    color: white;
-    padding: 12px 24px 12px 36px; /* Extra left padding for arrow */
+    padding: 12px 24px;
     text-decoration: none;
-    border-radius: 4px;
+    border-radius: 4px 0 0 4px;
+    margin-left: 40px; /* Space for the arrow tail */
 }
 
-/* Arrowhead on the left */
+/* Create the arrow shape on the left */
 .arrowbutton > div:nth-child(1) > div > p a::before {
     content: "";
     position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
+    left: -40px;
+    top: 0;
     width: 0;
     height: 0;
-    border-top: 20px solid transparent;
-    border-bottom: 20px solid transparent;
-    border-right: 20px solid #0065a4;
+    border-top: 32px solid transparent;
+    border-bottom: 32px solid transparent;
+    border-right: 40px solid #0065a4;
 }
-
