@@ -195,7 +195,9 @@ width:26%;
         padding: 10px 16px;
         margin: 0 10px;
         height: auto;
-        width: auto;
+        width: 142%;
+        margin-top: -21px;
+        margin-left: -310px;
     }
 
     .arrowbutton > div:nth-child(2) > div > h3 {
