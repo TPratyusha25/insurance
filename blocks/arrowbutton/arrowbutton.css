@@ -66,10 +66,16 @@ width:30%;
 .arrowbutton > div:nth-child(3) > div > p a {
      font-size: 15px !important;
     line-height: 20px !important;
-    font-family: Verdana ! important;
-    text-decoration: none;
+     text-decoration: none;
     color: #666666;
     background-color: white;
+    font-size: 15px !important;
+    line-height: 19px !important;
+    font-family: Verdana, Arial Narrow Bold ! important;
+    text-align: center;
+    color: #666666;
+    margin-top: -11px;
+    line-height: 1.6 ! important;
     
     
 }
