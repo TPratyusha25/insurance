@@ -114,6 +114,10 @@
     .carousel-wrapper {
         display: none !important;
     }
+
+    .carousel.block {
+        display: none;
+    }
 }
 
 
