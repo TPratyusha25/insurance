@@ -1,1 +1,36 @@
+ .rowhidden > div:nth-child(1) > div p a {
+
+    font-family: "Mission Gothic Bold Italic", Arial Narrow Bold !important;
+    font-size: 28px !important;
+    line-height: 32px !important;
+    font-weight: bold !important;
+    font-style: inherit !important;
+    text-align: center;
+    box-sizing: border-box;
+    display: inline-block;
+    /* max-width: 124%; */
+    margin: 12px 0;
+    border: 2px solid transparent;
+    /* border-radius: 0.4em; */
+    padding: 0.2em 1.2em;
+    font-family: var(--body-font-family);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2.25;
+    /* text-align: center; */
+    text-decoration: none;
+    background-color: #d40000;
+    color: var(--background-color);
+    cursor: pointer;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 61%;
+    margin-left: 30px;
+    white-space: normal;
+    word-break: break-word;
+    margin-top: 35px;
+
+ }
+
 
