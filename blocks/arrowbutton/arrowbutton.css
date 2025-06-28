@@ -201,7 +201,19 @@ width:26%;
     font-weight: 200 ! important;
     margin-left: 65px;
     margin-top: 210px;
-         width:30%;
+         
+}
+
+
+ .arrowbutton > div:nth-child(1) {
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 49.9px solid transparent;
+    border-left: 69px solid #0065a4;
+    border-bottom: 69px solid transparent;
+    margin-left: 174px;
+    margin-bottom: -6px;
 }
 
 
