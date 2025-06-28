@@ -264,12 +264,12 @@ main > .section:first-of-type {
 @media (max-width: 767px) {
 a.button:any-link, button {
 
-   margin-left: -26px;
+         margin-left: 16px;
         white-space: normal;
         word-break: break-word;
         line-height: 1.2 ! important;
-        font-size: 42px !important;
-        width: 468px;
+        font-size: 46px !important;
+        width: 158%;
         height: auto;
 
 }
