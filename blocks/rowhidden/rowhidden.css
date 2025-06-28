@@ -1,1 +1,27 @@
+ .rowhidden > div:nth-child(1) > div h2 {
+    font-size: 28px !important;
+    line-height: 32px !important;
+    font-family: "Mission Gothic Bold Italic", Arial Narrow Bold !important;
+    font-weight: bold !important;
+    font-style: inherit !important;
+    text-align: center;
+    color: #0065a4;
+    margin-top: -13px;
+    margin-right: 62px;
+ }
+
+
+.rowhidden > div:nth-child(2) > div p {
+font-size: 15px !important;
+    line-height: 19px !important;
+    font-family: Verdana, Arial Narrow Bold;
+    text-align: center;
+    color: #666666;
+    margin-top: -11px;
+    line-height: 1.6 ! important;
+
+
+}
+
+
 
