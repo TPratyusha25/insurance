@@ -295,7 +295,7 @@ a.button:any-link, button {
     }
 
     p {
-
+     display:none;
    font-size: 22px !important;
         line-height: 19px !important;
         font-family: Verdana, Arial Narrow Bold;
