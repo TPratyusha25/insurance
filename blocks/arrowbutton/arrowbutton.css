@@ -108,23 +108,24 @@ width:26%;
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     .arrowbutton > div:nth-child(1) > div > p a {
-          display: inline-block;
-    position: relative;
-    background-color: white;
-    color: white;
-    font-size: 23px !important;
-    line-height: 24px !important;
-    font-family: "Mission Gothic Bold Italic", Arial Narrow Bold !important;
-    font-weight: bold !important;
-    font-style: inherit !important;
-    text-decoration: none;
-    margin-left: -450px;
-    height: 66px;
-    margin-top: 35px;
-    background-image: url(https://michigan.aaa.com/assets/Images/Careers/Careers_blue_arrow.png);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    text-align: center;
+        display: inline-block;
+        position: relative;
+        background-color: white;
+        color: white;
+        font-size: 42px !important;
+        line-height: 39px !important;
+        font-family: "Mission Gothic Bold Italic", Arial Narrow Bold !important;
+        font-weight: bold !important;
+        font-style: inherit !important;
+        text-decoration: none;
+        margin-left: -1110px;
+        height: 103px;
+        margin-top: 23px;
+        background-image: url(https://michigan.aaa.com/assets/Images/Careers/Careers_blue_arrow.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        text-align: center;
+        width: 188%;
     }
 
     .arrowbutton > div:nth-child(1) {
@@ -134,9 +135,9 @@ width:26%;
     }
 
     .arrowbutton > div:nth-child(2) > div > p {
-       font-size: 21px !important;
+        font-size: 21px !important;
         margin-left: 426px;
-        margin-top: -75px;
+        margin-top: 19px;
         text-align: center;
         line-height: 26px ! important;
     }
