@@ -171,13 +171,13 @@ width:26%;
  @media screen and (max-width: 767px){
 
 .arrowbutton > div:nth-child(2) > div > p {
-    font-size: 15px !important;
-    line-height: 20px !important;
-    font-family: Verdana, Arial Narrow Bold;
-    margin-left: -3px;
-    margin-top: 63px;
-    align-items: start;
-    margin-bottom: 8px;
+        font-size: 15px !important;
+        line-height: 20px !important;
+        font-family: Verdana, Arial Narrow Bold;
+        margin-left: -3px;
+        margin-top: 167px;
+        align-items: start;
+        margin-bottom: 8px;
 }
 
 
@@ -199,23 +199,24 @@ width:26%;
     }
 
    .arrowbutton > div:nth-child(1) > div > p a {
-   display: inline-block;
-    position: relative;
-    background-color: white;
-    color: white;
-    font-size: 23px !important;
-    line-height: 24px !important;
-    font-family: "Mission Gothic Bold Italic", Arial Narrow Bold !important;
-    font-weight: bold !important;
-    font-style: inherit !important;
-    text-decoration: none;
-    margin-left: -450px;
-    height: 66px;
-    margin-top: 35px;
-    background-image: url(https://michigan.aaa.com/assets/Images/Careers/Careers_blue_arrow.png);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    text-align: center;
+       display: inline-block;
+        position: relative;
+        background-color: white;
+        color: white;
+        font-size: 29.4px !important;
+        line-height: 45px !important;
+        font-family: "Mission Gothic Bold Italic", Arial Narrow Bold !important;
+        font-weight: bold !important;
+        font-style: inherit !important;
+        text-decoration: none;
+        margin-left: -836px;
+        height: 114px;
+        margin-top: 35px;
+        background-image: url(https://michigan.aaa.com/assets/Images/Careers/Careers_blue_arrow.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        text-align: center;
+        width: 224%;
 }
 
 
