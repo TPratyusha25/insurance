@@ -185,7 +185,25 @@ width:26%;
 }
 
 
+    .arrowbutton > div:nth-child(1) {
+        width: 34%;
+        margin-left: 433px;
+        border-top: 34.9px solid transparent;
+        border-left: 36px solid #0065a4;
+        border-bottom: 39px solid transparent;
+    }
 
+         .arrowbutton > div:nth-child(1) > div > p a {
+        font-size: 27px !important;
+        line-height: 22px !important;
+        height: auto;
+        padding: 12px 22px;
+        width: 90%;
+        display: block;
+        text-align: center;
+        margin-top: -33px;
+        margin-left: -535px;
+    }
 
 
 
