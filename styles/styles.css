@@ -286,10 +286,12 @@ a.button:any-link, button {
 
     h2 {
 
-        font-size: 29px !important;
-        line-height: 33px !important;
-        width: 149% ! important;
+              font-size: 59px !important;
+        line-height: 61px !important;
+        width: 263% ! important;
         margin-left: 0px ! important;
+        position: relative;
+        left: -26px;
     }
 
     p {
