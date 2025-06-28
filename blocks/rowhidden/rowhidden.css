@@ -23,5 +23,49 @@ font-size: 15px !important;
 
 }
 
+@media (max-width:767) {
+
+ .rowhidden > div:nth-child(1) > div h2 {
+     display:none;
+ }
+
+
+.rowhidden > div:nth-child(2) > div p {
+     display:none;
+
+
+}
+
+
+}
+
+@media (min-width:767) and (max-width:1023) {
+
+
+ .rowhidden > div:nth-child(1) > div h2 {
+         margin-left: 264px;
+        width: 111%;
+        font-size: 35px ! important;
+        line-height: 42px ! important;
+ }
+
+
+.rowhidden > div:nth-child(2) > div p {
+        font-size: 25px !important;
+        line-height: 19px !important;
+        font-family: Verdana, Arial Narrow Bold;
+        /* text-align: center; */
+        color: #666666;
+        margin-top: -11px;
+        line-height: 1.6 ! important;
+        width: 105%;
+        margin-left: 268px;
+
+
+}
+
+
+
+}
 
 
