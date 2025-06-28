@@ -126,6 +126,7 @@
 
     .header > div:nth-child(8) > div > picture > img:hover {
         background-color: #e40606;
+        cursor: pointer;
     }
 
     .header > div:nth-child(9) {
