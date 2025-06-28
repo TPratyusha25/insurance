@@ -58,24 +58,28 @@ font-size: 15px !important;
 
 
 .rowhidden > div:nth-child(2) > div p {
-        font-size: 25px !important;
+              font-size: 22px !important;
         line-height: 19px !important;
         font-family: Verdana, Arial Narrow Bold;
         /* text-align: center; */
         color: #666666;
         margin-top: -11px;
         line-height: 1.6 ! important;
-        width: 105%;
-        margin-left: 268px;
+        width: 178%;
+        margin-left: 25px;
 
 
 }
 
  .rowhidden > div:nth-child(3) > div h3 {
-     font-size: 22px !important;
-    line-height: 24px !important;
-    font-family: "Mission Gothic", Arial Narrow Bold;
-    font-style: inherit !important;
+        font-size: 29px !important;
+        line-height: 43px !important;
+        font-family: "Mission Gothic", Arial Narrow Bold;
+        font-style: inherit !important;
+        position: relative;
+        width: 121%;
+        left: -62px;
+
  }
 
 
