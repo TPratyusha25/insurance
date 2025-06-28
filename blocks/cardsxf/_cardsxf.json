@@ -68,7 +68,7 @@
   ],
   "filters": [
     {
-      "id": "cards",
+      "id": "cardsxf",
       "components": [
         "card"
       ]
