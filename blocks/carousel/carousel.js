@@ -3,9 +3,9 @@ const items = ul.children;
 const itemCount = items.length;
 const visibleItems = 3;
 
-let itemWidth = getItemWidth(); // Dynamically get width
+let itemWidth = getItemWidth(); // Set initial item width
 
-// Clone first visible items and append
+// Clone first visible items and append for infinite scroll effect
 for (let i = 0; i < visibleItems; i++) {
   ul.appendChild(items[i].cloneNode(true));
 }
@@ -33,7 +33,7 @@ document.querySelector('.carousel.block > div:nth-child(4)').addEventListener('c
   updateSlider();
 });
 
-// Function to update slider position
+// Update the slider's position
 function updateSlider() {
   ul.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
   ul.style.transition = 'transform 0.4s ease-in-out';
@@ -47,20 +47,24 @@ function updateSlider() {
   }
 }
 
-// Helper: get item width based on viewport
+// Function to get dynamic item width based on screen size
 function getItemWidth() {
   const screenWidth = window.innerWidth;
-  if (screenWidth <= 1024 && screenWidth >= 768) {
-    return 432; // Tablet
+  if (screenWidth <= 1024 && screenWidth > 768) {
+    return 430; // Tablet
   } else if (screenWidth <= 768) {
-    return 100; // Example: mobile — change as needed
+    return 280; // Mobile (adjust as per your design)
   } else {
-    return 308; // Default: desktop
+    return 308; // Desktop
   }
 }
 
-// Optional: Update on resize
+// Handle window resize — update itemWidth and translateX
 window.addEventListener('resize', () => {
-  itemWidth = getItemWidth();
-  updateSlider(); // Adjust position based on new width
+  const newWidth = getItemWidth();
+  if (newWidth !== itemWidth) {
+    itemWidth = newWidth;
+    ul.style.transition = 'none';
+    ul.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+  }
 });
