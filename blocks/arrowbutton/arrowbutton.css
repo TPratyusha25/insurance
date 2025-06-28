@@ -161,4 +161,48 @@ width:26%;
     }
 } 
 
+ @media screen and (max-width: 767px){
 
+.arrowbutton > div:nth-child(2) > div > p {
+    font-size: 15px !important;
+    line-height: 20px !important;
+    font-family: Verdana, Arial Narrow Bold;
+    margin-left: -3px;
+    margin-top: 63px;
+    align-items: start;
+    margin-bottom: 8px;
+}
+
+
+.arrowbutton > div:nth-child(2) > div > h3 {
+    font-family: "Mission Gothic Bold Italic", Arial Narrow Bold !important;
+    font-weight: bolder;
+    text-align: left;
+    color: #d1232a;
+    font-style: italic;
+    margin-left: 549px;
+    margin-top: -198px;
+}
+
+
+     .arrowbutton > div:nth-child(3) > div > p a {
+    font-size: 15px !important;
+    line-height: 20px !important;
+    text-decoration: none;
+    color: #666666;
+    background-color: white;
+    font-size: 15px !important;
+    line-height: 19px !important;
+    font-family: Verdana, Arial Narrow Bold ! important;
+    text-align: center;
+    color: #666666;
+    margin-top: -11px;
+    line-height: 1.6 ! important;
+    font-weight: 200 ! important;
+    margin-left: 65px;
+    margin-top: 210px;
+}
+
+
+ }
+         
