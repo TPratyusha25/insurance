@@ -23,7 +23,7 @@ font-size: 15px !important;
 
 }
 
- .rowhidden > div:nth-child(1) > div h3 {
+ .rowhidden > div:nth-child(3) > div h3 {
   font-size: 22px !important;
     line-height: 24px !important;
     font-family: "Mission Gothic", Arial Narrow Bold;
@@ -67,8 +67,8 @@ font-size: 15px !important;
 
 }
 
-     .rowhidden > div:nth-child(1) > div h3 {
- font-size: 22px !important;
+ .rowhidden > div:nth-child(3) > div h3 {
+     font-size: 22px !important;
     line-height: 24px !important;
     font-family: "Mission Gothic", Arial Narrow Bold;
     font-style: inherit !important;
