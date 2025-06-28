@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const items = ul.children;
     const itemCount = items.length;
     const visibleItems = 3;
-    const itemWidth = items[1].offsetWidth;
+    const itemWidth = 308;
 
     for (let i = 0; i < visibleItems; i++) {
       ul.appendChild(items[i].cloneNode(true));
