@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
 document.addEventListener('DOMContentLoaded', () => {
-  const joinBtn = document.querySelector('header > div:nth-child(4) > div p');
+  const joinBtn = document.querySelector('.header > div:nth-child(4) > div p');
 
   if (joinBtn) {
     joinBtn.style.cursor = 'pointer'; // Optional: make it look clickable
