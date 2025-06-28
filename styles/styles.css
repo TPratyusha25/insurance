@@ -306,7 +306,7 @@ a.button:any-link, button {
 }
 
 
-/*@media (min-width: 768px) and (max-width: 1024px)  {
+@media (min-width: 768px) and (max-width: 1024px)  {
 
 a.button:any-link, button {
  
@@ -372,7 +372,7 @@ a.button:any-link, button {
         margin-left: 268px;
 
     }
-} */
+} 
     
 
 
