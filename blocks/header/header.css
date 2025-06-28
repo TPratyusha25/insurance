@@ -278,113 +278,207 @@
     }
 }
     
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  .header-wrapper {
-    margin-top: 0;
-  }
+ @media (min-width: 768px) and (max-width: 1023px){
 
-  .header-wrapper > div:nth-of-type(-n+15) {
-    max-width: 100% !important;
-    margin: 0 auto;
-    left: 0;
-    padding: 0 10px;
-  }
-
-  .header > div:nth-child(1) > div {
-    float: left;
-    width: 130px;
-    height: auto;
+.header > div:nth-child(9) > div {
     position: relative;
-    top: 0;
-    right: 0;
-    margin-top: 15px;
-  }
+    left: 40%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+/*     width: 100vw; */
+    background-image: url(https://michigan.aaa.com/assets/images/Global/background.png);
+    /* background-size: cover; */
+    /* background-position: center; */
+    z-index: 0;
+    width: 186%
 
-  .header > div:nth-child(3) > div {
-    float: right;
-    text-align: right;
-    padding-top: 10px;
-    padding-right: 10px;
-    font-size: 12px;
-    position: relative;
-    margin-top: 0;
-    right: 0;
-  }
+}
+    .header > div:nth-child(9) > div ul {
+    list-style-type: none;
+    padding-left: 0 !important;
+    background-image: url(https://michigan.aaa.com/assets/Images/Global/MainNav.png);
+    height: 56px;
+    }
 
-  .header > div:nth-child(3) > div ul {
-    gap: 6px;
-    justify-content: flex-end;
-    flex-wrap: nowrap;
-  }
+    .header > div:nth-child(9) > div ul li:nth-child(1) {
+    list-style: none !important;
+    position: relative !important;
+    float: left !important;
+    width: 10% !important;
+    /* height: 100%; */
+    left: 0% !important;
+    padding: 16px 21px !important;
+    }
 
-  .header > div:nth-child(4) > div p {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    height: 24px;
-    font: bold 11px / 24px Arial, sans-serif !important;
-    padding: 0 12px;
-    border-radius: 20px;
-    z-index: 2;
-  }
+    .header > div:nth-child(9) > div ul li:nth-child(2) {
+    list-style: none !important;
+    position: relative !important;
+    float: left !important;
+    width: 10% !important;
+    /* height: 100%; */
+    left: 0% !important;
+    padding: 16px 21px !important;
+    }
 
-  .header > div:nth-child(7) > div > p {
-    position: absolute;
-    top: 48px;
-    right: 55px;
-    width: 200px;
-    height: 24px;
-    padding-left: 8px;
-    font-size: 12px;
-    border-radius: 20px 0 0 20px;
-    border: 2px solid #d40000;
-    text-align: left;
-    float: none;
+    .header > div:nth-child(9) > div ul li:nth-child(3) {
+    list-style: none !important;
+    position: relative !important;
+    float: left !important;
+    width: 10% !important;
+    /* height: 100%; */
+    left: 0% !important;
+    padding: 16px 21px !important;
+    }
+
+    .header > div:nth-child(9) > div ul li:nth-child(4) {
+    list-style: none !important;
+    position: relative !important;
+    float: left !important;
+    width: 15% !important;
+    /* height: 100%; */
+    left: 0% !important;
+    padding: 16px 21px !important;
+    }
+
+    .header > div:nth-child(9) > div ul li:nth-child(5) {
+    list-style: none !important;
+    position: relative !important;
+    float: left !important;
+    width: 10% !important;
+    /* height: 100%; */
+    left: 0% !important;
+    padding: 16px 21px !important;
+    }
+
+    .header > div:nth-child(9) > div ul li:nth-child(6) {
+    list-style: none !important;
+    position: relative !important;
+    float: left !important;
+    width: 10% !important;
+    /* height: 100%; */
+    left: 0% !important;
+    padding: 16px 21px !important;
+    }
+
+    .header > div:nth-child(9) > div ul li:nth-child(7) {
+    list-style: none !important;
+    position: relative !important;
+    float: left !important;
+    width: 10% !important;
+    /* height: 100%; */
+    left: 0% !important;
+    padding: 16px 21px !important;
+    }
+
+
+    .header > div:nth-child(3) > div {
+   text-align: right;
+        float: right;
+        padding-top: 6px;
+        padding-right: 12px;
+        font-family: "Mission Gothic", Arial Narrow, Verdana;
+        font-weight: normal;
+        font-style: normal;
+        font-size: 13px;
+        position: relative;
+        /* right: -54%; */
+        left: 49%;
+        /* margin-top: 77px; */
+}
+
+    .header > div:nth-child(3) > div ul li a {
+    font-size: 22px;
+    color: #666666;
+    font-family: "Mission Gothic", Arial Narrow, Verdana;
+    font-weight: 600;
+}
+
+    .header > div:nth-child(4) > div p {
+    display: inline-block;
+        height: 24px;
+        position: relative;
+        padding: 0 0px 0 0px;
+        font: bold 12px / 24px Arial, Helvetica, sans-serif !important;
+        text-transform: uppercase;
+        text-shadow: none;
+        text-decoration: none !important;
+        background-color: #d40000;
+        color: white;
+        text-align: center;
+        border-radius: 20px;
+        left: 111%;
+      bottom: 55px;
+        width: 16%;
+}
+
+    .header > div:nth-child(3) > div p {
+    width: 0 !important;
+    margin: 0 !important;
+    }
+
+    .header > div:nth-child(4) {
+        
+        height: 84px;
+        margin-top: 70px;
+        margin-left: 133px;
+    
+    }
+
+    .header > div:nth-child(7) > div > p {
+    font: 12px / 24px Arial, Verdana, Geneva, sans-serif;
     color: #999;
-  }
-
-  .header > div:nth-child(8) {
-    position: absolute;
-    top: 48px;
-    right: 10px;
-    width: auto;
-  }
-
-  .header > div:nth-child(8) > div {
-    width: auto;
-  }
-
-  .header > div:nth-child(8) > div > picture > img {
-    height: 18px;
-    padding: 4px 8px 6px 6px;
     border: 2px solid #d40000;
-    background-color: #d1232A;
-    border-radius: 0 20px 20px 0;
-  }
+    float: left;
+    text-align: left;
+    border-radius: 20px 0px 0px 20px;
+    padding-left: 8px;
+    top: -15px !important;
+    left: 110% !important;
+    margin: 0 !important;
+    width: 25% ! important;
+    height: 30px !important;
+    }
 
-  .header > div:nth-child(9) > div {
-    width: 100%;
-    margin-left: 0;
-    margin-right: 0;
-    background-size: cover;
-  }
+    .header > div:nth-child(8) {
+    width: 0% ;
+    position: relative;
+    bottom: 52px;
+    left: 93%;
+    }
 
-  .header > div:nth-child(9) > div ul {
-    height: auto;
+     .header > div:nth-child(8) > div {
+    width: 18px;
+     }
+
+    .header > div:nth-child(8) > div > picture > img {
+    /* right: 9%; */
+    left: 458px !important;
+    height: 20px !important;
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 0;
-  }
+    align-items: center;
+    border: 2px solid #d40000;
+    padding: 4px 8px 6px 6px;
+    border-radius: 0px 20px 20px 0px;
+    background-color: #d1232A;
+    position: relative;
+    top: 3px !important;
+        
+    
+}
+.header-wrapper > div:nth-of-type(-n+15) {
+   
+    height: 140px;
+    overflow: visible;
+    /* width: 965px; */
+    max-width: 965px !important;
+    position: relative;
+    left: 10%;
+    margin-top: -65px;
+}
+.header > div:nth-child(1) > div > picture  img {
+    margin-top: 32px;
 
-  .header > div:nth-child(9) > div ul li {
-    float: none;
-    padding: 12px 16px;
-    left: 0;
-  }
+}
 
-  .header > div:nth-child(9) > div ul li::after,
-  .header > div:nth-child(9) > div ul li:nth-child(1)::before {
-    display: none;
-  }
 }
