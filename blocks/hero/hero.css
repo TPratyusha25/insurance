@@ -15,7 +15,7 @@
 
 }
 
-/*@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) {
 .hero-wrapper .hero img {
 
             margin-top: -1px;
@@ -23,4 +23,4 @@
         max-width: 231% ! important;
         width: 186%;
 }
-} */
+} 
