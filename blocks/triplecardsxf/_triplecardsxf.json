@@ -33,7 +33,7 @@
     ],
     "models": [
       {
-        "id": "card",
+        "id": "cardxf",
         "fields": [
           {
             "component": "reference",
@@ -62,7 +62,7 @@
     ],
     "filters": [
       {
-        "id": "triplecards",
+        "id": "triplecardsxf",
         "components": [
           "card"
         ]
