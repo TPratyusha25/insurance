@@ -32,7 +32,7 @@
     padding: 20px 0px;
     margin: 0px;
     letter-spacing: -0.03em;
-    margin-left: 172px;
+    margin-left: 118px;
 }
 
 
@@ -66,11 +66,11 @@
     text-align: center;
     width: 39%;
      margin-top: 3px;
-    margin-left: 185px;
+   margin-left: 165px;
 }
 
 .videocta-wrapper p {
-font-size: 1rem;
+
     color: #666666;
     line-height: 1.6;
     flex: 1 1 50%;
@@ -78,9 +78,11 @@ font-size: 1rem;
     font-size: 14px !important;
     line-height: 20px !important;
     font-family: Verdana, Arial Narrow Bold;
-    width: 50%;
-    margin-left: 131px;
+    width: 43%;
+    margin-left: 148px;
     margin-top: 19px;
+    text-align: left;
+    position: relative;
 }
 
 
@@ -98,9 +100,9 @@ font-size: 1rem;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     flex: 1 1 45%;
     order: 2;
-   margin-left: 681px;
+     margin-left: 614px;
     position: absolute;
-margin-top: -240px;
+    margin-top: -240px;
 }
 
 
