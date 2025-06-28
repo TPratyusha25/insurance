@@ -112,16 +112,10 @@
 }
 
 
-@media (min-width: 600px) {
-  .carousel.block > div {
-    flex: 1 1 48%;
-  }
-}
-
-@media (min-width: 900px) {
-  .carousel.block > div {
-    flex: 1 1 30%;
-  }
+@media (max-width: 767px) {
+ .carousel-wrapper {
+     display: none;
+ }
 }
 
 
