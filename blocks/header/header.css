@@ -124,6 +124,10 @@
     background-color: #d1232A;
     }
 
+    .header > div:nth-child(8) > div > picture > img:hover {
+        background-color: #e40606;
+    }
+
     .header > div:nth-child(9) {
         position: relative;
     }
