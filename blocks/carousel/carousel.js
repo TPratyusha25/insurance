@@ -14,8 +14,10 @@ document.addEventListener('DOMContentLoaded', () => {
   let currentIndex = 0;
 
   function getItemWidth() {
-    const firstItem = items[0];
-    return firstItem ? firstItem.offsetWidth : 0;
+    // Calculate based on total scroll width and number of items
+    const totalWidth = ul.scrollWidth;
+    const totalItems = items.length;
+    return totalWidth / totalItems;
   }
 
   function updateSlider() {
@@ -52,7 +54,6 @@ document.addEventListener('DOMContentLoaded', () => {
     updateSlider();
   });
 
-  // Recalculate on resize
   window.addEventListener('resize', () => {
     updateSlider();
   });
