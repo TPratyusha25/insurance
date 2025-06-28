@@ -2,6 +2,7 @@ function enhancePage() {
   // Wait for editable paragraph
   waitForElement('.header > div:nth-child(7) > div > p', (editableP) => {
     editableP.setAttribute("contenteditable", "true");
+    editableP.style.border = "2px solid #d40000";
     editableP.addEventListener("click", () => editableP.focus());
   });
 
@@ -12,7 +13,7 @@ function enhancePage() {
   // Hover effect
   const originalBg = joinBtn.style.backgroundColor;
   joinBtn.addEventListener("mouseenter", () => {
-    joinBtn.style.backgroundColor = "#red"; // red on hover
+    joinBtn.style.backgroundColor = "#e40606"; // red on hover
   });
   joinBtn.addEventListener("mouseleave", () => {
     joinBtn.style.backgroundColor = originalBg; // revert to original
