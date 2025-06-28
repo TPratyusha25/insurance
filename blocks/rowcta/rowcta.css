@@ -34,9 +34,9 @@
  }
 
 @media (max-width:767px) {
-.rowcta {
-diaplay: none ! important;
 
+.rowcta {
+     display: none ! important;
 }
 
 }
