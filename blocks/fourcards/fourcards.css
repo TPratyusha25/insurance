@@ -121,7 +121,7 @@ position: absolute;
   }
 
   .fourcards.block > div {
-    background-color: #2c68ab;
+          background-color: #2c68ab;
         /* padding: 16px; */
         border-top: 8px solid white;
         display: flex;
@@ -132,7 +132,7 @@ position: absolute;
         width: 266%;
         margin-bottom: 15px;
         margin-left: -25px;
-        height: 89px;
+        height: 113px;
   }
 
   /* Hide image and hover content on mobile */
@@ -159,17 +159,17 @@ position: absolute;
 
 
   .fourcards.block > div > div:nth-child(2) p {
-             color: white;
+        color: white;
         /* width: 100%; */
         /* padding: 6px; */
-        font-size: 22px !important;
+        font-size: 30px !important;
         font-weight: bold;
         font-family: "Mission Gothic", Arial Narrow Bold ! important;
         margin-top: 13px;
-        line-height: 28px ! important;
+        line-height: 41px ! important;
         text-align: left !important;
         height: 35px;
-        width: 245px;
+        width: 338px;
         margin-top: -5px;
         margin-left: 19px;
 
