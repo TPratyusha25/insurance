@@ -192,25 +192,34 @@ width:26%;
 }
 
 
-    .arrowbutton > div:nth-child(1) {
-        width: 34%;
-        margin-left: 433px;
-        border-top: 34.9px solid transparent;
-        border-left: 36px solid #0065a4;
-        border-bottom: 39px solid transparent;
+      .arrowbutton > div:nth-child(1) {
+        height: 0;
+        margin-left: 464px;
+        margin-bottom: -6px;
     }
 
-         .arrowbutton > div:nth-child(1) > div > p a {
-        font-size: 27px !important;
-        line-height: 22px !important;
-        height: auto;
-        padding: 12px 22px;
-        width: 90%;
-        display: block;
-        text-align: center;
-        margin-top: -33px;
-        margin-left: -535px;
-    }
+   .arrowbutton > div:nth-child(1) > div > p a {
+   display: inline-block;
+    position: relative;
+    background-color: white;
+    color: white;
+    font-size: 23px !important;
+    line-height: 24px !important;
+    font-family: "Mission Gothic Bold Italic", Arial Narrow Bold !important;
+    font-weight: bold !important;
+    font-style: inherit !important;
+    text-decoration: none;
+    margin-left: -450px;
+    height: 66px;
+    margin-top: 35px;
+    background-image: url(https://michigan.aaa.com/assets/Images/Careers/Careers_blue_arrow.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+
+     
 
 
 
