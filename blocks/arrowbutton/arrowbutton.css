@@ -217,20 +217,20 @@ width:26%;
 
 
 .arrowbutton > div:nth-child(3) > div > p a {
-    font-size: 15px !important;
-    line-height: 20px !important;
-    text-decoration: none;
-    color: #666666;
-    background-color: white;
-    font-size: 15px !important;
-    line-height: 19px !important;
-    font-family: Verdana, Arial Narrow Bold ! important;
-    text-align: center;
-    color: #666666;
-    margin-top: 300px;
-    line-height: 1.6 ! important;
-    font-weight: 200 ! important;
-    margin-left: 65px;
+    
+        text-decoration: none;
+        color: #666666;
+        background-color: white;
+        font-size: 29px !important;
+        line-height: 19px !important;
+        font-family: Verdana, Arial Narrow Bold ! important;
+        text-align: center;
+        color: #666666;
+        margin-top: -78px;
+        line-height: 1.6 ! important;
+        font-weight: 200 ! important;
+        margin-left: -48px;
+        width: 190%;
 }
 
 
