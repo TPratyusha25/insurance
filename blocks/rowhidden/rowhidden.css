@@ -26,14 +26,12 @@ font-size: 15px !important;
 @media (max-width:767) {
 
  .rowhidden > div:nth-child(1) > div h2 {
-     display:none;
+         display:none;
  }
 
 
 .rowhidden > div:nth-child(2) > div p {
-     display:none;
-
-
+         display:none;
 }
 
 
