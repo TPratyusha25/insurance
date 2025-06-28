@@ -1,44 +1,47 @@
+document.addEventListener("DOMContentLoaded", () => {
+  // Utility function to wait for an element to appear
+  function waitForElement(selector, callback) {
+    const el = document.querySelector(selector);
+    if (el) {
+      callback(el);
+      return;
+    }
 
-document.addEventListener("DOMContentLoaded", function () {
-    const targetSelector = ".header > div:nth-child(7) > div > p";
+    const observer = new MutationObserver(() => {
+      const el = document.querySelector(selector);
+      if (el) {
+        observer.disconnect();
+        callback(el);
+      }
+    });
 
-    function makeEditable() {
-      const searchText = document.querySelector(targetSelector);
-      if (searchText) {
-        searchText.setAttribute("contenteditable", "true");
-        searchText.style.cursor = "text";
-        searchText.style.outline = "none"; // Prevent blue outline
-        searchText.style.border = "2px solid #d40000"; // Keep consistent border
+    observer.observe(document.body, {
+      childList: true,
+      subtree: true,
+    });
+  }
 
-        searchText.addEventListener("click", () => searchText.focus());
-      }
-    }
+  // 1. Make a specific <p> editable
+  waitForElement('.header > div:nth-child(7) > div > p', (editableP) => {
+    editableP.setAttribute("contenteditable", "true");
+    editableP.style.cursor = "text";
+    editableP.style.outline = "none";
+    editableP.style.border = "2px solid #d40000";
+    editableP.addEventListener("click", () => editableP.focus());
+  });
 
-    // Initial attempt
-    makeEditable();
+  // 2. Make another <p> act like a button
+  waitForElement('.header > div:nth-child(4) > div > p', (joinBtn) => {
+    joinBtn.style.cursor = "pointer";
+    joinBtn.style.backgroundColor = "#2860a2";
+    joinBtn.style.color = "#fff";
+    joinBtn.style.padding = "10px 20px";
+    joinBtn.style.borderRadius = "4px";
+    joinBtn.style.display = "inline-block";
+    joinBtn.style.textAlign = "center";
 
-    // Watch for DOM changes and reapply if needed
-    const observer = new MutationObserver(() => {
-      makeEditable();
-    });
-
-    observer.observe(document.body, {
-      childList: true,
-      subtree: true
-    });
-  });
-
-document.addEventListener('DOMContentLoaded', () => {
-  const joinBtn = document.querySelector('.header > div:nth-child(4) > div p');
-
-  if (joinBtn) {
-    joinBtn.style.cursor = 'pointer'; // Optional: make it look clickable
-
-    joinBtn.addEventListener('click', () => {
+    joinBtn.addEventListener("click", () => {
       window.location.href = 'https://memberapps.acg.aaa.com/membership-join/classic/member-details?adobe_mc_sdid=SDID%3D0990E315639EB1BE-66805E249D4554CC%7CMCORGID%3D0CD9210654E6C1AD0A4C98A7@AdobeOrg%7CTS%3D1751134081&adobe_mc_ref=https:%2F%2Fmichigan.aaa.com%2Fcareers%2Fentrepreneurial-agent.aspx&mboxSession=f0a0eb0b9f804aec92c2777cfb4d560d';
     });
-  } else {
-    console.warn('Join button not found!');
-  }
+  });
 });
-
