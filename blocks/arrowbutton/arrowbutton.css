@@ -106,7 +106,7 @@ width:26%;
 
 
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+/* @media screen and (min-width: 768px) and (max-width: 1023px) {
     .arrowbutton > div:nth-child(1) > div > p a {
              font-size: 27px !important;
         line-height: 22px !important;
@@ -159,7 +159,7 @@ width:26%;
         font-size: 14px;
         line-height: 39px ! important;
     }
-}
+} */
 
 
 @media screen and (max-width: 767px) {
