@@ -157,10 +157,10 @@ position: absolute;
   }
 
     .fourcards.block > div > div:nth-child(2) p {
-        color: white;
-        width: 100%;
-        padding: 6px;
-        font-size: 25px !important;
+      color: white;
+        /* width: 100%; */
+        /* padding: 6px; */
+        font-size: 22px !important;
         font-weight: bold;
         font-family: "Mission Gothic", Arial Narrow Bold ! important;
         margin-top: 13px;
@@ -169,7 +169,7 @@ position: absolute;
         height: 35px;
         /* width: 68px; */
         margin-top: -5px;
-        margin-left: 188px;
+        margin-left: 19px;
 }
 
 
