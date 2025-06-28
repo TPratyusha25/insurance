@@ -156,7 +156,7 @@ document.querySelectorAll('.headereds > div:nth-child(22) > div > p').forEach((e
   });
   
   // JOIN AAA
-  const joinTextEl = document.querySelector('.headereds > div:nth-child(9) > div > p');
+  const joinTextEl = document.querySelector('header > div:nth-child(4) > div p');
   const joinOuterDiv = joinTextEl?.closest('div');
   const joinContainer = joinOuterDiv?.parentElement;
   const joinSibling = joinContainer?.nextElementSibling;
