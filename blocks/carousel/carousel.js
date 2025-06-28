@@ -51,7 +51,7 @@ function updateSlider() {
 function getItemWidth() {
   const screenWidth = window.innerWidth;
   if (screenWidth <= 1024 && screenWidth >= 768) {
-    return 430; // Tablet
+    return 432; // Tablet
   } else if (screenWidth <= 768) {
     return 100; // Example: mobile — change as needed
   } else {
