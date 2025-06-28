@@ -9,12 +9,6 @@ function enhancePage() {
   // Wait for button-like paragraph
  waitForElement('.header > div:nth-child(4) > div > p', (joinBtn) => {
   joinBtn.style.cursor = "pointer";
-  joinBtn.style.backgroundColor = "#2860a2";
-  joinBtn.style.color = "#fff";
-  joinBtn.style.padding = "10px 20px";
-  joinBtn.style.borderRadius = "4px";
-  joinBtn.style.display = "inline-block";
-  joinBtn.style.textAlign = "center";
 
   // Hover effect
   const originalBg = joinBtn.style.backgroundColor;
