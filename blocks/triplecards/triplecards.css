@@ -122,7 +122,7 @@ position: absolute;
 }
 
 
-@media screen and (max-width: 1023px) and (min-width: 768px) {
+/*@media screen and (max-width: 1023px) and (min-width: 768px) {
   .triplecards.block {
         grid-template-columns: repeat(auto-fill, minmax(428px, 1fr));
         width: 185%;
@@ -179,7 +179,7 @@ position: absolute;
     z-index: 10;
     height: 58px;
 }
-}
+} */
 
 
 
