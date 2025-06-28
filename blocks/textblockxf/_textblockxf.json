@@ -1,15 +1,15 @@
 {
     "definitions": [
       {
-        "title": "Text Block",
-        "id": "textblock",
+        "title": "Text Blockxf",
+        "id": "textblockxf",
         "plugins": {
           "xwalk": {
             "page": {
               "resourceType": "core/franklin/components/block/v1/block",
               "template": {
-                "name": "Text Block",
-                "model": "textblock"
+                "name": "Text Blockxf",
+                "model": "textblockxf"
               }
             }
           }
@@ -18,7 +18,7 @@
     ],
     "models": [
       {
-        "id": "textblock",
+        "id": "textblockxf",
         "fields": [
          {
       "component": "richtext",
