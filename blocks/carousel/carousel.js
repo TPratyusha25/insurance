@@ -1,60 +1,66 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const ul = document.querySelector('.carousel.block > div:nth-child(6) ul');
-  const visibleItems = 3;
-  let items = Array.from(ul.children);
-  const originalItemCount = items.length;
+const ul = document.querySelector('.carousel.block > div:nth-child(6) ul');
+const items = ul.children;
+const itemCount = items.length;
+const visibleItems = 3;
 
-  // Clone first visible items and append
-  for (let i = 0; i < visibleItems; i++) {
-    ul.appendChild(items[i].cloneNode(true));
-  }
+let itemWidth = getItemWidth(); // Dynamically get width
 
-  // Refresh items after cloning
-  items = Array.from(ul.children);
-  let currentIndex = 0;
+// Clone first visible items and append
+for (let i = 0; i < visibleItems; i++) {
+  ul.appendChild(items[i].cloneNode(true));
+}
 
-  function getItemWidth() {
-    // Calculate based on total scroll width and number of items
-    const totalWidth = ul.scrollWidth;
-    const totalItems = items.length;
-    return totalWidth / totalItems;
-  }
+let currentIndex = 0;
 
-  function updateSlider() {
-    const itemWidth = getItemWidth();
+// Left button click
+document.querySelector('.carousel.block > div:nth-child(2)').addEventListener('click', () => {
+  if (currentIndex <= 0) {
+    currentIndex = itemCount; // jump to cloned end
+    ul.style.transition = 'none';
     ul.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+    void ul.offsetWidth;
     ul.style.transition = 'transform 0.4s ease-in-out';
-
-    if (currentIndex >= originalItemCount) {
-      setTimeout(() => {
-        ul.style.transition = 'none';
-        currentIndex = 0;
-        ul.style.transform = `translateX(0)`;
-      }, 400);
-    }
+    currentIndex--;
+  } else {
+    currentIndex--;
   }
+  updateSlider();
+});
 
-  document.querySelector('.carousel.block > div:nth-child(2)').addEventListener('click', () => {
-    const itemWidth = getItemWidth();
-    if (currentIndex <= 0) {
-      currentIndex = originalItemCount;
+// Right button click
+document.querySelector('.carousel.block > div:nth-child(4)').addEventListener('click', () => {
+  currentIndex++;
+  updateSlider();
+});
+
+// Function to update slider position
+function updateSlider() {
+  ul.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+  ul.style.transition = 'transform 0.4s ease-in-out';
+
+  if (currentIndex >= itemCount) {
+    setTimeout(() => {
       ul.style.transition = 'none';
-      ul.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
-      void ul.offsetWidth;
-      ul.style.transition = 'transform 0.4s ease-in-out';
-      currentIndex--;
-    } else {
-      currentIndex--;
-    }
-    updateSlider();
-  });
+      currentIndex = 0;
+      ul.style.transform = `translateX(0)`;
+    }, 400);
+  }
+}
 
-  document.querySelector('.carousel.block > div:nth-child(4)').addEventListener('click', () => {
-    currentIndex++;
-    updateSlider();
-  });
+// Helper: get item width based on viewport
+function getItemWidth() {
+  const screenWidth = window.innerWidth;
+  if (screenWidth <= 1024 && screenWidth > 768) {
+    return 430; // Tablet
+  } else if (screenWidth <= 768) {
+    return 100; // Example: mobile — change as needed
+  } else {
+    return 308; // Default: desktop
+  }
+}
 
-  window.addEventListener('resize', () => {
-    updateSlider();
-  });
+// Optional: Update on resize
+window.addEventListener('resize', () => {
+  itemWidth = getItemWidth();
+  updateSlider(); // Adjust position based on new width
 });
