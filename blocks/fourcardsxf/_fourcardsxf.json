@@ -34,7 +34,7 @@
   ],
   "models": [
     {
-      "id": "card",
+      "id": "cardxf",
       "fields": [
         {
           "component": "reference",
@@ -68,7 +68,7 @@
   ],
   "filters": [
     {
-      "id": "fourcards",
+      "id": "fourcardsxf",
       "components": [
         "card"
       ]
