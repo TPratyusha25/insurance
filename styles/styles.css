@@ -271,6 +271,8 @@ a.button:any-link, button {
         font-size: 46px !important;
         width: 158%;
         height: auto;
+        position: relative;
+        left: 35px;
 
 }
 
