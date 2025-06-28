@@ -611,6 +611,19 @@
             "valueType": "string"
           }
         ]
+      },
+
+   {
+        "id": "rowcta",
+        "fields": [
+         {
+      "component": "richtext",
+      "name": "textContent",
+      "label": "Text",
+      "valueType": "string",
+      "required": true
+    }
+        ]
       }
 
   
