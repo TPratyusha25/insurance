@@ -43,6 +43,12 @@
       "card"
     ]
   },
+    {
+    "id": "fourcards",
+    "components": [
+      "card"
+    ]
+  },
   
   {
     "id": "cards",
