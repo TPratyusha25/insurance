@@ -2,7 +2,7 @@
   const items = ul.children;
   const itemCount = items.length;
   const visibleItems = 3;
-  const itemWidth = 308;
+  const itemWidth = items[0].offsetWidth;
 
   // Clone first visible items and append
   for (let i = 0; i < visibleItems; i++) {
