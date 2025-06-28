@@ -129,12 +129,11 @@ margin-top: -240px;
   }
 
   .videocta-wrapper picture img {
-    position: static !important;
-   
-         max-width: 199% ! important;
-        margin-left: -18px;
+     position: static !important;
+        max-width: 199% ! important;
+        margin-left: -20px;
         margin-top: -19px;
-        width: 153%;
+        width: 228%;
   }
 
   .videocta-wrapper h1{
@@ -153,10 +152,18 @@ margin-top: -240px;
   }
 
   .videocta-wrapper p {
-       font-size: 23px !important;
-        line-height: 35px !important;
-        width: 149% ! important;
+        font-size: 31px !important;
+        line-height: 45px !important;
+        width: 239% ! important;
+        text-align: left;
   }
+
+    .videocta-wrapper picture {
+    display: block;
+    width: 134%;
+    cursor: pointer;
+    position: relative;
+}
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
