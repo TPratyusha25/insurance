@@ -1,22 +1,43 @@
-const ul = document.querySelector('.carousel.block > div:nth-child(6) ul');
-  const items = ul.children;
-  const itemCount = items.length;
+document.addEventListener('DOMContentLoaded', () => {
+  const ul = document.querySelector('.carousel.block > div:nth-child(6) ul');
   const visibleItems = 3;
-  let itemWidth = items[0].getBoundingClientRect().width;
+  let items = Array.from(ul.children);
+  const originalItemCount = items.length;
 
   // Clone first visible items and append
   for (let i = 0; i < visibleItems; i++) {
     ul.appendChild(items[i].cloneNode(true));
   }
 
+  // Refresh items after cloning
+  items = Array.from(ul.children);
   let currentIndex = 0;
 
+  function getItemWidth() {
+    const firstItem = items[0];
+    return firstItem ? firstItem.getBoundingClientRect().width : 0;
+  }
+
+  function updateSlider() {
+    const itemWidth = getItemWidth();
+    ul.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+    ul.style.transition = 'transform 0.4s ease-in-out';
+
+    if (currentIndex >= originalItemCount) {
+      setTimeout(() => {
+        ul.style.transition = 'none';
+        currentIndex = 0;
+        ul.style.transform = `translateX(0)`;
+      }, 400);
+    }
+  }
+
   document.querySelector('.carousel.block > div:nth-child(2)').addEventListener('click', () => {
+    const itemWidth = getItemWidth();
     if (currentIndex <= 0) {
-      currentIndex = itemCount; // jump to cloned end
+      currentIndex = originalItemCount;
       ul.style.transition = 'none';
       ul.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
-      // force reflow to apply instantly
       void ul.offsetWidth;
       ul.style.transition = 'transform 0.4s ease-in-out';
       currentIndex--;
@@ -31,16 +52,8 @@ const ul = document.querySelector('.carousel.block > div:nth-child(6) ul');
     updateSlider();
   });
 
-  function updateSlider() {
-    ul.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
-    ul.style.transition = 'transform 0.4s ease-in-out';
-
-    if (currentIndex >= itemCount) {
-      // at cloned end → jump to real start
-      setTimeout(() => {
-        ul.style.transition = 'none';
-        currentIndex = 0;
-        ul.style.transform = `translateX(0)`;
-      }, 400);
-    }
-  }
+  // Recalculate on resize
+  window.addEventListener('resize', () => {
+    updateSlider();
+  });
+});
