@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function getItemWidth() {
     const firstItem = items[0];
-    return firstItem ? firstItem.getBoundingClientRect().width : 0;
+    return firstItem ? firstItem.offsetWidth : 0;
   }
 
   function updateSlider() {
