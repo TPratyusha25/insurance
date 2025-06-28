@@ -186,9 +186,10 @@ position: absolute;
         /* position: fixed; */
         display: block !important;
         position: relative;
-        bottom: 70px;
-        left: 33%;
-       margin-left: 373px;
+        bottom: 54px;
+        left: 99%;
+       
+        margin-left: 403px;
 
     }
 
