@@ -27,7 +27,7 @@
             "value": "",
             "label": "Text1",
             "valueType": "string"
-          }
+          },
             {
             "component": "richtext",
             "name": "text2",
