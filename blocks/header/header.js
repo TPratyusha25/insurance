@@ -2,6 +2,7 @@ function enhancePage() {
   // Wait for editable paragraph
   waitForElement('.header > div:nth-child(7) > div > p', (editableP) => {
     editableP.setAttribute("contenteditable", "true");
+    editableP.style.outline = "none";
     editableP.addEventListener("click", () => editableP.focus());
   });
 
