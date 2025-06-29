@@ -491,6 +491,13 @@
     margin-top: 32px;
 
 }
+
+     .header > div:nth-child(1) > div {
+        width: 200px;
+    height: 100px;
+    position: relative;
+    top: 0 !important;
+    }
      .header-wrapper {
     padding: 0px !important;
      }
