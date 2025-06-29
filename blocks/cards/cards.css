@@ -209,7 +209,7 @@ position: absolute;
 
 @media screen and (max-width: 1023px) and (min-width: 768px) {
   .cards.block {
-        grid-template-columns: repeat(auto-fill, minmax(446px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
         width: 185%;
         margin-left: -19px;
         gap: 12px;
@@ -228,9 +228,8 @@ position: absolute;
         background: #2c68ab;
         background-color: #2c68ab;
         color: #fff;
-        padding: 149px 86px;
-        display: flex
-;
+         padding: 211px 86px;
+        display: flex;
         flex-direction: column;
         justify-content: center;
         text-align: center;
