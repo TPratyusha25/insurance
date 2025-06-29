@@ -487,22 +487,11 @@
     left: 0% !important;
     width: 100%;
 }
-.header > div:nth-child(1) > div > picture  img {
-    width: 200px;
-    height: 100px;
-    margin-top: 0px !important;
 
-}
-
-     .header > div:nth-child(1) > div {
-        width: 200px;
-    height: 100px;
-    position: relative;
-    top: 0 !important;
-    }
      .header-wrapper {
     padding: 0px !important;
      }
 
 } 
 
+    
