@@ -34,9 +34,13 @@
               },
 
   
-        { "component": "text", "name": "joinText", "label": "Join Button Text" },
-        { "component": "aem-content", "name": "joinUrl", "label": "Join Button URL" },
-        { "component": "reference", "name": "joinIcon", "label": "Join Button Icon" },
+          {
+                "component": "richtext",
+                "name": "text",
+                "value": "",
+                "label": "Text",
+                "valueType": "string"
+              },
          
 
       
