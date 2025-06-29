@@ -483,13 +483,9 @@
 }
 .header-wrapper > div:nth-of-type(-n+15) {
    
-    height: 140px;
-    overflow: visible;
-    /* width: 965px; */
-    max-width: 965px !important;
     position: relative;
-    left: 10%;
-    margin-top: -65px;
+    left: 0% !important;
+    width: 100%;
 }
 .header > div:nth-child(1) > div > picture  img {
     margin-top: 32px;
