@@ -388,43 +388,36 @@
 
 
     .header > div:nth-child(3) > div {
-   text-align: right;
-        float: right;
-        padding-top: 6px;
-        padding-right: 12px;
-        font-family: "Mission Gothic", Arial Narrow, Verdana;
-        font-weight: normal;
-        font-style: normal;
-        font-size: 13px;
         position: relative;
-        /* right: -54%; */
-        left: 49%;
-        /* margin-top: 77px; */
+    margin: 0 !important;
+    left: 57%;
+    padding-top: 25px;
+    	float: right;
+	padding-right: 12px;
+
 }
 
     .header > div:nth-child(3) > div ul li a {
-    font-size: 22px;
+    font-size: 18px;
     color: #666666;
     font-family: "Mission Gothic", Arial Narrow, Verdana;
     font-weight: 600;
 }
 
+     .header > div:nth-child(3) > div ul li:nth-child(1) a::after {
+    content: " |";
+    padding: 0px 12px;
+    font-size: 18px;
+}
+    .header > div:nth-child(3) > div ul li:nth-child(2) a::after {
+    content: " |";
+    padding: 0px 12px;
+    font-size: 18px;
+}
+
     .header > div:nth-child(4) > div p {
-    display: inline-block;
-        height: 24px;
-        position: relative;
-        padding: 0 0px 0 0px;
-        font: bold 12px / 24px Arial, Helvetica, sans-serif !important;
-        text-transform: uppercase;
-        text-shadow: none;
-        text-decoration: none !important;
-        background-color: #d40000;
-        color: white;
-        text-align: center;
-        border-radius: 20px;
-        left: 111%;
-      bottom: 55px;
-        width: 16%;
+    margin: 0 !important;
+    height: 80px;
 }
 
     .header > div:nth-child(3) > div p {
@@ -433,10 +426,11 @@
     }
 
     .header > div:nth-child(4) {
-        
-        height: 84px;
-        margin-top: 70px;
-        margin-left: 133px;
+         width: 18%;
+    position: relative;
+    left: 155%;
+    bottom: 25%;
+    height: 60%;
     
     }
 
@@ -478,6 +472,34 @@
     background-color: #d1232A;
     position: relative;
     top: 3px !important;
+
+    .header-wrapper{
+        padding: 0px !important;                 
+    }
+
+    .header-wrapper > div:nth-of-type(-n+15) {
+    position: relative;
+    left: 0% !important;                         
+    width: 100%;
+    }
+
+    .header > div:nth-child(1) > div > picture img {
+    width: 200px;
+    height: 100px;
+    margin-top: 0px !important;
+    }
+
+    .header > div:nth-child(4) > div p a {
+    left: 0 !important;
+    height: 36px;
+    position: relative;
+    padding: 0px 10px 0px 10px;
+    font: bold 16px / 31px Arial, Helvetica, sans-serif !important;
+    bottom: 64px;
+    width: 80%;
+    margin: 0 !important;
+    }
+    
         
     
 }
