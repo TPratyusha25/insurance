@@ -62,21 +62,30 @@
     font-size: 14px;
     }
 
-    .header > div:nth-child(4) > div p a {
-       display: inline-block;
-    height: 24px;
+    .header > div:nth-child(4) {
+    width: 15%;
     position: relative;
-    padding: 0 15px 0 15px;
-    font: bold 12px / 24px Arial, Helvetica, sans-serif !important;
+    left: 88%;
+    height: 29%;
+    }
+
+    .header > div:nth-child(4) > div p a {
+    display: inline-block;
+    height: 25px;
+    position: relative;
+    padding: 0px 10px 0px 10px;
+    font: bold 12px / 22px Arial, Helvetica, sans-serif !important;
     text-transform: uppercase;
     text-shadow: none;
     text-decoration: none !important;
     background-color: #d40000;
     color: white;
     text-align: center;
+    margin: 0 !important;
     border-radius: 20px;
-    left: 75.7%;
-    bottom: -11px;
+    /* left: 75.7%; */
+    bottom: 64px;
+    width: 60%;
 }
 /*     .header > div:nth-child(5) > div > p {
         display: none;
