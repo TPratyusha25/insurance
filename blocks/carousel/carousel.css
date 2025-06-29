@@ -144,7 +144,7 @@
 /*     position: absolute;
     /* top: 10px; */
     /* left: 50%; */
-    right: 17%;
+    right: 0% !important;
     /* transform: translateX(-50%); */
     width: 945px;
     text-align: center; */
