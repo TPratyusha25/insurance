@@ -46,7 +46,7 @@ font-size: 15px !important;
 
 
 
-@media (min-width:767px) and (max-width:1023px) {
+@media (min-width:767px) and (max-width:1024px) {
 
 
  .rowhidden > div:nth-child(1) > div h2 {
