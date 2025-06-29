@@ -63,14 +63,14 @@
     }
 
     .header > div:nth-child(4) {
-    width: 15%;
+        width: 15%;
     position: relative;
-    left: 88%;
+    left: 87.7%;
     height: 29%;
     }
 
     .header > div:nth-child(4) > div p a {
-    display: inline-block;
+        display: inline-block;
     height: 25px;
     position: relative;
     padding: 0px 10px 0px 10px;
@@ -120,17 +120,19 @@
      }
 
     .header > div:nth-child(6) > div > picture > img {
-       display: flex;
+          display: flex;
     align-items: center;
     border: 2px solid #d40000;
-/*     border-radius: 20px; */
+    /* border-radius: 20px; */
     padding: 4px 8px 6px 6px;
-    height: 12px;
+    height: 11px;
     position: relative;
     border-radius: 0px 20px 20px 0px;
-    top: 23.5px;
+    /* top: 2px; */
     left: 37px;
     background-color: #d1232A;
+    background-image: url(https://michigan.aaa.com/assets/Images/Global/MainNav.png);
+    background-position: -936px -115px;
     }
 
     .header > div:nth-child(6) > div > picture > img:hover {
