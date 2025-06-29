@@ -78,11 +78,11 @@
     left: 75.7%;
     bottom: -11px;
 }
-    .header > div:nth-child(5) > div > p {
+/*     .header > div:nth-child(5) > div > p {
         display: none;
-    }
+    } */
 
-    .header > div:nth-child(7) > div > p {
+    .header > div:nth-child(5) > div > p {
       font: 12px / 24px Arial, Verdana, Geneva, sans-serif;
     color: #999;
     width: 17%;
@@ -99,18 +99,18 @@
     margin-bottom: 0px;
     }
 
-     .header > div:nth-child(8) {
+     .header > div:nth-child(6) {
     width: 0%;
     position: relative;
     bottom: 52px;
     left: 93%;
      }
 
-    .header > div:nth-child(8) > div {
+    .header > div:nth-child(6) > div {
     width: 18px;
      }
 
-    .header > div:nth-child(8) > div > picture > img {
+    .header > div:nth-child(6) > div > picture > img {
        display: flex;
     align-items: center;
     border: 2px solid #d40000;
@@ -124,16 +124,16 @@
     background-color: #d1232A;
     }
 
-    .header > div:nth-child(8) > div > picture > img:hover {
+    .header > div:nth-child(6) > div > picture > img:hover {
         background-color: #e40606;
         cursor: pointer;
     }
 
-    .header > div:nth-child(9) {
+    .header > div:nth-child(7) {
         position: relative;
     }
 
-    .header > div:nth-child(9) > div {
+    .header > div:nth-child(7) > div {
     position: relative;
     left: 50%;
     right: 50%;
@@ -146,14 +146,14 @@
     z-index: 0;
     }
 
-    .header > div:nth-child(9) > div ul {
+    .header > div:nth-child(7) > div ul {
         list-style-type: none;
     padding-left: 0 !important;
     background-image: url(https://michigan.aaa.com/assets/Images/Global/MainNav.png);
     height: 56px;
     }
 
-    .header > div:nth-child(9) > div ul li {
+    .header > div:nth-child(7) > div ul li {
         list-style: none;
     position: relative;
     float: left;
@@ -162,7 +162,7 @@
     padding: 13px 15px 13px 17px;
     }
 
-     .header > div:nth-child(9) > div ul li:nth-child(1) a {
+     .header > div:nth-child(7) > div ul li:nth-child(1) a {
     background-image: url(https://michigan.aaa.com/assets/Images/Global/MainNav.png);
     /* height: 100%; */
     background-repeat: no-repeat;
@@ -170,7 +170,7 @@
     color: transparent;
      }
 
-    .header > div:nth-child(9) > div ul li:nth-child(2) a {
+    .header > div:nth-child(7) > div ul li:nth-child(2) a {
     background-image: url(https://michigan.aaa.com/assets/Images/Global/MainNav.png);
     /* height: 100%; */
     background-repeat: no-repeat;
@@ -178,7 +178,7 @@
     color: transparent;
      }
 
-    .header > div:nth-child(9) > div ul li:nth-child(3) a {
+    .header > div:nth-child(7) > div ul li:nth-child(3) a {
     background-image: url(https://michigan.aaa.com/assets/Images/Global/MainNav.png);
     /* height: 100%; */
     background-repeat: no-repeat;
@@ -186,7 +186,7 @@
     color: transparent;
      }
 
-    .header > div:nth-child(9) > div ul li:nth-child(4) a {
+    .header > div:nth-child(7) > div ul li:nth-child(4) a {
     background-image: url(https://michigan.aaa.com/assets/Images/Global/MainNav.png);
     /* height: 100%; */
     background-repeat: no-repeat;
@@ -194,7 +194,7 @@
     color: transparent;
      }
 
-    .header > div:nth-child(9) > div ul li:nth-child(5) a {
+    .header > div:nth-child(7) > div ul li:nth-child(5) a {
     background-image: url(https://michigan.aaa.com/assets/Images/Global/MainNav.png);
     /* height: 100%; */
     background-repeat: no-repeat;
@@ -202,7 +202,7 @@
     color: transparent;
      }
 
-    .header > div:nth-child(9) > div ul li:nth-child(6) a {
+    .header > div:nth-child(7) > div ul li:nth-child(6) a {
     background-image: url(https://michigan.aaa.com/assets/Images/Global/MainNav.png);
     /* height: 100%; */
     background-repeat: no-repeat;
@@ -210,7 +210,7 @@
     color: transparent;
      }
 
-    .header > div:nth-child(9) > div ul li:nth-child(7) a {
+    .header > div:nth-child(7) > div ul li:nth-child(7) a {
     background-image: url(https://michigan.aaa.com/assets/Images/Global/MainNav.png);
     /* height: 100%; */
     background-repeat: no-repeat;
@@ -218,7 +218,7 @@
     color: transparent;
      }
 
-    .header > div:nth-child(9) > div ul li:nth-child(1)::before {
+    .header > div:nth-child(7) > div ul li:nth-child(1)::before {
     content: "";
     width: 3px;
     background-image: url(https://michigan.aaa.com/assets/Images/Global/Navigation.png?v=2);
@@ -230,7 +230,7 @@
     bottom: 0;
     }
 
-    .header > div:nth-child(9) > div ul li::after {
+    .header > div:nth-child(7) > div ul li::after {
     content: "";
     width: 3px;
     background-image: url(https://michigan.aaa.com/assets/Images/Global/Navigation.png?v=2);
@@ -242,31 +242,31 @@
     bottom: 0;
     }
 
-    .header > div:nth-child(9) > div ul li:nth-child(1):hover {
+    .header > div:nth-child(7) > div ul li:nth-child(1):hover {
     cursor: pointer;
     background-color: #2D72B8;
 }
-    .header > div:nth-child(9) > div ul li:nth-child(2):hover {
+    .header > div:nth-child(7) > div ul li:nth-child(2):hover {
     cursor: pointer;
     background-color: #2D72B8;
 }
-    .header > div:nth-child(9) > div ul li:nth-child(3):hover {
+    .header > div:nth-child(7) > div ul li:nth-child(3):hover {
     cursor: pointer;
     background-color: #2D72B8;
 }
-    .header > div:nth-child(9) > div ul li:nth-child(4):hover {
+    .header > div:nth-child(7) > div ul li:nth-child(4):hover {
     cursor: pointer;
     background-color: #2D72B8;
 }
-    .header > div:nth-child(9) > div ul li:nth-child(5):hover {
+    .header > div:nth-child(7) > div ul li:nth-child(5):hover {
     cursor: pointer;
     background-color: #2D72B8;
 }
-    .header > div:nth-child(9) > div ul li:nth-child(6):hover {
+    .header > div:nth-child(7) > div ul li:nth-child(6):hover {
     cursor: pointer;
     background-color: #2D72B8;
 }
-    .header > div:nth-child(9) > div ul li:nth-child(7):hover {
+    .header > div:nth-child(7) > div ul li:nth-child(7):hover {
     cursor: pointer;
     background-color: #2D72B8;
 }
