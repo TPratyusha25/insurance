@@ -488,7 +488,9 @@
     width: 100%;
 }
 .header > div:nth-child(1) > div > picture  img {
-    margin-top: 32px;
+    width: 200px;
+    height: 100px;
+    margin-top: 0px !important;
 
 }
 
