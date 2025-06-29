@@ -1,11 +1,11 @@
 .cards.block {
-    display: grid;
+     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(309px, 1fr));
     gap: 9px;
-   width: 61%;
-    margin-left: 246px;
-    margin-bottom: 27px;
-    margin-top: 23px;
+    width: 65%;
+    margin-left: 224px;
+    margin-bottom: 25px;
+    margin-top: -8px;
 }
 
 .cards.block > div {
