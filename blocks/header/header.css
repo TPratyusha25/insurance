@@ -481,16 +481,6 @@
         
     
 }
-.header-wrapper > div:nth-of-type(-n+15) {
-   
-    position: relative;
-    left: 0% !important;
-    width: 100%;
-}
-
-     .header-wrapper {
-    padding: 0px !important;
-     }
 
 } 
 
