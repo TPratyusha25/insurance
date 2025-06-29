@@ -121,21 +121,22 @@
 @media (min-width: 768px) and (max-width: 1024px) {
     .carousel-wrapper {
     width: auto !important;
-        height: 310px !important;
+        height: 350px !important;
         overflow: visible !important;
+        background-color: transparent;
     }
 
     .carousel.block{
-        width: 181% !important;
+        width: 182% !important;
     background-color: #265e9f;
-    height: 110%;
+    height: 100%;
     }
 
     .carousel.block > div:nth-child(2){
         left: 10px;
     }
 
-    .carousel.block > div:nth-child(2){
+    .carousel.block > div:nth-child(4){
         right: 10px;
     }
 
