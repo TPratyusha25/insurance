@@ -23,7 +23,7 @@
 
 
 
-    font-size: 32px;
+   font-size: 32px ! important;
     line-height: 34px;
     /* font-style: italic; */
     font-family: "Mission Gothic bold Italic", Arial Narrow Bold;
