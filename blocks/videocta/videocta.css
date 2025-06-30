@@ -221,3 +221,18 @@
     }
     
 } 
+
+
+
+
+@media (min-width: 426px) and (max-width: 767px) {
+    .videocta-wrapper picture img {
+        position: static !important;
+        max-width: 217% ! important;
+        margin-left: -20px;
+        margin-top: -19px;
+        width: 261%;
+    }
+
+
+}
