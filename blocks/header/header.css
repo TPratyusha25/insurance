@@ -501,6 +501,27 @@
     width: 80%;
     margin: 0 !important;
     }
+
+	.header > div:nth-child(5) {
+	width: 28%;
+    position: absolute;
+    bottom: 36%;
+    left: 138%;
+	}
+
+	.header > div:nth-child(5) > div > p {
+	font: 12px / 24px Arial, Verdana, Geneva, sans-serif;
+    color: #999;
+    width: 100%;
+    position: relative;
+    text-align: left;
+    border-radius: 20px 0px 0px 20px;
+    padding-left: 8px;
+    height: 21px;
+    text-size-adjust: 109%;
+    margin: 0 !important;
+    font-size: 13px !important;
+	}
     
         
     
