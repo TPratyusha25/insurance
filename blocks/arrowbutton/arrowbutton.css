@@ -255,9 +255,13 @@ width:26%;
 @media screen and (min-width: 425px) and (max-width: 767px) {
 
     .arrowbutton > div:nth-child(2) > div > h3 {
-        font-size: 20px !important;
-        line-height: 24px !important;
-        padding-top: 12px;
+        font-size: 50px !important;
+        line-height: 52px !important;
+      
+        width: 131%;
+        position: relative;
+        top: -296px;
+        left: 107px;
     }
 
 
