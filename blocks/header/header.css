@@ -524,6 +524,29 @@
 	left: 0 !important;
     top: 0 !important;
 	}
+
+	.header > div:nth-child(6) {
+	width: 3%;
+    position: relative;
+    bottom: 46px;
+    left: 167.5%;
+	}
+
+	.header > div:nth-child(6) > div > picture > img {
+	    display: flex;
+    align-items: center;
+    border: 2px solid #d40000;
+    border-radius: 20px;
+    padding: 4px 8px 6px 6px;
+    height: 11px;
+    position: relative;
+    border-radius: 0px 20px 20px 0px;
+    top: 0px !important;
+    left: 0px !important;
+    background-color: #d1232A;
+    background-image: url(https://michigan.aaa.com/assets/Images/Global/MainNav.png);
+    background-position: -937px -115px;
+	}
     
         
     
